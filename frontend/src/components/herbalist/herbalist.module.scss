@@ -1,0 +1,162 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+$medium: 1199px;
+
+.main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.itemsContainer {
+  height: 450px;
+  @media screen and (max-width: $medium) {
+    width: 440px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 240px;
+  }
+}
+
+.itemContainer {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 25px;
+  @media screen and (max-width: $medium) {
+    padding-bottom: 20px;
+  }
+}
+
+.priceContainer {
+  width: 10px;
+  position: absolute;
+  bottom: 65px;
+  left: 100px;
+  @media screen and (max-width: $medium) {
+    bottom: 65px;
+  }
+}
+
+.buyButton {
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  font-size: 22px;
+  color: v.$color-gold;
+}
+
+.noItemsMessageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noItemsMessage {
+  color: v.$color-light-gray;
+  font-size: 20px;
+}
+
+// New
+.healContainer {
+  position: relative;
+  justify-content: center;
+  width: 360px;
+  height: 360px;
+  @media screen and (max-width: $medium) {
+    width: 200px;
+    height: 200px;
+    margin-top: -30px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+.healImage {
+  position: absolute;
+  top: 16px;
+  left: 8.5px;
+  width: 342px;
+  height: 328px;
+  @media screen and (max-width: $medium) {
+    width: 189px;
+    height: 182px;
+    top: 9px;
+    left: 5px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 132px;
+    height: 120px;
+    top: 7px;
+    left: 4px;
+  }
+}
+
+.healTextContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.healText {
+  color: v.$color-gold;
+  font-size: 28px;
+}
+
+// Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmModalContainer {
+  position: relative;
+  height: 125px;
+  width: 262.5px;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.confirmContainer {
+  position: absolute;
+  justify-content: space-between;
+  width: 160px;
+  top: 16px;
+}
+
+.headerText {
+  color: v.$color-light-gray;
+  line-height: 20px;
+}
+
+.healCostText {
+  color: v.$color-gold;
+  line-height: 20px;
+}
+
+.itemName {
+  color: v.$color-blue;
+}
+
+.goldText {
+  color: v.$color-gold;
+}
+
+.confirmButton {
+  position: absolute;
+  bottom: 10px;
+  justify-content: center;
+}

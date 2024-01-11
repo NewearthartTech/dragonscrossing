@@ -1,0 +1,804 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$medium: 1199px;
+
+// Action Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modalContainer {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  margin-top: 40px;
+  height: 700px;
+  width: 1205px;
+  @media screen and (max-width: $medium) {
+    height: 670px;
+    width: 631px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    height: 670px;
+    width: 412px;
+    margin-top: 20px;
+  }
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.monsterPhaseContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: $medium) {
+    padding-top: 10px;
+  }
+}
+
+.heroPhaseContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionPhaseBackground {
+  position: relative;
+  height: 329px;
+  width: 610px;
+  @media screen and (max-width: $extraSmall) {
+    height: 321px;
+    width: 390px;
+  }
+}
+
+.actionPhaseBackgroundDisabled {
+  height: 320px;
+  width: 584px;
+  left: 13px;
+  top: 5px;
+  @media screen and (max-width: $extraSmall) {
+    width: 372px;
+    height: 311px;
+    left: 9px;
+  }
+  position: absolute;
+  opacity: 45%;
+  background-color: v.$color-black;
+}
+
+.combatActionBackground {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.characterNameBackground {
+  position: absolute;
+  top: -2px;
+  left: 42px;
+  @media screen and (max-width: $extraSmall) {
+    left: 30px;
+  }
+}
+
+.characterNameContainer {
+  position: absolute;
+  height: 24px;
+  z-index: 5;
+  top: 21px;
+  left: 55px;
+  margin-right: 10px;
+}
+
+.monsterResultName {
+  color: v.$color-danger-red;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 5px;
+  font-family: Whatacolour, Verdana, serif, sans-serif, "Segoe UI", "Roboto";
+}
+
+.heroResultName {
+  position: absolute;
+  top: 21px;
+  left: 57px;
+  @media screen and (max-width: $extraSmall) {
+    left: 45px;
+  }
+  color: v.$color-light-gray;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.phaseText {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  color: v.$color-light-gray;
+  font-size: 19px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  right: 24px;
+  top: 17px;
+  height: 25px;
+  width: 25px;
+}
+
+.closeButtonContainer:hover {
+  opacity: 0.6;
+}
+
+.characterAttributes {
+  position: absolute;
+  top: 65px;
+  left: 52px;
+  @media screen and (max-width: $extraSmall) {
+    left: 40px;
+  }
+  display: flex;
+  align-items: center;
+}
+
+.characterSymbol {
+  height: 18px;
+  width: 18px;
+}
+
+.characterLevel {
+  color: v.$color-light-gray;
+  padding-left: 7px;
+}
+
+.attributeDivider {
+  height: 20px;
+  width: 10px;
+  border-right: 1px solid v.$color-darker-gray;
+}
+
+.itemsContainer {
+  width: 460px;
+  @media screen and (max-width: $extraSmall) {
+    width: 285px;
+  }
+}
+
+.itemContainer {
+  padding-left: 7px;
+}
+
+.itemName {
+  padding-left: 10px;
+  color: v.$color-light-gray;
+}
+
+.attackResultsContainer {
+  position: relative;
+  height: 316px;
+  margin-top: 7px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.buttonDiceContainer {
+  position: absolute;
+  width: 290px;
+  height: 100%;
+  left: 30px;
+  @media screen and (max-width: $extraSmall) {
+    width: 195px;
+    left: 3px;
+  }
+}
+
+.diceContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -33px;
+  left: 10px;
+}
+
+.manyDiceContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 20px;
+  height: 187px;
+  @media screen and (max-width: $extraSmall) {
+    height: 187px;
+    top: 40px;
+    left: 8px;
+  }
+}
+
+.die {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  margin-right: 6px;
+}
+
+.noDiceMessage {
+  color: v.$color-light-gray;
+}
+
+.diePlayerContainer {
+  position: absolute;
+  height: 85px;
+  width: 86px;
+  top: -136px;
+  left: 1px;
+}
+
+.dieDamage {
+  position: absolute;
+  top: 27px;
+  margin-right: 3px;
+  font-size: 22px;
+  color: v.$color-black;
+  z-index: 2;
+  text-shadow: none;
+}
+
+.secondaryActionDescriptionContainer {
+  position: absolute;
+  justify-content: center;
+  top: 5px;
+  right: 3px;
+  z-index: 10;
+  height: 24px;
+  width: 16px;
+}
+
+.secondaryDescriptionIcon {
+  color: v.$color-light-gold;
+  cursor: pointer;
+}
+
+.containerHitMiss {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  height: 110px;
+  width: 110px;
+  @media screen and (max-width: $extraSmall) {
+  }
+}
+
+.backgroundHitMiss {
+  cursor: pointer;
+  height: 110px;
+  width: 110px;
+}
+
+.imageHitMiss {
+  position: absolute;
+  height: 65px;
+  width: 65px;
+  top: 25px;
+}
+
+.imagePersuade {
+  position: absolute;
+  height: 59px;
+  width: 91px;
+  top: 26px;
+  left: 8px;
+}
+
+.imageflee {
+  position: absolute;
+  height: 90px;
+  width: 89px;
+  top: 9px;
+  left: 6px;
+}
+
+.messageHitMiss {
+  color: v.$color-light-gray;
+  font-size: 28px;
+}
+
+.damageContainer {
+  position: absolute;
+  right: 0px;
+  top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  height: 100%;
+  @media screen and (max-width: $extraSmall) {
+    width: 160px;
+  }
+}
+
+.buttonContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 220px;
+  @media screen and (max-width: $extraSmall) {
+    top: 245px;
+  }
+}
+
+.totalDamageContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  margin-bottom: 2px;
+  top: 50px;
+  @media screen and (max-width: $extraSmall) {
+    top: 60px;
+  }
+}
+
+.totalDamageImage {
+  cursor: pointer;
+}
+
+.heroTotalDamage {
+  cursor: pointer;
+  position: absolute;
+  color: v.$color-light-gray;
+  font-size: 28px;
+  top: 31px;
+}
+
+.monsterTotalDamage {
+  cursor: pointer;
+  position: absolute;
+  color: v.$color-danger-red;
+  font-size: 28px;
+  top: 31px;
+}
+
+.heroDamageText {
+  position: absolute;
+  color: v.$color-light-gray;
+  font-size: 28px;
+  top: 160px;
+  @media screen and (max-width: $extraSmall) {
+    top: 170px;
+  }
+}
+
+.monsterDamageText {
+  position: absolute;
+  color: v.$color-danger-red;
+  font-size: 28px;
+  top: 160px;
+  @media screen and (max-width: $extraSmall) {
+    top: 170px;
+  }
+}
+
+.damageBreakdownContainer {
+  position: absolute;
+  box-shadow: 3px 3px 5px 1px v.$color-black;
+  width: 150px;
+  height: 137px;
+  bottom: 18px;
+  left: 65px;
+  @media screen and (max-width: $extraSmall) {
+    bottom: 20px;
+    left: 3px;
+  }
+}
+
+.damageBreakdown {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 134px;
+  bottom: 5px;
+  left: 8px;
+}
+
+.damageBreakdownHeader {
+  font-size: 15px;
+  line-height: 18px;
+  color: v.$color-light-gray;
+}
+
+.damageBreakdownBonus {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: -3px;
+  color: v.$color-green;
+  font-weight: 1000;
+}
+
+.damageBreakdownMitigation {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: -3px;
+  color: v.$color-danger-red;
+  font-weight: 1000;
+}
+
+.rollingStatus {
+  position: absolute;
+  width: 100px;
+  color: v.$color-light-gray;
+  font-style: italic;
+  top: 170px;
+  left: 255px;
+  @media screen and (max-width: $extraSmall) {
+    left: 160px;
+  }
+}
+
+.phaseTwoContainer {
+  position: relative;
+}
+
+.fleeResultContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  color: v.$color-light-gray;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  height: 90%;
+}
+
+.secondaryDiceContainer {
+  position: absolute;
+  justify-content: center;
+  width: 150px;
+  top: 164px;
+  left: 230px;
+  @media screen and (max-width: $extraSmall) {
+    left: 125px;
+  }
+}
+
+.secondaryDiceContainerCompleted {
+  position: absolute;
+  justify-content: center;
+  width: 150px;
+  top: 164px;
+  left: 150px;
+  @media screen and (max-width: $extraSmall) {
+    left: 200px;
+  }
+}
+
+.secondaryDiceButtonContainer {
+  padding-top: 7px;
+}
+
+// Hit Miss Flip Styles
+.cardMain {
+  position: absolute;
+  background-color: transparent;
+  perspective: 1000px;
+  height: 170px;
+  width: 110px;
+  top: 140px;
+  left: 250px;
+  @media screen and (max-width: $extraSmall) {
+    left: 145px;
+  }
+}
+
+.cardMainCompleted {
+  position: absolute;
+  background-color: transparent;
+  perspective: 1000px;
+  height: 170px;
+  width: 110px;
+  top: 140px;
+  left: 330px;
+  @media screen and (max-width: $extraSmall) {
+    left: 60px;
+  }
+}
+
+.cardContainer {
+  position: relative;
+  transition: transform 1.1s;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+
+.cardContainerTransform {
+  position: relative;
+  transition: transform 1.1s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotateX(0deg);
+}
+
+.cardFront {
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+}
+
+.monsterSpecialAbilityContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 120px;
+  height: 25px;
+}
+
+.specialAbilityText {
+  color: v.$color-light-gray;
+  font-size: 18px;
+}
+
+.specialAbilityName {
+  color: v.$color-danger-red;
+}
+
+.clickableImage {
+  cursor: pointer;
+}
+
+.heroCritFadeInContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 1;
+  height: 57px;
+  width: 100px;
+  transform: rotate(-45deg);
+  transition: opacity 0.5s linear;
+  top: 50px;
+  right: 150px;
+  @media screen and (max-width: $extraSmall) {
+    top: 59px;
+    right: 85px;
+  }
+}
+
+.heroCritFadeOutContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 0;
+  height: 57px;
+  width: 100px;
+  transform: rotate(-45deg);
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  top: 50px;
+  right: 150px;
+  @media screen and (max-width: $extraSmall) {
+    top: 59px;
+    right: 85px;
+  }
+}
+
+.heroParryFadeInContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 1;
+  height: 57px;
+  width: 135px;
+  transform: rotate(-45deg);
+  transition: opacity 0.5s linear;
+  top: 131px;
+  left: 195px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 90px;
+  }
+}
+
+.heroParryFadeOutContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 0;
+  height: 57px;
+  width: 135px;
+  transform: rotate(-45deg);
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  top: 131px;
+  left: 195px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 90px;
+  }
+}
+
+.heroArmorFadeInContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 1;
+  height: 57px;
+  width: 135px;
+  transform: rotate(45deg);
+  transition: opacity 0.5s linear;
+  top: 131px;
+  left: 280px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 175px;
+  }
+}
+
+.heroArmorFadeOutContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 0;
+  height: 57px;
+  width: 135px;
+  transform: rotate(45deg);
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  top: 131px;
+  left: 280px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 175px;
+  }
+}
+
+.heroEventText {
+  position: absolute;
+  top: 9px;
+  left: 34px;
+  color: v.$color-light-green;
+  font-size: 26px;
+}
+
+.heroParryEventText {
+  position: absolute;
+  top: 9px;
+  left: 43px;
+  color: v.$color-light-green;
+  font-size: 26px;
+}
+
+.monsterCritFadeInContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 1;
+  height: 57px;
+  width: 100px;
+  transform: rotate(-45deg);
+  transition: opacity 0.5s linear;
+  top: 43px;
+  right: 137px;
+  @media screen and (max-width: $extraSmall) {
+    top: 53px;
+    right: 71px;
+  }
+}
+
+.monsterCritFadeOutContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 0;
+  height: 57px;
+  width: 100px;
+  transform: rotate(-45deg);
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  top: 43px;
+  right: 137px;
+  @media screen and (max-width: $extraSmall) {
+    top: 53px;
+    right: 71px;
+  }
+}
+
+.monsterParryFadeInContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 1;
+  height: 57px;
+  width: 135px;
+  transform: rotate(-45deg);
+  transition: opacity 0.5s linear;
+  top: 131px;
+  left: 195px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 90px;
+  }
+}
+
+.monsterParryFadeOutContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 0;
+  height: 57px;
+  width: 135px;
+  transform: rotate(-45deg);
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  top: 131px;
+  left: 195px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 90px;
+  }
+}
+
+.monsterArmorFadeInContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 1;
+  height: 57px;
+  width: 135px;
+  transform: rotate(45deg);
+  transition: opacity 0.5s linear;
+  top: 131px;
+  left: 280px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 175px;
+  }
+}
+
+.monsterArmorFadeOutContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 0;
+  height: 57px;
+  width: 135px;
+  transform: rotate(45deg);
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  top: 131px;
+  left: 280px;
+  @media screen and (max-width: $extraSmall) {
+    top: 131px;
+    left: 175px;
+  }
+}
+
+.monsterEventText {
+  position: absolute;
+  top: 9px;
+  left: 34px;
+  color: v.$color-danger-red;
+  font-size: 26px;
+}
+
+.monsterParryEventText {
+  position: absolute;
+  top: 9px;
+  left: 43px;
+  color: v.$color-danger-red;
+  font-size: 26px;
+}
+
+.eventBackground {
+  opacity: 0.8;
+}

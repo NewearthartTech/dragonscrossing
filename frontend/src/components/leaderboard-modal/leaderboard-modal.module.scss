@@ -1,0 +1,236 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 335px;
+  width: 810px;
+  @media screen and (max-width: $small) {
+    width: 390px;
+  }
+  position: relative;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 2;
+  @media screen and (max-width: $small) {
+    top: 18px;
+    right: 18px;
+  }
+}
+
+.closeButtonContainer:hover {
+  opacity: 0.6;
+}
+
+.headerTitleContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 197px;
+  top: -12px;
+}
+
+.headerTitle {
+  position: absolute;
+  top: 2px;
+  color: v.$color-white;
+  font-size: 22px;
+}
+
+.infoIconContainer {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  @media screen and (max-width: $small) {
+    top: 18px;
+    left: 18px;
+  }
+}
+
+.refreshDescription {
+  cursor: pointer;
+  color: v.$color-white;
+}
+
+.headerContainer {
+  position: absolute;
+  justify-content: space-between;
+  width: 620px;
+  @media screen and (max-width: $small) {
+    width: 345px;
+  }
+  top: 35px;
+}
+
+.seasonNameContainer {
+  width: 65%;
+  justify-content: flex-start;
+}
+
+.registedHeroesContainer {
+  width: 35%;
+  justify-content: flex-end;
+}
+
+.titleText {
+  color: v.$color-white;
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.titleTextData {
+  color: v.$color-white;
+  font-size: 18px;
+}
+
+.contentContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 62px;
+}
+
+.row {
+  width: 765px;
+  @media screen and (max-width: $small) {
+    width: 360px;
+  }
+}
+
+.headerDivider {
+  width: 755px;
+  height: 2px;
+  background-color: v.$color-white;
+  margin-top: 4px;
+  margin-bottom: 1px;
+  @media screen and (max-width: $small) {
+    width: 360px;
+  }
+}
+
+.columnDivider {
+  height: 16px;
+  width: 2px;
+  background-color: v.$color-white;
+  margin-right: 5px;
+  margin-top: 4px;
+  margin-left: -7px;
+}
+
+.hidColumnDivider {
+  height: 16px;
+  width: 2px;
+  background-color: v.$color-white;
+  margin-right: 11px;
+  margin-top: 4px;
+  margin-left: -11px;
+}
+
+.fzdColumnDivider {
+  height: 16px;
+  width: 2px;
+  background-color: v.$color-white;
+  margin-right: 50px;
+  margin-top: 4px;
+  margin-left: -50px;
+}
+
+.rankCol {
+  width: 50px;
+  @media screen and (max-width: $small) {
+    width: 40px;
+  }
+  height: 20px;
+  justify-content: center;
+}
+
+.heroIdCol {
+  width: 65px;
+  @media screen and (max-width: $small) {
+    width: 45px;
+  }
+  height: 20px;
+  justify-content: center;
+}
+
+.levelCol {
+  width: 45px;
+  @media screen and (max-width: $small) {
+    width: 35px;
+  }
+  height: 20px;
+  justify-content: center;
+}
+
+.finalBossDefeatedCol {
+  width: 135px;
+  @media screen and (max-width: $small) {
+    width: 35px;
+  }
+  height: 20px;
+  justify-content: center;
+}
+
+.furthestZoneDiscoveredCol {
+  width: 175px;
+  @media screen and (max-width: $small) {
+    width: 125px;
+  }
+  height: 20px;
+  justify-content: center;
+}
+
+.benchmarkQuestsUsedCol {
+  width: 160px;
+  @media screen and (max-width: $small) {
+    width: 40px;
+  }
+  height: 20px;
+  justify-content: center;
+}
+
+.totalQuestsUsedCol {
+  width: 135px;
+  @media screen and (max-width: $small) {
+    width: 40px;
+  }
+  height: 20px;
+  justify-content: center;
+}
+
+.headerText {
+  color: v.$color-light-gold;
+  font-size: 17px;
+}
+
+.cellText {
+  color: v.$color-white;
+}
+
+.cellTextGray {
+  color: v.$color-gray;
+}
+
+.selectedHeroText {
+  color: v.$color-light-blue;
+}

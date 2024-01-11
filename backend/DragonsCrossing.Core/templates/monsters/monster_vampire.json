@@ -1,0 +1,137 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 90,
+    "upper": 110
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 350
+  },
+  "ChanceToDodge": {
+    "lower": 0,
+    "upper": 0
+  },
+  "DifficultyToHit": {
+    "lower": 2400,
+    "upper": 2700
+  },
+  "CritChance": {
+    "lower": 1900,
+    "upper": 2900
+  },
+  "ParryChance": {
+    "lower": 900,
+    "upper": 1100
+  },
+  "Charisma": {
+    "lower": 36,
+    "upper": 46
+  },
+  "Quickness": {
+    "lower": 36,
+    "upper": 42
+  },
+  "Level": {
+    "lower": 17,
+    "upper": 20
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 5200,
+    "upper": 5800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 7
+  },
+  "BonusDamage": {
+    "lower": 7,
+    "upper": 11
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_gray-hood-of-mystery.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_praetorian-leather-crest-helm.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_frayed-jute-loop.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_stormfury-archbane-plate-walkers.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_archmaguss-skeletal-staff.json": {
+      "ChancesOfDrop": 125
+    },
+    "item_magnuss-mask-of-annihilation.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-adhesive-application.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sniper.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-custom-poisons.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Vampire",
+  "MonsterSlug": "vampire",
+  "Description": "The vampire is dressed as if to dance at court. It has an intense look on its face, and you can smell iron in the air as it breathes quickly.",
+  "MonsterItems": [
+    "Wicked Rapier",
+    "Courtly Combat Clothes"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 22,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "sanguine-surrender",
+    "Name": "Sanguine Surrender",
+    "Description": "Reduces Hero Crit and Parry by 80% for 3 rounds. Reduces Hero Dodge by 40% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Crit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -8000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -8000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q4_ChanceToDodge",
+        "FriendlyStatName": "Chance to Dodge",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -4000,
+        "Duration": 3
+      }
+    ]
+  }
+}

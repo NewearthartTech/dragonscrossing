@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1000,
+      "upper": 1700
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 5
+    },
+    "DodgeRate": {
+      "lower": 200,
+      "upper": 350
+    },
+    "Strength": {
+      "lower": 5,
+      "upper": 7
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "phantom-visage-of-the-corrupted-aedosian",
+  "name": "Phantom Visage of the Corrupted Aedosian",
+  "itemDropSound": "metal-helm",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "phantom-visage-of-the-corrupted-aedosian",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

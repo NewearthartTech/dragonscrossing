@@ -1,0 +1,122 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 24,
+    "upper": 36
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 400,
+    "upper": 600
+  },
+  "DifficultyToHit": {
+    "lower": 1200,
+    "upper": 3000
+  },
+  "CritChance": {
+    "lower": 200,
+    "upper": 400
+  },
+  "ParryChance": {
+    "lower": 550,
+    "upper": 950
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 11,
+    "upper": 13
+  },
+  "Level": {
+    "lower": 4,
+    "upper": 5
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1300,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 2,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 1,
+    "upper": 2
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1000,
+    "upper": 2000
+  },
+  "LootItemsTemplates": {
+    "item_singing-spellsword.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_elven-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_dark-metal-rod.json": {
+      "ChancesOfDrop": 1450
+    },
+    "item_mortys-ring-of-charm.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_finnars-spellsword-of-despair.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-mental-knit.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-force-shield.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-magic-missile.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Elven Protector",
+  "MonsterSlug": "elven-protector",
+  "Description": "Elves were only a myth on your original world; here their true number is unknowable. You can't tell if she's friend or foe, but she appears at home and ready in the forest.",
+  "MonsterItems": [
+    "Elven Bow"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 8,
+  "SpecialAbility": {
+    "Id": 7,
+    "SoundSlug": "otherworldly-mystique",
+    "Name": "Otherworldly Mystique",
+    "Description": "Increases Monster's Parry and Dodge by 10% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q4_ChanceToDodge",
+        "FriendlyStatName": "Dodge",
+        "Description": "Increases dodge for 2 rounds.",
+        "AffectAmount": 1000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "Increases parry for 2 rounds.",
+        "AffectAmount": 1000,
+        "Duration": 2
+      }
+    ]
+  }
+}

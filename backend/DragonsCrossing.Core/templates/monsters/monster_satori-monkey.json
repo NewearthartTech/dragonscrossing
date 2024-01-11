@@ -1,0 +1,129 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 78,
+    "upper": 96
+  },
+  "ChanceToHit": {
+    "lower": 300,
+    "upper": 500
+  },
+  "ChanceToDodge": {
+    "lower": 600,
+    "upper": 1000
+  },
+  "DifficultyToHit": {
+    "lower": 1800,
+    "upper": 2800
+  },
+  "CritChance": {
+    "lower": 1600,
+    "upper": 2400
+  },
+  "ParryChance": {
+    "lower": 1900,
+    "upper": 2500
+  },
+  "Charisma": {
+    "lower": 15,
+    "upper": 25
+  },
+  "Quickness": {
+    "lower": 13,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 14,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1300,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 5,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 6,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 3000,
+    "upper": 4000
+  },
+  "LootItemsTemplates": {
+    "item_raspberry-beret.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_sharp-obsidian-band.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_long-narrow-parrying-dagger.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_band-of-perfect-light.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_wise-walkers-of-diligence.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_fallen-aedosians-treacherous-ring.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Satori Monkey",
+  "MonsterSlug": "satori-monkey",
+  "Description": "You think to yourself, \"a monkey!\" and the Satori smiles at you and says, \"Yes, but so much more.\"",
+  "MonsterItems": [
+    "Unsettling Intelligence",
+    "Bands of Metal Armor"
+  ],
+  "AppearChance": 1000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 17,
+  "SpecialAbility": {
+    "Id": 27,
+    "SoundSlug": "third-eye",
+    "Name": "Third Eye",
+    "Description": "Reduces Hero parry by 100% for 10 rounds. Increases Monster dodge by 75% for 10 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -10000,
+        "Duration": 10
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q4_ChanceToDodge",
+        "FriendlyStatName": "Chance to Dodge",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 7500,
+        "Duration": 10
+      }
+    ]
+  }
+}

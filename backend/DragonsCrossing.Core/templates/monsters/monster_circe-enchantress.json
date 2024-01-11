@@ -1,0 +1,149 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 62,
+    "upper": 65
+  },
+  "ChanceToHit": {
+    "lower": 150,
+    "upper": 150
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1600,
+    "upper": 2400
+  },
+  "CritChance": {
+    "lower": 1600,
+    "upper": 1900
+  },
+  "ParryChance": {
+    "lower": 1700,
+    "upper": 1800
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 14
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 12,
+    "upper": 14
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1200,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 6
+  },
+  "BonusDamage": {
+    "lower": 3,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2200,
+    "upper": 2600
+  },
+  "LootItemsTemplates": {
+    "item_ornate-plackart.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_red-targe.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_tarnished-silver-ring.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_threaded-golden-rod.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_the-blood-infused-kris.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_prides-fallen-rod.json": {
+      "ChancesOfDrop": 125
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Circe, Enchantress",
+  "MonsterSlug": "circe-enchantress",
+  "Description": "There is a low hum in the air that draws you to this vision of a woman. You know you are falling a little bit in love with her, but you don't care. Perhaps a hit from your weapons would break this mental snare?",
+  "MonsterItems": [
+    "Bewitching Presence",
+    "Crown of Command"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 38,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "binding-flame",
+    "Name": "Binding Flame",
+    "Description": "Reduces Player Chance to Hit, Parry, Armor Mitigation Chance, and Dodge by 25% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+"AffectType": "Hero",
+"Statname": "Q3_ChanceToHit",
+"FriendlyStatName": "Chance to Hit",
+"Description": "FILL THIS IN",
+"AffectAmount": -2500,
+"Duration": 2  
+  
+},    
+{
+"AffectType": "Hero",
+"Statname": "Q5_Parry",
+"FriendlyStatName": "Parry",
+"Description": "FILL THIS IN",
+"AffectAmount": -2500,
+"Duration": 2    
+
+},    
+{
+"AffectType": "Hero",
+"Statname": "Q8_ArmorMitigation",
+"FriendlyStatName": "Armor Mitigation Chance",
+"Description": "FILL THIS IN",
+"AffectAmount": -2500,
+"Duration": 2
+
+},    
+{    
+
+"AffectType": "Hero",
+"Statname": "Q4_ChanceToDodge",
+"FriendlyStatName": "Chance to Dodge",
+"Description": "FILL THIS IN",
+"AffectAmount": -2500,
+"Duration": 2
+      }
+    ]
+  }
+}

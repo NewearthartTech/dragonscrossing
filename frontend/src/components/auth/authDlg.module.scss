@@ -1,0 +1,46 @@
+@use "@/styles/variables" as v;
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 184px;
+  width: 390px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer {
+  position: absolute;
+  top: 20px;
+  justify-content: center;
+}
+
+.titleText {
+  color: v.$color-gold;
+  font-size: 22px;
+}
+
+.content {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contentText {
+  color: v.$color-light-gray;
+}
+
+.buttonContainer {
+  position: absolute;
+  justify-content: center;
+  bottom: 20px;
+}

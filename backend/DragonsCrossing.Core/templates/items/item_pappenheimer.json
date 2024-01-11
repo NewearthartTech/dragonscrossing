@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 300,
+      "upper": 450
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "pappenheimer",
+  "name": "Pappenheimer",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "pappenheimer",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,23 @@
+﻿{
+  "skill": {
+    "dcxToIdentify": 1.0,
+    "id": "",
+    "type": "UnidentifiedHeroSkill"
+  },
+  "id": "f0b0b3eb-25e8-4050-b900-0b74ff94d6a3",
+  "nftTokenId": 0,
+  "itemIndex": null,
+  "rarity": "Unknown",
+  "bonusDamage": null,
+  "affectedAttributes": {},
+  "slug": "skill-fireball",
+  "name": "",
+  "itemDropSound": "",
+  "slot": "unidentifiedSkill",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [],
+  "imageSlug": null,
+  "levelRequirement": 0,
+  "type": "SkillItemTemplate"
+}

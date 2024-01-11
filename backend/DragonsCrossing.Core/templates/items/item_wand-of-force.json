@@ -1,0 +1,24 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": null,
+  "slug": "wand-of-force",
+  "name": "Wand of Force",
+  "itemDropSound": "wand-rod",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "wand-of-force",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

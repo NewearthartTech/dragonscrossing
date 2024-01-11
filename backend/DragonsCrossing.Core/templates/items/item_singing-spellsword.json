@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "Charisma": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "singing-spellsword",
+  "name": "Singing Spellsword",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "singing-spellsword",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

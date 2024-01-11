@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1000,
+      "upper": 1500
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 3
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "jane-and-mary-brand-walking-shoes",
+  "name": "Jane and Mary Brand Walking Shoes",
+  "itemDropSound": "sandals",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "jane-and-mary-brand-walking-shoes",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

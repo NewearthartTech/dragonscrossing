@@ -1,0 +1,10 @@
+{
+    "description": "Your luck is horrid, and you watch with dismay as the gambler snatches up your wager. You lose your entire stake!",
+    "gameState": {
+      "slug": "enchantedFields",
+      "zone": {
+        "slug": "wildPrairie",
+        "tiles": []
+      }
+    }
+  }

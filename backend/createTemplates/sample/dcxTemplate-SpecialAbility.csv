@@ -1,0 +1,47 @@
+Name,Id,CanUseSpecialAbilityMoreThanOnce,SoundSlug,Affects_1,Affects_2,Description
+Whirly Gig,1,FALSE,whirly-gig,"AffectType: Monster
+ StatName: Q8_BonusDamage
+FriendlyStatName: ""Bonus Damage""
+Description: ""The monster will deal 20% bonus damage for 1 round.""
+AffectAmount: 2000
+Duration: 1",,This monster will deal 20% bonus damage for 1 round.
+Runic Axe,2,FALSE,runic-axe,"AffectType: Hero
+ StatName: Q5_Parry
+FriendlyStatName: ""Parry""
+Description: ""Reduces Parry by 5% for 2 rounds""
+AffectAmount: -500
+Duration: 2",,Reduces Player parry by 5% for 2 rounds.
+Dangerous Delve,3,FALSE,dangerous-delve,"AffectType: Hero
+ StatName: Q8_ArmorMitigation
+FriendlyStatName: ""Armor Mitigation""
+Description: ""Reduces Armor Mitigation by 100% for 2 rounds.""
+AffectAmount: -10000
+Duration: 2","AffectType: Monster
+ StatName: Q8_ArmorMitigation
+FriendlyStatName: ""Armor Mitigation""
+Description: ""Reduces Armor Mitigation by 100% for 1 round.""
+AffectAmount: -10000
+Duration: 1","Reduces Player armor mitigation by 100% for 2 rounds, and Monster mitigation by 100% for 1 round."
+Majesty,4,FALSE,majesty,"AffectType: Monster
+ StatName: Q3_DifficultyToHit
+FriendlyStatName: ""Difficulty to Hit""
+Description: ""Increases the difficulty to hit the Monster by 10%""
+AffectAmount: 1000
+Duration: 3",,Increases the difficulty to hit the Monster by 10% for 3 rounds.
+Overhand Chop,5,FALSE,overhand-chop,"AffectType: Monster
+ StatName: Q8_BonusDamage
+FriendlyStatName: ""Bonus Damage""
+Description: ""The monster will deal 22% bonus damage for 1 round.""
+AffectAmount: 2500
+Duration: 1",,This monster will deal 25% bonus damage for 1 round.
+Riddling Offense,6,FALSE,riddling-offense,"AffectType: Hero
+ StatName: Q4_ChanceToDodge
+FriendlyStatName: ""Dodge""
+Description: ""Reduces Dodge by 5% for 2 rounds.""
+AffectAmount: -500
+Duration: 2","AffectType: Hero
+ StatName: Q5_Parry
+FriendlyStatName: ""Parry""
+Description: ""Reduces Parry by 5% for 2 rounds.""
+AffectAmount: -500
+Duration: 2",Reduces Player Parry and Dodge by 5% for 2 rounds.

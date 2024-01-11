@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "CriticalHitRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "dark-metal-rod",
+  "name": "Dark Metal Rod",
+  "itemDropSound": "wand-rod",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "dark-metal-rod",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

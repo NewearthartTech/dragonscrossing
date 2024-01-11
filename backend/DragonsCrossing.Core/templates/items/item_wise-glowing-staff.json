@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "Wisdom": {
+      "lower": 1,
+      "upper": 1
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 350
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "wise-glowing-staff",
+  "name": "Wise Glowing Staff",
+  "itemDropSound": "wand-rod",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "wise-glowing-staff",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

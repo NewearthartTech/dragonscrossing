@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 400,
+      "upper": 625
+    },
+    "DodgeRate": {
+      "lower": 200,
+      "upper": 300
+    },
+    "CriticalHitRate": {
+      "lower": 450,
+      "upper": 750
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "curious-band-of-amber",
+  "name": "Curious Band of Amber",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "curious-band-of-amber",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

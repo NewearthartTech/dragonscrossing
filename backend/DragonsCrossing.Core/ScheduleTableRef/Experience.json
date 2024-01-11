@@ -1,0 +1,122 @@
+[
+  {
+    "level": 1,
+    "xpRequired": 8,
+    "additionalQuestsGranted": 0,
+    "approximateTime": 1.481481481
+  },
+  {
+    "level": 2,
+    "xpRequired": 8,
+    "additionalQuestsGranted": 0,
+    "approximateTime": 1.555555556
+  },
+  {
+    "level": 3,
+    "xpRequired": 8,
+    "additionalQuestsGranted": 1,
+    "approximateTime": 1.517241379
+  },
+  {
+    "level": 4,
+    "xpRequired": 9,
+    "additionalQuestsGranted": 1,
+    "approximateTime": 1.586206897
+  },
+  {
+    "level": 5,
+    "xpRequired": 9,
+    "additionalQuestsGranted": 1,
+    "approximateTime": 1.655172414
+  },
+  {
+    "level": 6,
+    "xpRequired": 9,
+    "additionalQuestsGranted": 2,
+    "approximateTime": 1.612903226
+  },
+  {
+    "level": 7,
+    "xpRequired": 10,
+    "additionalQuestsGranted": 2,
+    "approximateTime": 1.677419355
+  },
+  {
+    "level": 8,
+    "xpRequired": 10,
+    "additionalQuestsGranted": 2,
+    "approximateTime": 1.741935484
+  },
+  {
+    "level": 9,
+    "xpRequired": 10,
+    "additionalQuestsGranted": 3,
+    "approximateTime": 1.696969697
+  },
+  {
+    "level": 10,
+    "xpRequired": 11,
+    "additionalQuestsGranted": 3,
+    "approximateTime": 1.757575758
+  },
+  {
+    "level": 11,
+    "xpRequired": 11,
+    "additionalQuestsGranted": 3,
+    "approximateTime": 1.818181818
+  },
+  {
+    "level": 12,
+    "xpRequired": 11,
+    "additionalQuestsGranted": 4,
+    "approximateTime": 1.771428571
+  },
+  {
+    "level": 13,
+    "xpRequired": 12,
+    "additionalQuestsGranted": 4,
+    "approximateTime": 1.828571429
+  },
+  {
+    "level": 14,
+    "xpRequired": 12,
+    "additionalQuestsGranted": 4,
+    "approximateTime": 1.885714286
+  },
+  {
+    "level": 15,
+    "xpRequired": 12,
+    "additionalQuestsGranted": 5,
+    "approximateTime": 1.837837838
+  },
+  {
+    "level": 16,
+    "xpRequired": 13,
+    "additionalQuestsGranted": 5,
+    "approximateTime": 1.891891892
+  },
+  {
+    "level": 17,
+    "xpRequired": 13,
+    "additionalQuestsGranted": 5,
+    "approximateTime": 1.945945946
+  },
+  {
+    "level": 18,
+    "xpRequired": 13,
+    "additionalQuestsGranted": 6,
+    "approximateTime": 1.897435897
+  },
+  {
+    "level": 19,
+    "xpRequired": 14,
+    "additionalQuestsGranted": 6,
+    "approximateTime": 1.948717949
+  },
+  {
+    "level": 20,
+    "xpRequired": 0,
+    "additionalQuestsGranted": 6,
+    "approximateTime": 1.948717949
+  }
+]

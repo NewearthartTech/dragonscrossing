@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_riposte",
+  "slug": "skill-riposte",
+  "name": "Riposte",
+  "description": "Increase Hero Crit by 65% + (Agility / 2) for 3 rounds. Increase Hero Parry by 50% + (Strength / 2)% for 3 rounds.",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

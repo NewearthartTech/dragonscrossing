@@ -1,0 +1,570 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: rabbitmq
+  namespace: dcx-beta
+spec:
+  selector:
+    matchLabels:
+      app: rabbitmq
+  serviceName: rabbitmq
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rabbitmq
+    spec:
+      containers:
+        - image: masstransit/rabbitmq
+          name: rabbitmq
+
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+
+          env:
+            - name: RABBITMQ_DEFAULT_USER
+              value: admin
+            - name: RABBITMQ_DEFAULT_PASS
+              value: admin
+
+          volumeMounts:
+            - name: rabbitmq-data
+              mountPath: /var/lib/rabbitmq
+
+  volumeClaimTemplates:
+    - metadata:
+        name: rabbitmq-data
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq
+  namespace: dcx-beta
+spec:
+  ports:
+    - port: 5672
+  selector:
+    app: rabbitmq
+  clusterIP: None
+
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: mongodb
+  namespace: dcx-beta
+spec:
+    clusterIP: None
+    ports:
+    -   port: 27017
+    selector:
+        app: mongodb
+
+---
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+    name: mongodb-node
+    namespace: dcx-beta
+spec:
+  serviceName: mongodb
+  selector:
+    matchLabels:
+        app: mongodb
+  replicas: 1
+  template:
+    metadata:
+        labels:
+            app: mongodb
+    spec:
+        containers:
+        -   name: mongodb-node
+            image: mongo:4.4
+            command: [ "/usr/bin/mongod", "--replSet", "rs0", "--bind_ip_all" ]
+            volumeMounts:
+            -   mountPath: "/data/db"
+                name: mongo-data
+            ports:
+            -   containerPort: 27017
+       
+        
+  volumeClaimTemplates:
+  - metadata:
+        name: mongo-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+---          
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: dcx-server
+    namespace: dcx-beta
+    labels:
+      app: dcx-server
+
+spec:
+  selector:
+    matchLabels:
+        app: dcx-server
+  replicas: 1
+  template:
+
+    metadata:
+        labels:
+            app: dcx-server
+    spec:
+
+        imagePullSecrets:
+        - name: newearthcb-azurecr
+
+        containers:
+        -   name: dcx-server
+            image: newearthcb.azurecr.io/dcx-server:__TAG__SERVER
+
+            env:
+
+            -   name: mongo__connectionString
+                value: "mongodb://mongodb?connect=direct"
+
+            -   name: rabbitmq__host
+                value: "rabbitmq"
+
+            - name: redis__connectionString
+              value: "redis:6379"
+
+            -   name: ASPNETCORE_hostBuilder__reloadConfigOnChange
+                value: "false"
+
+            -   name: summonHero__priceInDcx
+                value: "10"
+
+            -   name: whitelist__whiteListFolder
+                value: "whitelist_production"
+
+
+            -   name: web3__defaultChainId
+                value: "42161"
+
+            -   name: web3__chainRpc__42161__name
+                value: "arb-mainnet"
+            -   name: web3__chainRpc__42161__rpcUrl
+                value: "https://arb-mainnet.g.alchemy.com/v2/XXXXXXXXXXXXXXXXX"
+            -   name: web3__chainRpc__42161__alchemyKey
+                value: "XXXXXXXXXXXXXXXXX"
+
+            -   name: web3__contracts__1.0.881.0__DcxHeroContract
+                value: "0x94979475C7eDff610A2c033aeD34269Bfa17D539"
+            -   name: web3__contracts__1.0.881.0__TokenomicsContract
+                value: "0x914328cc8fBD3915A82A6B57B6420D348aF8084F"
+            -   name: web3__contracts__1.0.881.0__DcxItemsContract
+                value: "0x08D21585668bd2D95c78287B8F2af29e30D72935"
+            -   name: web3__dcxTokenContract
+                value: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+
+
+            -   name: web3__dcxHeroName
+                value: "EPOOP Hero"
+            -   name: web3__dcxHeroSymbol
+                value: "EPOOP Hero"
+
+            -   name: web3__dcxItemName
+                value: "EPOOP Item"
+            -   name: web3__dcxItemSymbol
+                value: "EPOOP Item"
+
+
+            -   name: web3__tokenCacheUpdateInveral
+                value: "300"
+
+            -   name: web3__isTestEndPointAvailable
+                value: "true"
+
+
+            -   name: web3__serverPrivateKey
+                valueFrom:
+                  secretKeyRef:
+                    name: web3-creds
+                    key: w3PrivateKey
+            
+            
+            -   name: web3__metaDataBaseURI
+                value: "https://beta.staging.dragonscrossing.com/api/metadata/"
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: dcx-web
+    namespace: dcx-beta
+    labels:
+      app: dcx-web
+
+spec:
+  selector:
+    matchLabels:
+        app: dcx-web
+  replicas: 2
+  template:
+
+    metadata:
+        labels:
+            app: dcx-web
+    spec:
+
+        imagePullSecrets:
+        - name: newearthcb-azurecr
+
+        containers:
+        -   name: dcx-web
+            image: newearthcb.azurecr.io/dcx-web:__TAG__FRONTEND
+
+            env:
+
+            -   name: NEXT_PUBLIC_API
+                value: "."
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    name: dcx-server
+    namespace: dcx-beta
+spec:
+    ports:
+    -   name: http 
+        port: 80
+    selector:
+        app: dcx-server
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    name: dcx-web
+    namespace: dcx-beta
+spec:
+    ports:
+    -   name: http 
+        port: 3000
+    selector:
+        app: dcx-web
+
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dcx-beta-ingress-all
+  namespace: dcx-beta
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  tls:
+    - hosts:
+      - beta.staging.dragonscrossing.com
+      secretName: dcx-beta-tls-main
+
+  rules:
+  - host: beta.staging.dragonscrossing.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: dcx-web
+            port: 
+              number: 3000
+      
+      - pathType: Prefix
+        path: "/api"
+        backend:
+          service:
+            name: dcx-server
+            port: 
+              number: 80
+
+---
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: elasticsearch
+  namespace: dcx-beta
+spec:
+  selector:
+    matchLabels:
+      app: elasticsearch
+  serviceName: elasticsearch
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      securityContext:
+        fsGroup: 1000
+
+      initContainers:
+        - name: init-sysctl
+          image: busybox
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            privileged: true
+          command: ["sysctl", "-w", "vm.max_map_count=262144"]
+
+      containers:
+        - image: docker.elastic.co/elasticsearch/elasticsearch:8.6.0
+          name: elasticsearch
+          securityContext:
+            privileged: true
+            runAsUser: 1000
+            capabilities:
+              add:
+                - IPC_LOCK
+                - SYS_RESOURCE
+
+          ports:
+            - containerPort: 9200
+
+          env:
+            - name: bootstrap.memory_lock
+              value: "false"
+            - name: xpack.security.enabled
+              value: "false"
+            - name: discovery.type
+              value: "single-node"
+            - name: ES_JAVA_OPTS
+              value: "-Xmx256m -Xms256m"
+
+          volumeMounts:
+            - name: elasticsearch-data
+              mountPath: /usr/share/elasticsearch/data
+
+          readinessProbe:
+            httpGet:
+              scheme: HTTP
+              path: /_cluster/health?local=true
+              port: 9200
+            initialDelaySeconds: 5
+
+#          resources:
+#            requests:
+#              memory: "500Mi"
+
+  volumeClaimTemplates:
+    - metadata:
+        name: elasticsearch-data
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 6Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch
+  namespace: dcx-beta
+spec:
+  ports:
+    - port: 9200
+  selector:
+    app: elasticsearch
+  clusterIP: None
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kibana-data-pvc
+  namespace: dcx-beta
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+  namespace: dcx-beta
+  labels:
+    app: kibana
+spec:
+  selector:
+    matchLabels:
+      app: kibana
+  strategy:
+    type: Recreate
+
+  template:
+    metadata:
+      labels:
+        app: kibana
+    spec:
+      containers:
+        - image: docker.elastic.co/kibana/kibana:8.6.0
+          name: kibana
+          ports:
+            - containerPort: 5601
+          env:
+            - name: ELASTICSEARCH_HOSTS
+              value: http://elasticsearch:9200
+
+      # We will populate kibana soon
+      #          volumeMounts:
+      #            - mountPath: /usr/share/kibana/config
+      #              name: kibana-data
+      #              subPath: config
+      #            - mountPath: /usr/share/kibana/data
+      #              name: kibana-data
+      #              subPath: data
+
+      volumes:
+        - name: kibana-data
+          persistentVolumeClaim:
+            claimName: kibana-data-pvc
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana
+  namespace: dcx-beta
+spec:
+  ports:
+    - port: 5601
+  selector:
+    app: kibana
+  clusterIP: None
+
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dcx-kibana-staging-ingress
+  namespace: dcx-beta
+  annotations:
+    nginx.ingress.kubernetes.io/auth-type: basic
+    nginx.ingress.kubernetes.io/auth-secret: basic-auth
+    nginx.ingress.kubernetes.io/auth-realm: 'Authentication Required - coreDevOnly'
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  tls:
+    - hosts:
+      - kibana-beta.staging.dragonscrossing.com
+      secretName: dcx-beta-tls-kibana-alpha
+
+  rules:
+  - host: kibana-beta.staging.dragonscrossing.com
+    http:
+      paths:
+
+      - pathType: Exact
+        path: "/"
+        backend:
+          service:
+            name: kibana
+            port: 
+              number: 5601
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dcx-beta-ingress-kibana-all
+  namespace: dcx-beta
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  tls:
+    - hosts:
+      - kibana-beta.staging.dragonscrossing.com
+      secretName: dcx-beta-tls-kibana-alpha
+
+  rules:
+  - host: kibana-beta.staging.dragonscrossing.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: kibana
+            port: 
+              number: 5601
+      
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: dcx-beta
+  labels:
+    app: redis
+spec:
+  selector:
+    matchLabels:
+      app: redis
+  strategy:
+    type: Recreate
+
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+        - image: redis:6.2-alpine
+
+          name: redis
+          ports:
+            - containerPort: 6379
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: dcx-beta
+spec:
+  ports:
+    - port: 6379
+  selector:
+    app: redis
+  clusterIP: None
+
+
+            

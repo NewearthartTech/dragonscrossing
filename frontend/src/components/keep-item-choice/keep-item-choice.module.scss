@@ -1,0 +1,193 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.deathTollMain {
+  position: relative;
+  height: 150px;
+  width: 496px;
+  margin-bottom: -20px;
+  @media screen and (max-width: $extraSmall) {
+    width: 344px;
+    margin-bottom: -17px;
+  }
+}
+
+.descriptionBackground {
+  height: 150px;
+  width: 496px;
+  @media screen and (max-width: $extraSmall) {
+    width: 344px;
+  }
+}
+
+.header {
+  position: absolute;
+  top: -16px;
+  left: 155px;
+  @media screen and (max-width: $extraSmall) {
+    left: 75px;
+  }
+}
+
+.headerText {
+  position: absolute;
+  color: v.$color-light-gray;
+  font-size: 21px;
+  top: -17px;
+  left: 203px;
+  @media screen and (max-width: $extraSmall) {
+    left: 125px;
+  }
+}
+
+.descriptionContainer {
+  position: absolute;
+  margin-top: 3px;
+  height: 150px;
+  width: 496px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $extraSmall) {
+    width: 344px;
+  }
+}
+
+.lossText {
+  color: v.$color-danger-red;
+  font-size: 17px;
+  line-height: 22px;
+  width: 496px;
+  text-align: center;
+  @media screen and (max-width: $extraSmall) {
+    width: 295px;
+  }
+}
+
+.keepText {
+  color: v.$color-light-gray;
+  font-size: 17px;
+  line-height: 22px;
+  width: 496px;
+  text-align: center;
+  @media screen and (max-width: $extraSmall) {
+    width: 295px;
+  }
+}
+
+.separator {
+  height: 8px;
+  width: 400px;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  border-radius: 25px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @media screen and (max-width: $extraSmall) {
+    width: 295px;
+  }
+}
+
+.itemsMain {
+  position: relative;
+  height: 485px;
+  width: 496px;
+  @media screen and (max-width: $extraSmall) {
+    width: 344px;
+    height: 380px;
+  }
+}
+
+.itemsBackground {
+  height: 485px;
+  width: 496px;
+  @media screen and (max-width: $extraSmall) {
+    width: 344px;
+    height: 380px;
+  }
+}
+
+.itemsContainer {
+  position: absolute;
+  padding-left: 25px;
+  margin-bottom: 40px;
+  margin-top: 35px;
+  height: 370px;
+  width: 483px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  @media screen and (max-width: $extraSmall) {
+    width: 335px;
+    height: 265px;
+  }
+}
+
+.itemHeightContainer {
+  height: 0px;
+}
+
+.itemContainer {
+  height: 60px;
+  width: 65px;
+  margin-right: 10px;
+  margin-bottom: 14px;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContainer {
+  position: relative;
+  height: 100px;
+  width: 210px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+}
+
+.confirmationBackground {
+  position: absolute;
+}
+
+.confirmTextContainer {
+  position: absolute;
+  top: 4px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 60px;
+}
+
+.confirmText {
+  line-height: 18px;
+  color: v.$color-light-gray;
+  text-align: center;
+}
+
+.confirmDone {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: center;
+}

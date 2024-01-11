@@ -1,0 +1,27 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": null,
+  "slug": "double-bit-axe",
+  "name": "Double Bit Axe",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "double-bit-axe",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

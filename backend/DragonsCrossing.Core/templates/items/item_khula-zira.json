@@ -1,0 +1,35 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 350,
+      "upper": 550
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "khula-zira",
+  "name": "Khula Zira",
+  "itemDropSound": "metal-helm",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "khula-zira",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

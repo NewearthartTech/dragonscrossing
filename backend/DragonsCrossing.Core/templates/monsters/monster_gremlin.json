@@ -1,0 +1,134 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 52,
+    "upper": 57
+  },
+  "ChanceToHit": {
+    "lower": 150,
+    "upper": 150
+  },
+  "ChanceToDodge": {
+    "lower": 300,
+    "upper": 500
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 900,
+    "upper": 1100
+  },
+  "ParryChance": {
+    "lower": 600,
+    "upper": 800
+  },
+  "Charisma": {
+    "lower": 20,
+    "upper": 25
+  },
+  "Quickness": {
+    "lower": 15,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 9,
+    "upper": 11
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1700,
+    "upper": 2400
+  },
+  "ArmorMitigationAmount": {
+    "lower": 5,
+    "upper": 7
+  },
+  "BonusDamage": {
+    "lower": 5,
+    "upper": 6
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2500,
+    "upper": 3500
+  },
+  "LootItemsTemplates": {
+    "item_stubborn-copper-ring.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_flared-kopis.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_tatami-sandals.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_greediest-flamberge.json": {
+      "ChancesOfDrop": 250
+    },
+    "item_hrothgars-sorrow-promise-ring.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_helm-of-foul-undoing.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Gremlin",
+  "MonsterSlug": "gremlin",
+  "Description": "This thing absolutely wants to play a trick on you. A violent trick.",
+  "MonsterItems": [
+    "Agility of the Mythical",
+    "Strange Stick"
+  ],
+  "AppearChance": 1000,
+  "DieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "LocationTile": 31,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "mischief-managed",
+    "Name": "Mischief Managed",
+    "Description": "Increases Monster Crit by 100% for 2 rounds. Decreases Hero Parry and Armor Mitigation chance by 50% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Crit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 10000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 2
+      }
+    ]
+  }
+}

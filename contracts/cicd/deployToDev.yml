@@ -1,0 +1,111 @@
+# pipeline to publish nuget and npm packages
+
+trigger:
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-20.04
+  
+variables:
+  tag: '1.0.$(Build.BuildId)'
+
+jobs:
+  - job: buildNpm
+    steps:
+    - checkout: self
+      persistCredentials: true
+
+    - task: NuGetToolInstaller@1
+      inputs:
+        checkLatest: true      
+
+    - task: UseDotNet@2
+      displayName: 'Use .NET Core sdk'
+      inputs:
+        packageType: sdk
+        version: 6.0.300
+        installationPath: $(Agent.ToolsDirectory)/dotnet        
+
+    - task: Npm@1
+      displayName: 'install yarn'
+      inputs:
+        command: custom
+        customCommand: install --global yarn
+
+    - script: |
+        yarn --frozen-lockfile 
+        mkdir ./export-npm
+        mkdir ./export-npm/src
+        ls -la ./export-npm
+        echo creating typechain ---- 
+        npx hardhat typechain
+        ls -la ./export-npm/src
+        cp ./cicd/package.template.json ./export-npm/package.json
+        cp ./cicd/tsconfig.template.json ./export-npm/tsconfig.json  
+        ls -la ./export-npm
+        npx hardhat run scripts/extractAbi.ts
+        echo $(Build.StagingDirectory)
+        mkdir $(Build.StagingDirectory)/build_nuget
+        mkdir $(Build.StagingDirectory)/build_nuget/cbContract
+        ls -la $(Build.StagingDirectory)/build_nuget
+        cp ./cicd/Dcx.DcxContract.csproj.template $(Build.StagingDirectory)/build_nuget/cbContract/Dcx.DcxContract.csproj
+        sed -i 's/__TAG__/$(tag)/' $(Build.StagingDirectory)/build_nuget/cbContract/Dcx.DcxContract.csproj
+        cp ./cicd/NuGet.Config $(Build.StagingDirectory)/build_nuget/cbContract
+        docker run --rm -v $(Build.Repository.LocalPath)/exported_abi:/abi -v $(Build.StagingDirectory)/build_nuget:/out  newearthart/nethereum.generator
+        
+      displayName:  generate types
+#      failOnStderr: true
+
+    - task: NuGetAuthenticate@0
+      displayName: Nuget Authenticate
+      inputs:
+        forceReinstallCredentialProvider: true
+
+    - script: |
+        dotnet --version
+        dotnet build --configuration release
+        dotnet pack --configuration release -p:PackageVersion=$(tag) --output ./nugetOut
+        dotnet nuget push nugetOut/Dcx.dcxContract.$(tag).nupkg --source "DefaultPushSource" --api-key az
+      workingDirectory: $(Build.StagingDirectory)/build_nuget/cbContract 
+      displayName: publish nuget
+      failOnStderr: true
+
+
+
+    - task: Npm@1
+      displayName: 'update npm version'
+      inputs:
+        workingDir: ./export-npm
+        command: custom
+        customCommand: version $(tag) --no-git-tag-version
+
+    - task: Npm@1
+      displayName: 'publish npm'
+      inputs:
+        workingDir: ./export-npm
+        command: publish
+        publishRegistry: useFeed
+        publishFeed: "Dragons Crossing/dcx-feed-1"
+
+    - task: Npm@1
+      displayName: 'bump repo version'
+      inputs:
+        command: custom
+        customCommand: version $(tag) --no-git-tag-version
+
+    - script: |
+        git config user.email "cicd"
+        git config user.name "cicd"
+        git add .
+        git commit -m "updated package version to $(tag) [skip ci]"
+        git push origin HEAD:$(Build.SourceBranchName)
+   
+      displayName: 'push repo version'
+
+
+    
+
+
+

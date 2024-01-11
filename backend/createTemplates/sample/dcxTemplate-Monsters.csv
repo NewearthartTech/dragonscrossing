@@ -1,0 +1,32 @@
+MaxHitPoints,ChanceToHit,ChanceToDodge,DifficultyToHit,CritChance,ParryChance,Charisma,Quickness,Level,Power,ArmorMitigation,BonusDamage,ChanceOfUsingSpecialAbility,Name,MonsterSlug,Description,MonsterItems,AppearChance,DieDamage,LocationTile,LootItemsTemplates,SpecialAbility
+40-50,0-0,200-400,1200-3500,400-600,400-600,1-5,1-5,1-2,1 - 1,400-700,0 - 1,500-1500,Wandering Goblin,wandering-goblin,"Grumbling, stumbling, filthy and ragged, this little green creature's size does little to hide the wanton violence begging to burst at the first thing that looks at him the wrong way. For better or worse, today that happens to be you.",Dirty Spear,2000,1D4,enchantedFields,"item_strong_runed_axe.json: 100
+item_brawny_stubborn_iron_ring.json: 50
+item_simple_shortsword.json: 1000
+item_wand_of_force.json: 1000
+item_rough_slippers.json: 1000",Whirly Gig
+42-55,200-300,400-600,1200-3500,500-700,500-700,5-10,2-6,1-2,1 - 1,600-1700,0 - 0,500-1500,Rival Adventurer,rival-adventurer,"Ah, a fellow adventurer. He's using that whetstone with skill; he has seen a thing or two, and you think you've seen him in town before.",Ancestoral Axe,2000,1D6,enchantedFields,"item_horizons_wild_prairie_coat.json: 50
+item_sagacious_wedding_loop.json: 100
+item_green_focus_glass.json: 1000
+item_very_fine_hat.json: 1000
+item_used_steel-toes.json: 1000",Runic Axe
+60-70,0-0,400-600,1200-3500,400-600,500-700,1-5,4-9,1-2,1 - 1,1200-1700,0 - 2,700-2000,Forgotten Dwarf,forgotten-dwarf,"Dwarves, or dwarfs? Big beards and heavy boots seem to be their thing. This one doesn't look too happy to see you.",Hammer,2000,1D6,enchantedFields,"item_horizons_wild_prairie_coat.json: 50
+item_sagacious_wedding_loop.json: 100
+item_green_focus_glass.json: 1000
+item_very_fine_hat.json: 1000
+item_used_steel-toes.json: 1000",Dangerous Delve
+50-75,0-0,500-600,2000-3500,600-800,500-800,10-15,4-9,2-3,1 - 1,400-700,1 - 2,700-2000,Mighty Stag,mighty-stag,"A mighty stag stands before you, and you feel the absurd urge to kneel before such a princely animal.",Majestic Antlers,1500,1D6,enchantedFields,"item_horizons_wild_prairie_coat.json: 50
+item_sagacious_wedding_loop.json: 100
+item_green_focus_glass.json: 1000
+item_very_fine_hat.json: 1000
+item_used_steel-toes.json: 1000",Majesty
+45-60,0-0,400-600,1200-3500,600-900,600-900,2-9,1-5,2-3,1 - 1,800-1500,1 - 2,700-2000,Brigand,brigand,"Mother warned you about run-ins with strangers on the road. This fellow seems to fit every stereotype, and he reeks of danger and cheap booze.","Bow
+Stabbing Dagger",1500,1D6,enchantedFields,"item_horizons_wild_prairie_coat.json: 50
+item_sagacious_wedding_loop.json: 100
+item_green_focus_glass.json: 1000
+item_very_fine_hat.json: 1000
+item_used_steel-toes.json: 1000",Overhand Chop
+60-77,300-400,200-400,1200-3500,1000-1200,400-600,10-15,1-5,3-4,1 - 1,500-1200,0 - 3,1000-2000,Bridge Troll,bridge-troll,"You're crossing a small bridge when it collapses underneath you. After a rough landing, you gaze up at an impossibly large, rocky visage, peerless in its hideousness. ""Let me pose you a riddle,"" it slurs out. How does it know your language?",Massive Hands,1000,1D8,enchantedFields,"item_horizons_wild_prairie_coat.json: 50
+item_sagacious_wedding_loop.json: 100
+item_green_focus_glass.json: 1000
+item_very_fine_hat.json: 1000
+item_used_steel-toes.json: 1000",Riddling Offense

@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_magic_missile",
+  "slug": "skill-magic-missile",
+  "name": "Magic Missile",
+  "description": "Deals 3D4 + (Wisdom / 8)",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 4,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

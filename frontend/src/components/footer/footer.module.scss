@@ -1,0 +1,246 @@
+@use "@/styles/variables" as v;
+
+$medium: 1199px;
+
+.container {
+  height: 75px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.background {
+  position: absolute;
+  height: 75px;
+  opacity: 0.5;
+  background-color: v.$color-black;
+}
+
+.dividerContainerLeft {
+  position: absolute;
+  left: 100px;
+  top: -4px;
+  width: 100%;
+}
+
+.dividerContainerRight {
+  position: absolute;
+  right: 100px;
+  top: -4px;
+  width: 100%;
+}
+
+.contentContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.mobileContentContainer {
+  justify-content: space-between;
+  width: 330px;
+}
+
+.experienceContainer {
+  align-items: center;
+  justify-content: center;
+  // background-color: red;
+}
+
+.barsContainer {
+  padding-bottom: 35px;
+}
+
+.hpContainer {
+  height: 30px;
+  margin-bottom: 4px;
+}
+
+.xpContainer {
+  height: 30px;
+}
+
+.centerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.questContainer {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mobileQuestContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80px;
+}
+
+.questFrameContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  left: 0px;
+}
+
+.questTextContainer {
+  position: absolute;
+  bottom: 7px;
+  left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileQuestTextContainer {
+  position: absolute;
+  top: -11px;
+  left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questText {
+  position: absolute;
+  text-align: center;
+  color: v.$color-light-gray;
+  font-size: 20px;
+  top: -9px;
+}
+
+.mobileQuestText {
+  position: absolute;
+  color: v.$color-light-gray;
+  font-size: 20px;
+  top: 12px;
+}
+
+.menuContainer {
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+}
+
+.levelUpIndicatorContainer {
+  cursor: pointer;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  margin-left: -50px;
+}
+
+.mobileLevelUpIndicatorContainer {
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 70px;
+  margin-left: -15px;
+}
+
+.levelUpIcon {
+  color: v.$color-light-gold;
+  font-size: 35px;
+  cursor: pointer;
+  @media screen and (max-width: $medium) {
+    margin-top: 3px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.buttonIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconButton {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  height: 51px;
+  width: 60px;
+  background-color: v.$color-darker-gray;
+}
+
+.iconButton:hover {
+  background-color: v.$color-light-gray;
+}
+
+.buttonPadding {
+  margin-right: 30px;
+  @media screen and (max-width: 1320px) {
+    margin-right: 21px;
+  }
+}
+
+.footerButtonImage {
+  cursor: pointer;
+}
+
+.disableInventory {
+  display: flex;
+  height: 51px;
+  width: 60px;
+  position: absolute;
+  background-color: v.$color-black;
+  opacity: 0.5;
+}
+
+//Temp
+.fixDiceContainer {
+  width: 82px;
+  position: fixed;
+  top: 42px;
+  left: 2px;
+}
+
+.resetQuestsContainer {
+  width: 82px;
+  position: fixed;
+  top: 77px;
+  left: 2px;
+}
+
+.learnSkillContainer {
+  width: 82px;
+  position: fixed;
+  top: 112px;
+  left: 2px;
+}
+
+.giveAllLootContainer {
+  width: 82px;
+  position: fixed;
+  align-items: center;
+  top: 112px;
+  left: 2px;
+}
+
+.giveLootText {
+  color: v.$color-light-gray;
+}
+
+.giveLootCheckbox {
+  margin-top: -10px;
+  color: v.$color-light-gray;
+}

@@ -1,0 +1,217 @@
+@use "@/styles/variables" as v;
+
+.container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: v.$color-black;
+}
+
+.backgroundContainer {
+  position: relative;
+  justify-content: center;
+  height: 290px;
+  width: 380px;
+}
+
+.rarityBreakdownContainer {
+  position: absolute;
+  top: 28px;
+  justify-content: center;
+}
+
+.row {
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+}
+
+.rarityText {
+  color: v.$color-white;
+}
+
+.mythicLine {
+  height: 1px;
+  background-color: v.$color-mythic;
+  width: 180px;
+}
+
+.legendaryLine {
+  height: 1px;
+  background-color: v.$color-legendary;
+  width: 150px;
+}
+
+.rareLine {
+  height: 1px;
+  background-color: v.$color-rare;
+  width: 185px;
+}
+
+.quantityContainer {
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  top: 112px;
+  width: 290px;
+}
+
+.quantityHeader {
+  font-size: 20px;
+  color: v.$color-white;
+}
+
+.numberContainer {
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  border-radius: 25px;
+  border: solid 2px v.$color-white;
+  background-color: v.$color-dark-gray;
+  cursor: pointer;
+}
+
+.numberContainerDisabled {
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  border-radius: 25px;
+  border: solid 2px v.$color-white;
+  background-color: v.$color-dark-gray;
+  opacity: 0.7;
+  cursor: default;
+}
+
+.numberContainerSelected {
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  border-radius: 25px;
+  border: solid 2px v.$color-white;
+  background-color: v.$color-website-orange;
+  cursor: pointer;
+}
+
+.quantityText {
+  font-size: 20px;
+  color: v.$color-white;
+  cursor: inherit;
+}
+
+.buttonContainer {
+  cursor: pointer;
+  position: absolute;
+  top: 168px;
+  height: 50px;
+  width: 250px;
+  border-radius: 25px;
+  background-color: v.$color-website-orange;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer:hover {
+  opacity: 0.7;
+}
+
+.buttonContainerDisabled {
+  cursor: default;
+  position: absolute;
+  top: 168px;
+  height: 50px;
+  width: 250px;
+  border-radius: 25px;
+  background-color: v.$color-website-orange;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.buttonText {
+  cursor: inherit;
+  color: v.$color-white;
+  font-size: 24px;
+}
+
+.costContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 41px;
+}
+
+.heroSupplyContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+}
+
+// Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pendingTransactionModalContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  height: 180px;
+  width: 300px;
+}
+
+.mintHeroStatusContainer {
+  position: absolute;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.spinnerContainer {
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.spinner {
+  color: v.$color-light-gray;
+}
+
+.message {
+  text-align: center;
+  color: v.$color-light-gray;
+  line-height: 20px;
+}
+
+.navigateButtonContainer {
+  cursor: pointer;
+  margin-top: 12px;
+  height: 45px;
+  width: 250px;
+  border-radius: 25px;
+  background-color: v.$color-website-orange;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 2;
+}

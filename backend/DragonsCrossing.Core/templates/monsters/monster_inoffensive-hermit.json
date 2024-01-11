@@ -1,0 +1,123 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 26,
+    "upper": 38
+  },
+  "ChanceToHit": {
+    "lower": 150,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 400,
+    "upper": 600
+  },
+  "DifficultyToHit": {
+    "lower": 1600,
+    "upper": 3000
+  },
+  "CritChance": {
+    "lower": 350,
+    "upper": 550
+  },
+  "ParryChance": {
+    "lower": 100,
+    "upper": 200
+  },
+  "Charisma": {
+    "lower": 22,
+    "upper": 25
+  },
+  "Quickness": {
+    "lower": 15,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 6,
+    "upper": 7
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 600,
+    "upper": 1300
+  },
+  "ArmorMitigationAmount": {
+    "lower": 2,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 1,
+    "upper": 2
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_casual-offroad-walkers.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_boiled-leather-armor.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_20-sided-stone.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_the-starfold-hat.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_dragonslayers-ring.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-apply-poultice.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-improvised-trap.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-pocket-sand.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Inoffensive Hermit",
+  "MonsterSlug": "inoffensive-hermit",
+  "Description": "He looks dirty and wise at the same time, somehow. The hermit poses you the age old question: what is justice?",
+  "MonsterItems": [
+    "Staff of Knowledge",
+    "Flea-Bitten Fur"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 8,
+  "SpecialAbility": {
+    "Id": 11,
+    "SoundSlug": "blistering-interrogation",
+    "Name": "Blistering Interrogation",
+    "Description": "Increases Monster's Critical by 20% for 2 rounds, and reduces Player Critical by 99% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Critical Chance",
+        "Description": "Reduces Critical Chance by 99% for 2 rounds.",
+        "AffectAmount": -9900,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Critical Chance",
+        "Description": "Increases Critical Chance by 20% for 2 rounds.",
+        "AffectAmount": 2000,
+        "Duration": 2
+      }
+    ]
+  }
+}

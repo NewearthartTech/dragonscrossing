@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 750,
+      "upper": 1125
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "seax",
+  "name": "Seax",
+  "itemDropSound": "metal-weapon",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "seax",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

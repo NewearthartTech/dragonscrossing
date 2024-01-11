@@ -1,0 +1,137 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 80,
+    "upper": 100
+  },
+  "ChanceToHit": {
+    "lower": 400,
+    "upper": 500
+  },
+  "ChanceToDodge": {
+    "lower": 250,
+    "upper": 450
+  },
+  "DifficultyToHit": {
+    "lower": 1700,
+    "upper": 2200
+  },
+  "CritChance": {
+    "lower": 2400,
+    "upper": 3400
+  },
+  "ParryChance": {
+    "lower": 250,
+    "upper": 450
+  },
+  "Charisma": {
+    "lower": 30,
+    "upper": 40
+  },
+  "Quickness": {
+    "lower": 30,
+    "upper": 35
+  },
+  "Level": {
+    "lower": 16,
+    "upper": 19
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1900,
+    "upper": 2400
+  },
+  "ArmorMitigationAmount": {
+    "lower": 8,
+    "upper": 11
+  },
+  "BonusDamage": {
+    "lower": 6,
+    "upper": 8
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_copper-coated-xiphos.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_crackling-oak-wand.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_fearsome-zweihander.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_oiled-scale-mail.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_the-facelifter-heirloom-of-horizon.json": {
+      "ChancesOfDrop": 125
+    },
+    "item_quickstrike-crossbow-of-closing-eyes.json": {
+      "ChancesOfDrop": 125
+    },
+    "skill-fireball.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-ice-tomb.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-hasty-wish.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Gargoyle",
+  "MonsterSlug": "gargoyle",
+  "Description": "The gargoyle molts a stone skin off and stretches. The nap does not appear to have quieted its thirst for violence.",
+  "MonsterItems": [
+    "Stone Claws",
+    "Bulky Bracers and Pauldron"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 8
+    },
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 22,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "stone-coffin",
+    "Name": "Stone Coffin",
+    "Description": "Increases Monster Armor Mitigation and Armor Mitigation Amount by 55% for 2 rounds. Reduces Monster Difficulty to Hit by 15% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 5500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 5500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q3_DifficultyToHit",
+        "FriendlyStatName": "Difficulty to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -1500,
+        "Duration": 2
+      }
+    ]
+  }
+}

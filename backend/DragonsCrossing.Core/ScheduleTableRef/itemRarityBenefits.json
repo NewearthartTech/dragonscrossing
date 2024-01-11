@@ -1,0 +1,80 @@
+{
+  "Common": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 0,
+      "mysteriousForest": 0,
+      "foulWastes": 0,
+      "wondrousThicket": 0,
+      "treacherousPeaks": 0,
+      "fallenTemples": 0,
+      "darkTower": 0,
+      "unknown": 0
+    }
+  },
+  "Uncommon": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 1,
+      "mysteriousForest": 2,
+      "foulWastes": 3,
+      "wondrousThicket": 0,
+      "treacherousPeaks": 4,
+      "fallenTemples": 0,
+      "darkTower": 6,
+      "unknown": 0
+    }
+  },
+  "Rare": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 2,
+      "mysteriousForest": 3,
+      "foulWastes": 4,
+      "wondrousThicket": 0,
+      "treacherousPeaks": 5,
+      "fallenTemples": 0,
+      "darkTower": 8,
+      "unknown": 0
+    }
+  },
+  "Legendary": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 3,
+      "mysteriousForest": 4,
+      "foulWastes": 5,
+      "wondrousThicket": 0,
+      "treacherousPeaks": 6,
+      "fallenTemples": 0,
+      "darkTower": 10,
+      "unknown": 0
+    }
+  },
+  "Mythic": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 4,
+      "mysteriousForest": 5,
+      "foulWastes": 6,
+      "wondrousThicket": 0,
+      "treacherousPeaks": 7,
+      "fallenTemples": 0,
+      "darkTower": 12,
+      "unknown": 0
+    }
+  },
+  "Unknown": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 0,
+      "mysteriousForest": 0,
+      "foulWastes": 0,
+      "wondrousThicket": 0,
+      "treacherousPeaks": 0,
+      "fallenTemples": 0,
+      "darkTower": 0,
+      "unknown": 0
+    }
+  }
+}

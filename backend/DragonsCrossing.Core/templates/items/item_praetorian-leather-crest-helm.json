@@ -1,0 +1,47 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1700,
+      "upper": 2200
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    },
+    "ParryRate": {
+      "lower": 300,
+      "upper": 450
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "praetorian-leather-crest-helm",
+  "name": "Praetorian Leather Crest Helm",
+  "itemDropSound": "leather-helmet",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "praetorian-leather-crest-helm",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

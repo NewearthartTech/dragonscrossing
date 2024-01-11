@@ -1,0 +1,10 @@
+{
+  "id": "10",
+  "referenceId": "200",
+  "url": "/img/api/skills/mage/ice_tomb",
+  "name": "ice tomb",
+  "status": "learned",
+  "effect": "Deals 50 damage",
+  "requiredSkillPoints": 2,
+  "uses": 0
+}

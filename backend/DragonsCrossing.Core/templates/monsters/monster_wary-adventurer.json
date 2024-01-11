@@ -1,0 +1,129 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 92,
+    "upper": 112
+  },
+  "ChanceToHit": {
+    "lower": 400,
+    "upper": 550
+  },
+  "ChanceToDodge": {
+    "lower": 1000,
+    "upper": 1200
+  },
+  "DifficultyToHit": {
+    "lower": 2500,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 1800,
+    "upper": 2800
+  },
+  "ParryChance": {
+    "lower": 1700,
+    "upper": 2200
+  },
+  "Charisma": {
+    "lower": 39,
+    "upper": 49
+  },
+  "Quickness": {
+    "lower": 32,
+    "upper": 37
+  },
+  "Level": {
+    "lower": 16,
+    "upper": 19
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 3200,
+    "upper": 3700
+  },
+  "ArmorMitigationAmount": {
+    "lower": 8,
+    "upper": 11
+  },
+  "BonusDamage": {
+    "lower": 8,
+    "upper": 10
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_expensive-moissanite-band.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_taylors-laced-black-canvas-shoes.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_pull-up-gray-leather-boots.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_thundering-dark-mail-of-ending.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_quickstrike-crossbow-of-closing-eyes.json": {
+      "ChancesOfDrop": 125
+    },
+    "item_archmaguss-skeletal-staff.json": {
+      "ChancesOfDrop": 125
+    },
+    "skill-thirst-for-blood.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-riposte.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-mastered-blow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Wary Adventurer",
+  "MonsterSlug": "wary-adventurer",
+  "Description": "\"I do not like the look of you,\" the adventurer declares. \"I am certain that given the chance you will kill me and search my corpse for treasure. I will make this easy and strike first.\"",
+  "MonsterItems": [
+    "Matched Enchanted Daggers",
+    "Crafted Leather and Plate"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 22,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "clever-contraption",
+    "Name": "Clever Contraption",
+    "Description": "Reduces Hero Difficulty to Hit by 15% for 2 rounds. Increases Monster Damage by 10% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q3_DifficultyToHit",
+        "FriendlyStatName": "Difficulty to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -1500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 1000,
+        "Duration": 3
+      }
+    ]
+  }
+}

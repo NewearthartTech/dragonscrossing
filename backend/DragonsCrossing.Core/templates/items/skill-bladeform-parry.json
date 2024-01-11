@@ -1,0 +1,23 @@
+﻿{
+  "skill": {
+    "dcxToIdentify": 1.0,
+    "id": "",
+    "type": "UnidentifiedHeroSkill"
+  },
+  "id": "92fda1c9-622c-4527-b162-36c09d3498d9",
+  "nftTokenId": 0,
+  "itemIndex": null,
+  "rarity": "Unknown",
+  "bonusDamage": null,
+  "affectedAttributes": {},
+  "slug": "skill-bladeform-parry",
+  "name": "",
+  "itemDropSound": "",
+  "slot": "unidentifiedSkill",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [],
+  "imageSlug": null,
+  "levelRequirement": 0,
+  "type": "SkillItemTemplate"
+}

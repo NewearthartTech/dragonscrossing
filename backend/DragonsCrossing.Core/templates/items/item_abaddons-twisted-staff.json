@@ -1,0 +1,44 @@
+﻿{
+  "bonusDamage": {
+    "lower": 4,
+    "upper": 4
+  },
+  "affectedAttributes": {
+    "Wisdom": {
+      "lower": 6,
+      "upper": 8
+    },
+    "ParryRate": {
+      "lower": 500,
+      "upper": 600
+    },
+    "DodgeRate": {
+      "lower": 400,
+      "upper": 500
+    },
+    "CriticalHitRate": {
+      "lower": 600,
+      "upper": 700
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "abaddons-twisted-staff",
+  "name": "Abaddon's Twisted Staff",
+  "itemDropSound": "staff",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "abaddons-twisted-staff",
+  "levelRequirement": 20,
+  "type": "ItemTemplate"
+}

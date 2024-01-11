@@ -1,0 +1,26 @@
+{
+  "Common": {
+    "lower": 1,
+    "upper": 60
+  },
+  "Uncommon": {
+    "lower": 61,
+    "upper": 80
+  },
+  "Rare": {
+    "lower": 81,
+    "upper": 92
+  },
+  "Legendary": {
+    "lower": 93,
+    "upper": 97
+  },
+  "Mythic": {
+    "lower": 98,
+    "upper": 100
+  },
+  "Unknown": {
+    "lower": 1000,
+    "upper": 1000
+  }
+}

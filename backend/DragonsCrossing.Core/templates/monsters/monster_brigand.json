@@ -1,0 +1,118 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 15,
+    "upper": 21
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 200,
+    "upper": 400
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 3000
+  },
+  "CritChance": {
+    "lower": 500,
+    "upper": 700
+  },
+  "ParryChance": {
+    "lower": 600,
+    "upper": 900
+  },
+  "Charisma": {
+    "lower": 2,
+    "upper": 9
+  },
+  "Quickness": {
+    "lower": 1,
+    "upper": 5
+  },
+  "Level": {
+    "lower": 2,
+    "upper": 3
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1200,
+    "upper": 1600
+  },
+  "ArmorMitigationAmount": {
+    "lower": 1,
+    "upper": 1
+  },
+  "BonusDamage": {
+    "lower": 1,
+    "upper": 2
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1000,
+    "upper": 2000
+  },
+  "LootItemsTemplates": {
+    "item_simple-shortsword.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_beastly-mask.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_worn-traveling-boots.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_agile-broken-in-leathers.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_commoners-band.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_sagacious-wedding-loop.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-apply-poultice.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-improvised-trap.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-pocket-sand.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Brigand",
+  "MonsterSlug": "brigand",
+  "Description": "Mother warned you about run-ins with strangers on the road. This fellow seems to fit every stereotype, and he reeks of danger and cheap booze.",
+  "MonsterItems": [
+    "Bow",
+    "Stabbing Dagger"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 1,
+  "SpecialAbility": {
+    "Id": 5,
+    "SoundSlug": "overhand-chop",
+    "Name": "Overhand Chop",
+    "Description": "This monster will deal 25% bonus damage for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "The monster will deal 25% bonus damage for 1 round.",
+        "AffectAmount": 2500,
+        "Duration": 1
+      }
+    ]
+  }
+}

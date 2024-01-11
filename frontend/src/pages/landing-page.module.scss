@@ -1,0 +1,31 @@
+@use "@/styles/variables" as v;
+
+.main {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  background-color: v.$color-dark-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 300px;
+  background-color: v.$color-light-gray;
+  border: 5px solid v.$color-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 200px;
+  margin-top: 15px;
+}
+
+.loginButton {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  width: 100px;
+}

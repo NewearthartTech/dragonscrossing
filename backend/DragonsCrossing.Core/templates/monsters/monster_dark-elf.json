@@ -1,0 +1,126 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 41,
+    "upper": 50
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 200
+  },
+  "ChanceToDodge": {
+    "lower": 500,
+    "upper": 1200
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2700
+  },
+  "CritChance": {
+    "lower": 1000,
+    "upper": 1600
+  },
+  "ParryChance": {
+    "lower": 1800,
+    "upper": 2500
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 12,
+    "upper": 17
+  },
+  "Level": {
+    "lower": 8,
+    "upper": 10
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1400,
+    "upper": 2200
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 5
+  },
+  "BonusDamage": {
+    "lower": 2,
+    "upper": 5
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_rigid-metal-cuirass.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_platinum-band.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_amethyst-glower.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_mahogany-wand.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_mask-of-the-antler-king.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_glassmail.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Dark Elf",
+  "MonsterSlug": "dark-elf",
+  "Description": "Nothing is really known about the dark elves, save that they are territorial and hold an unspeakable sorrow in their countenance.",
+  "MonsterItems": [
+    "Elven Dagger",
+    "Well-Crafted Leathers"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 12,
+  "SpecialAbility": {
+    "Id": 16,
+    "SoundSlug": "despondent-gaze",
+    "Name": "Despondent Gaze",
+    "Description": "Reduces Hero Parry by 55% for 2 rounds. Increases Monster Damage by 30% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 3000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5500,
+        "Duration": 2
+      }
+    ]
+  }
+}

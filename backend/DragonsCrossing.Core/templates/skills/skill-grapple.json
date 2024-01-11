@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_grapple",
+  "slug": "skill-grapple",
+  "name": "Grapple",
+  "description": "Deals 1D6 + ((Strength + Agility) / 13) damage and reduces parry for both Monster and Hero by 80% for 2 rounds.",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 4,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 1,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

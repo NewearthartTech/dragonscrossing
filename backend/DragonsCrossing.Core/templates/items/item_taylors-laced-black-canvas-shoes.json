@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1200,
+      "upper": 1700
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "DodgeRate": {
+      "lower": 150,
+      "upper": 300
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "taylors-laced-black-canvas-shoes",
+  "name": "Taylor's Laced Black Canvas Shoes",
+  "itemDropSound": "sandals",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "taylors-laced-black-canvas-shoes",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 800,
+      "upper": 1400
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 4
+    },
+    "CriticalHitRate": {
+      "lower": 250,
+      "upper": 500
+    },
+    "Quickness": {
+      "lower": 5,
+      "upper": 7
+    },
+    "Strength": {
+      "lower": 3,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 3,
+      "upper": 4
+    },
+    "Wisdom": {
+      "lower": 3,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 3,
+      "upper": 5
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "helm-of-foul-undoing",
+  "name": "Helm of Foul Undoing",
+  "itemDropSound": "metal-helm",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "helm-of-foul-undoing",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

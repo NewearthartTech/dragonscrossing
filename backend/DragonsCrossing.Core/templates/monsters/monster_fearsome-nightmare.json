@@ -1,0 +1,160 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 111,
+    "upper": 116
+  },
+  "ChanceToHit": {
+    "lower": 150,
+    "upper": 350
+  },
+  "ChanceToDodge": {
+    "lower": 300,
+    "upper": 600
+  },
+  "DifficultyToHit": {
+    "lower": 2400,
+    "upper": 2600
+  },
+  "CritChance": {
+    "lower": 1000,
+    "upper": 1800
+  },
+  "ParryChance": {
+    "lower": 500,
+    "upper": 700
+  },
+  "Charisma": {
+    "lower": 89,
+    "upper": 106
+  },
+  "Quickness": {
+    "lower": 20,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 13,
+    "upper": 13
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 2000,
+    "upper": 2600
+  },
+  "ArmorMitigationAmount": {
+    "lower": 6,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 6,
+    "upper": 8
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_one-handed-ruby-claymore.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_pappenheimer.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_diamond-tipped-sabre.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_mask-of-the-antler-king.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_glassmail.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_defiant-boots-of-the-third-war.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_hrothgars-sorrow-promise-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_helm-of-foul-undoing.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Fearsome Nightmare",
+  "MonsterSlug": "fearsome-nightmare",
+  "Description": "A fiery, dull orange aura drifts off this creature. The darkest recesses of your psyche recoil at its grim, recognizable menace. It is a Nightmare, carrying a sickle that may deliver your end.",
+  "MonsterItems": [
+    "Nightmares and Delusions"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 14,
+  "SpecialAbility": {
+    "Id": 21,
+    "SoundSlug": "difficult-delusion",
+    "Name": "Difficult Delusion",
+    "Description": "Reduces Hero Bonus Damage by 33% for 2 rounds. Increases Monster Difficulty to Hit by 20% for 2 rounds. Reduces Hero Parry by 55% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -3300,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q3_DifficultyToHit",
+        "FriendlyStatName": "Difficulty to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5500,
+        "Duration": 2
+      }
+    ]
+  }
+}

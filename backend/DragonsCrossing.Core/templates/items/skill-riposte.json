@@ -1,0 +1,23 @@
+﻿{
+  "skill": {
+    "dcxToIdentify": 1.0,
+    "id": "",
+    "type": "UnidentifiedHeroSkill"
+  },
+  "id": "79f34f32-29e9-437c-8d4b-f08c379f8cdd",
+  "nftTokenId": 0,
+  "itemIndex": null,
+  "rarity": "Unknown",
+  "bonusDamage": null,
+  "affectedAttributes": {},
+  "slug": "skill-riposte",
+  "name": "",
+  "itemDropSound": "",
+  "slot": "unidentifiedSkill",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [],
+  "imageSlug": null,
+  "levelRequirement": 0,
+  "type": "SkillItemTemplate"
+}

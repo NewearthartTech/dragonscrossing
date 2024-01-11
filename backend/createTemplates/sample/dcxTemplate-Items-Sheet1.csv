@@ -1,0 +1,6 @@
+armorMitigation,parryRate,dodgeRate,criticalHitRate,bonusDamage,affectedAttributes,name,slot,dieDamage,purchasePrice,sellPrice,heroStatComplianceDictionary,allowedHeroClassList,itemDropSound,slug,blackSmithZone
+30 - 50,30-50,10-20,30-50,3-5,"HitPoints:1-10
+Wisdom:1-5",Basic Dagger,twoHand,1D6,20,5,"strength:2
+agility:1","Ranger,Warrior,Mage",metal-weapon,basic-dagger,wildPrairie
+30 - 50,30-50,10-20,30-50,3-5,Wisdom:1-5,Basic Great Sword,twoHand,1D6,20,5,"strength:2
+agility:1","Ranger,Warrior,Mage",metal-weapon,basic-greatsword,wildPrairie

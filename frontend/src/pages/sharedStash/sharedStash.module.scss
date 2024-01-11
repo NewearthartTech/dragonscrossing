@@ -1,0 +1,197 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opaqueContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  opacity: 0.5;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 75px;
+}
+
+.topLeftContainer {
+  position: absolute;
+  width: 56px;
+  top: 1px;
+  left: 5px;
+}
+
+.topRightContainer {
+  position: absolute;
+  width: 60px;
+  top: 1px;
+  right: 1px;
+}
+
+.bottomLeftContainer {
+  position: absolute;
+  width: 43px;
+  bottom: 2px;
+  left: 9px;
+}
+
+.bottomRightContainer {
+  position: absolute;
+  width: 43px;
+  bottom: 2px;
+  right: 8px;
+}
+
+.stakingHeaderContainer {
+  position: absolute;
+  justify-content: center;
+  top: -20px;
+}
+
+.inventoryTopLeftContainer {
+  position: absolute;
+  width: 56px;
+  top: 15px;
+  left: 5px;
+  @media screen and (max-width: $small) {
+    left: 0px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    top: 14px;
+    left: -2px;
+  }
+}
+
+.inventoryTopRightContainer {
+  position: absolute;
+  width: 60px;
+  top: 15px;
+  right: 1px;
+  @media screen and (max-width: $small) {
+    right: -3px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    top: 14px;
+    right: -5px;
+  }
+}
+
+.inventoryBottomLeftContainer {
+  position: absolute;
+  width: 43px;
+  bottom: 17px;
+  left: 9px;
+  @media screen and (max-width: $small) {
+    left: 3px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    bottom: 16px;
+    left: 1px;
+  }
+}
+
+.inventoryBottomRightContainer {
+  position: absolute;
+  width: 43px;
+  bottom: 17px;
+  right: 8px;
+  @media screen and (max-width: $small) {
+    right: 4px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    bottom: 16px;
+    right: 1px;
+  }
+}
+
+.stakingHeaderText {
+  position: absolute;
+  justify-content: center;
+  top: 4px;
+  color: v.$color-light-gray;
+  font-size: 22px;
+}
+
+.stashNavigationButtonsContainer {
+  position: absolute;
+  justify-content: space-between;
+  width: 270px;
+  top: 35px;
+}
+
+.inventoryNavigationButtonsContainer {
+  position: absolute;
+  justify-content: space-between;
+  width: 270px;
+  top: 35px;
+}
+
+.questMessageContainerStash {
+  position: absolute;
+  top: 72px;
+  justify-content: center;
+}
+
+.questMessageContainerInventory {
+  position: absolute;
+  top: 69px;
+  justify-content: center;
+}
+
+.questMessage {
+  color: v.$color-danger-red-light;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.stashItemsContainer {
+  position: absolute;
+  top: 100px;
+  justify-content: space-between;
+  height: 150px;
+  width: 150px;
+}
+
+.stashInventoryItemsContainer {
+  position: absolute;
+  justify-content: center;
+  height: 430px;
+  width: 700px;
+  top: 93px;
+  @media screen and (max-width: $small) {
+    height: 405px;
+    width: 485px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  @media screen and (max-width: $extraSmall) {
+    height: 380px;
+    width: 349px;
+  }
+}
+
+.leaveButtonContainer {
+  position: absolute;
+  justify-content: center;
+  bottom: 18px;
+}
+
+.inventoryLeaveButtonContainer {
+  position: absolute;
+  justify-content: center;
+  bottom: 38px;
+}

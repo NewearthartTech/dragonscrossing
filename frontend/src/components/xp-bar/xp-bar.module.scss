@@ -1,0 +1,40 @@
+@use "@/styles/variables" as v;
+
+.container {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.xpBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.trimmedContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  position: absolute;
+}
+
+.xpBar {
+  position: absolute;
+  left: 0;
+  top: 50;
+  background: radial-gradient(v.$color-xp-bar-light, v.$color-xp-bar-dark);
+  box-sizing: border-box;
+}
+
+.xpBarLabel {
+  color: v.$color-light-gray;
+  font-size: 15px;
+  position: absolute;
+  z-index: 1;
+}

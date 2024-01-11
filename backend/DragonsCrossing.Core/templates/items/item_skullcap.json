@@ -1,0 +1,35 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 800,
+      "upper": 1400
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 3
+    },
+    "Charisma": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "skullcap",
+  "name": "Skullcap",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "skullcap",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

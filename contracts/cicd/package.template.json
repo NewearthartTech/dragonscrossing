@@ -1,0 +1,20 @@
+{
+    "name": "@dcx/dcx-contracts",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lib/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "tsc",
+      "prepublishOnly": "npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "typescript": "^4.7.4"
+    },
+    "files": [
+      "lib/**/*"
+    ]
+  }
+  

@@ -1,0 +1,35 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 600,
+      "upper": 1000
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 2
+    },
+    "Charisma": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "casual-offroad-walkers",
+  "name": "Casual Offroad Walkers",
+  "itemDropSound": "sandals",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "casual-offroad-walkers",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

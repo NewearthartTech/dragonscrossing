@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_teleport",
+  "slug": "skill-teleport",
+  "name": "Teleport",
+  "description": "Guaranteed Flee Next Round.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 7,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

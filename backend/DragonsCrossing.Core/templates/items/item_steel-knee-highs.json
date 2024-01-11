@@ -1,0 +1,35 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 300,
+      "upper": 500
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "steel-knee-highs",
+  "name": "Steel Knee Highs",
+  "itemDropSound": "stompers",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "steel-knee-highs",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

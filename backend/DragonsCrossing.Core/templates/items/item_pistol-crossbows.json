@@ -1,0 +1,36 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "CriticalHitRate": {
+      "lower": 425,
+      "upper": 625
+    },
+    "HitPoints": {
+      "lower": 3,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "pistol-crossbows",
+  "name": "Pistol Crossbows",
+  "itemDropSound": "crossbow",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "pistol-crossbows",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

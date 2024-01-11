@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 900,
+      "upper": 1200
+    },
+    "Agility": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "the-blood-infused-kris",
+  "name": "The Blood Infused Kris",
+  "itemDropSound": "metal-weapon",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "the-blood-infused-kris",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

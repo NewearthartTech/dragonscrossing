@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2000,
+      "upper": 2800
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 4
+    },
+    "ParryRate": {
+      "lower": 300,
+      "upper": 450
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "gray-hood-of-mystery",
+  "name": "Gray Hood of Mystery",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "gray-hood-of-mystery",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

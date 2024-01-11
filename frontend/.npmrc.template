@@ -1,0 +1,13 @@
+registry=https://pkgs.dev.azure.com/dragonscrossingdcx/b1a1952c-be26-46f6-8955-9dd354699472/_packaging/dcx-feed-1/npm/registry/ 
+always-auth=true
+
+efgmcupodnl7thtwpjnoxn3p2p7mwqv7hz4wnapvmzdkfobh2l2q
+
+; begin auth token
+//pkgs.dev.azure.com/dragonscrossingdcx/b1a1952c-be26-46f6-8955-9dd354699472/_packaging/dcx-feed-1/npm/registry/:username=dragonscrossingdcx
+//pkgs.dev.azure.com/dragonscrossingdcx/b1a1952c-be26-46f6-8955-9dd354699472/_packaging/dcx-feed-1/npm/registry/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+//pkgs.dev.azure.com/dragonscrossingdcx/b1a1952c-be26-46f6-8955-9dd354699472/_packaging/dcx-feed-1/npm/registry/:email=npm requires email to be set but doesn't use the value
+//pkgs.dev.azure.com/dragonscrossingdcx/b1a1952c-be26-46f6-8955-9dd354699472/_packaging/dcx-feed-1/npm/:username=dragonscrossingdcx
+//pkgs.dev.azure.com/dragonscrossingdcx/b1a1952c-be26-46f6-8955-9dd354699472/_packaging/dcx-feed-1/npm/:_password=[BASE64_ENCODED_PERSONAL_ACCESS_TOKEN]
+//pkgs.dev.azure.com/dragonscrossingdcx/b1a1952c-be26-46f6-8955-9dd354699472/_packaging/dcx-feed-1/npm/:email=npm requires email to be set but doesn't use the value
+; end auth token

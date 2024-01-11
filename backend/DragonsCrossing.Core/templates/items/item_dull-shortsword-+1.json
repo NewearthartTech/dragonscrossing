@@ -1,0 +1,26 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": "mysteriousForest",
+  "slug": "dull-shortsword-+1",
+  "name": "Dull Shortsword +1",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "simple-shortsword",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

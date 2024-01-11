@@ -1,0 +1,49 @@
+@use "@/styles/variables" as v;
+$extraLarge: 1669px;
+$medium: 1199px;
+$small: 899px;
+$extraSmall: 599px;
+
+// Pending Transaction Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pendingTransactionModalContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  height: 110px;
+  width: 168px;
+}
+
+.claimStatusContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.spinnerContainer {
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.spinner {
+  color: v.$color-light-gray;
+}
+
+.message {
+  text-align: center;
+  color: v.$color-light-gray;
+  margin-top: 6px;
+}

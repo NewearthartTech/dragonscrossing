@@ -1,0 +1,68 @@
+@use "@/styles/variables" as v;
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 150px;
+  width: 280px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.messageContentContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.messageContainer {
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  padding-bottom: 8px;
+  overflow-wrap: break-word;
+  display: inline-block;
+}
+
+.messageContainerWithButton {
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.message {
+  color: v.$color-light-gray;
+  line-height: 18px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  right: 4px;
+  top: 6px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.closeButtonContainer:hover {
+  opacity: 0.6;
+}
+
+.buttonContainer {
+  justify-content: center;
+}

@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_hasty_wish",
+  "slug": "skill-hasty-wish",
+  "name": "Hasty Wish",
+  "description": "Increase Hero Parry, Dodge, Armor Mitigation Chance, Crit by 25%, and Chance to Hit by a flat 15%.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 7,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

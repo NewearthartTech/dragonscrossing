@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1300,
+      "upper": 1900
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 4
+    },
+    "ParryRate": {
+      "lower": 250,
+      "upper": 450
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 7
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 8
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "mask-of-the-antler-king",
+  "name": "Mask of the Antler King",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "mask-of-the-antler-king",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

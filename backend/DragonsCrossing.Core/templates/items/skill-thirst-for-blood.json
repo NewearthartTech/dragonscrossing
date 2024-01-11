@@ -1,0 +1,23 @@
+﻿{
+  "skill": {
+    "dcxToIdentify": 1.0,
+    "id": "",
+    "type": "UnidentifiedHeroSkill"
+  },
+  "id": "03a4cb0a-3eb6-4db3-8cf2-4232d3cb4bcb",
+  "nftTokenId": 0,
+  "itemIndex": null,
+  "rarity": "Unknown",
+  "bonusDamage": null,
+  "affectedAttributes": {},
+  "slug": "skill-thirst-for-blood",
+  "name": "",
+  "itemDropSound": "",
+  "slot": "unidentifiedSkill",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [],
+  "imageSlug": null,
+  "levelRequirement": 0,
+  "type": "SkillItemTemplate"
+}

@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 600,
+      "upper": 1000
+    },
+    "Wisdom": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "flashing-diamond-focus",
+  "name": "Flashing Diamond Focus",
+  "itemDropSound": "gem-focus",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "flashing-diamond-focus",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,23 @@
+﻿{
+  "skill": {
+    "dcxToIdentify": 1.0,
+    "id": "",
+    "type": "UnidentifiedHeroSkill"
+  },
+  "id": "0eaf396e-1e5c-4e29-9d44-c226047a4cc3",
+  "nftTokenId": 0,
+  "itemIndex": null,
+  "rarity": "Unknown",
+  "bonusDamage": null,
+  "affectedAttributes": {},
+  "slug": "skill-teleport",
+  "name": "",
+  "itemDropSound": "",
+  "slot": "unidentifiedSkill",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [],
+  "imageSlug": null,
+  "levelRequirement": 0,
+  "type": "SkillItemTemplate"
+}

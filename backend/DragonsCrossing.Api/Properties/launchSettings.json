@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:57826",
+      "sslPort": 44387
+    }
+  },
+  "profiles": {
+    "DragonsCrossing.Api": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5264",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "web3__chainRpc__80001__alchemyKey": "",
+        "web3__chainRpc__80001__name": "polygon-mumbai",
+        "web3__chainRpc__80001__rpcUrl": "https://rpc.ankr.com/polygon_mumbai"
+      }
+    }
+  }
+}

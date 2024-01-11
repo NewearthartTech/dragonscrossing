@@ -1,0 +1,47 @@
+{
+  "id": "1",
+  "areaId": "1",
+  "name": "Gargoyle",
+  "personality": "Enraged",
+  "description": "Grumbling, stumbling, filthy and ragged, this little red creature's size does little to hide the wanton violence begging to burst at the first thing that looks at him the wrong way. Today, that happens to be you.",
+  "type": "warrior",
+  "url": "/img/api/monsters/gargoyle_fiend.png",
+  "power": 6,
+  "difficultyToHit": 3,
+  "armor": "Torn Rags and Leather",
+  "items": [
+    {
+      "name": "Runed Axe",
+      "url": "/img/api/items/runed_axe",
+      "rarity": "legendary"
+    },
+    {
+      "name": "Simple Shortsword",
+      "url": "/img/api/items/simple_shortsword",
+      "rarity": "epic"
+    }
+  ],
+  "attackType": "melee",
+  "healthStatus": "Fresh",
+  "totalHitpoints": 20,
+  "currentHitpoints": 18,
+  "range": 1,
+  "damage": 3,
+  "strength": 6,
+  "totalStrength": 6,
+  "agility": 5,
+  "totalAgility": 5,
+  "wisdom": 5,
+  "totalWisdom": 5,
+  "quickness": 7,
+  "totalQuickness": 7,
+  "level": 3,
+  "skills": [
+    {
+      "id": "1",
+      "name": "Sneak",
+      "totalUses": 2,
+      "remainingUses": 2
+    }
+  ]
+}

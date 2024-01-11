@@ -1,0 +1,59 @@
+trigger:
+  -  release-beta
+
+pool:
+  vmImage: ubuntu-20.04
+
+stages:
+- stage: deploy
+
+  jobs:
+  - job: deployImage
+
+    steps:
+    - checkout: self
+      persistCredentials: true
+
+    - task: NodeTool@0
+      inputs:
+        versionSpec: '16.x'
+      displayName: 'Install Node 16'      
+
+    - script: |
+        cp $(Build.Repository.LocalPath)/.npmrc.cicd.template $(Build.Repository.LocalPath)/.npmrc
+      displayName: 'copy npmrc'
+      failOnStderr: true
+
+    - task: npmAuthenticate@0
+      inputs:
+        workingFile: .npmrc
+
+    - task: Docker@2
+      displayName: Login to ACR
+      inputs:
+        command: login
+        containerRegistry: 'newEarthAzureContRegistryUsingPassword'
+
+
+    - script: |
+        FRONTEND_VER=`cat ./package.json | grep -m 1 version | sed 's/[^0-9.]//g'`
+        yarn
+        SERVER_VER=`npm list @dcx/dcx-backend |grep dcx-backend|grep -o 'dcx-backend@.*' |cut -f2- -d@`
+        CONTRACTS_VER=`npm list @dcx/dcx-contracts |grep dcx-contracts|grep -o 'dcx-contracts@.*' |cut -f2- -d@`
+        echo "using server $SERVER_VER ,  contracts  $CONTRACTS_VER frontend $FRONTEND_VER"
+        cp ./deploy/toBeta.k8-template.yml $(Agent.TempDirectory)/toBeta.k8.yml
+        sed -i "s/__TAG__SERVER/$SERVER_VER/" $(Agent.TempDirectory)/toBeta.k8.yml
+        sed -i "s/__TAG__CONTRACTS/$CONTRACTS_VER/" $(Agent.TempDirectory)/toBeta.k8.yml
+        sed -i "s/__TAG__FRONTEND/$FRONTEND_VER/" $(Agent.TempDirectory)/toBeta.k8.yml
+
+      displayName: 'prepare kubectl file'
+#      failOnStderr: false
+
+    - task: Kubernetes@1
+      displayName: kubectl apply
+      inputs:
+        connectionType: Kubernetes Service Connection
+        kubernetesServiceEndpoint: k8-do-new2
+        command: apply
+        arguments: -f $(Agent.TempDirectory)/toBeta.k8.yml    
+

@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 700,
+      "upper": 950
+    },
+    "DodgeRate": {
+      "lower": 400,
+      "upper": 650
+    },
+    "CriticalHitRate": {
+      "lower": 900,
+      "upper": 1200
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "tarnished-silver-ring",
+  "name": "Tarnished Silver Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "tarnished-silver-ring",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

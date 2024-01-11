@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 675,
+      "upper": 1050
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "steel-parrying-dagger",
+  "name": "Steel Parrying Dagger",
+  "itemDropSound": "metal-weapon",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "steel-parrying-dagger",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

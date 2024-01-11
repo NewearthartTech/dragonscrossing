@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 675,
+      "upper": 855
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "HitPoints": {
+      "lower": 3,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "red-targe",
+  "name": "Red Targe",
+  "itemDropSound": "metal-weapon",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "red-targe",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

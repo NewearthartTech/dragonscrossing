@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 900,
+      "upper": 1080
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "horizons-wild-prairie-coat",
+  "name": "Horizon's Wild Prairie Coat",
+  "itemDropSound": "leathers",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "horizons-wild-prairie-coat",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

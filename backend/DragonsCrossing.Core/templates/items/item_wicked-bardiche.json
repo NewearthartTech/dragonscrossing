@@ -1,0 +1,36 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "CriticalHitRate": {
+      "lower": 520,
+      "upper": 720
+    },
+    "HitPoints": {
+      "lower": 3,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "wicked-bardiche",
+  "name": "Wicked Bardiche",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "wicked-bardiche",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

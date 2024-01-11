@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 350,
+      "upper": 550
+    },
+    "DodgeRate": {
+      "lower": 125,
+      "upper": 225
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 400
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "discarded-wedding-loop",
+  "name": "Discarded Wedding Loop",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "discarded-wedding-loop",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

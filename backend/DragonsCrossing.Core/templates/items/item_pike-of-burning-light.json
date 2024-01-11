@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "CriticalHitRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "pike-of-burning-light",
+  "name": "Pike of Burning Light",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "pike-of-burning-light",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

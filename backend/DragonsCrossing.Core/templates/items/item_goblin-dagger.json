@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 300,
+      "upper": 485
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "goblin-dagger",
+  "name": "Goblin Dagger",
+  "itemDropSound": "metal-weapon",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "goblin-dagger",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

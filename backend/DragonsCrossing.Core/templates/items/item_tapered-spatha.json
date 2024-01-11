@@ -1,0 +1,27 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": null,
+  "slug": "tapered-spatha",
+  "name": "Tapered Spatha",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "tapered-spatha",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

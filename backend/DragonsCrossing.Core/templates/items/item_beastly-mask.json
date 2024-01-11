@@ -1,0 +1,35 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 400,
+      "upper": 600
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 2
+    },
+    "Quickness": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "beastly-mask",
+  "name": "Beastly Mask",
+  "itemDropSound": "leather-helmet",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "beastly-mask",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

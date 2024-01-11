@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1000,
+      "upper": 1500
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    },
+    "ParryRate": {
+      "lower": 400,
+      "upper": 750
+    },
+    "Charisma": {
+      "lower": 4,
+      "upper": 6
+    },
+    "Wisdom": {
+      "lower": 4,
+      "upper": 6
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "wise-walkers-of-diligence",
+  "name": "Wise Walkers of Diligence",
+  "itemDropSound": "sandals",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "wise-walkers-of-diligence",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

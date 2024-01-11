@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 600,
+      "upper": 800
+    },
+    "DodgeRate": {
+      "lower": 400,
+      "upper": 650
+    },
+    "CriticalHitRate": {
+      "lower": 1000,
+      "upper": 1400
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 3,
+      "upper": 5
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "band-of-perfect-light",
+  "name": "Band of Perfect Light",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "band-of-perfect-light",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

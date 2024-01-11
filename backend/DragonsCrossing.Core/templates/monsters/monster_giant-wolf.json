@@ -1,0 +1,133 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 59,
+    "upper": 70
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 500
+  },
+  "ChanceToDodge": {
+    "lower": 600,
+    "upper": 800
+  },
+  "DifficultyToHit": {
+    "lower": 2400,
+    "upper": 3000
+  },
+  "CritChance": {
+    "lower": 1400,
+    "upper": 1800
+  },
+  "ParryChance": {
+    "lower": 100,
+    "upper": 300
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 15
+  },
+  "Quickness": {
+    "lower": 14,
+    "upper": 22
+  },
+  "Level": {
+    "lower": 11,
+    "upper": 13
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 700,
+    "upper": 1300
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 7
+  },
+  "BonusDamage": {
+    "lower": 3,
+    "upper": 5
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 2500
+  },
+  "LootItemsTemplates": {
+    "item_wicked-bardiche.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_iron-greaves-and-boots.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_orichalcum-cube.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_cowhide-boots.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_dallans-winter-razor.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_the-blood-infused-kris.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Giant Wolf",
+  "MonsterSlug": "giant-wolf",
+  "Description": "It's fearsome. It's gray. It's big, and it's furry. Yep, that's a giant wolf.",
+  "MonsterItems": [
+    "Eerily Sharp Teeth"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "LocationTile": 17,
+  "SpecialAbility": {
+    "Id": 22,
+    "SoundSlug": "savage",
+    "Name": "Savage",
+    "Description": "Reduces Hero dodge by 90% for 2 rounds. Increases Monster chance to hit by 25% for 2 rounds. Increases Monster bonus damage by 35% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q4_ChanceToDodge",
+        "FriendlyStatName": "Chance to Dodge",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -9000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q3_ChanceToHit",
+        "FriendlyStatName": "Chance to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 3500,
+        "Duration": 1
+      }
+    ]
+  }
+}

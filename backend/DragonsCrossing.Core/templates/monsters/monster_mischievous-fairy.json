@@ -1,0 +1,122 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 20,
+    "upper": 25
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 1400,
+    "upper": 2000
+  },
+  "DifficultyToHit": {
+    "lower": 2500,
+    "upper": 3200
+  },
+  "CritChance": {
+    "lower": 1400,
+    "upper": 1800
+  },
+  "ParryChance": {
+    "lower": 100,
+    "upper": 150
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 12,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 4,
+    "upper": 5
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1600,
+    "upper": 2100
+  },
+  "ArmorMitigationAmount": {
+    "lower": 1,
+    "upper": 2
+  },
+  "BonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1000,
+    "upper": 2000
+  },
+  "LootItemsTemplates": {
+    "item_skullcap.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_wieldy-bastard.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_starchy-robes.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_pike-of-burning-light.json": {
+      "ChancesOfDrop": 250
+    },
+    "item_the-starfold-hat.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-apply-poultice.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-improvised-trap.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-pocket-sand.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Mischievous Fairy",
+  "MonsterSlug": "mischievous-fairy",
+  "Description": "A fairy! It flits about, laughing merrily, enjoying life with a wild abandon you find yourself jealous of. ",
+  "MonsterItems": [
+    "Dainty, Magic Hands"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "LocationTile": 8,
+  "SpecialAbility": {
+    "Id": 8,
+    "SoundSlug": "earpiercing-laughter",
+    "Name": "Earpiercing Laughter",
+    "Description": "Increases Monster damage by 50% for 1 round, and reduces Hero Armor Mitigation Chance by 80% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "The monster will deal 50% bonus damage for 1 round.",
+        "AffectAmount": 5000,
+        "Duration": 1
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -8000,
+        "Duration": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 37,
+    "upper": 45
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 400,
+    "upper": 750
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2800
+  },
+  "CritChance": {
+    "lower": 700,
+    "upper": 1000
+  },
+  "ParryChance": {
+    "lower": 100,
+    "upper": 300
+  },
+  "Charisma": {
+    "lower": 15,
+    "upper": 20
+  },
+  "Quickness": {
+    "lower": 12,
+    "upper": 18
+  },
+  "Level": {
+    "lower": 9,
+    "upper": 11
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1300,
+    "upper": 1900
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 4
+  },
+  "BonusDamage": {
+    "lower": 2,
+    "upper": 3
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_seax.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_heater-shield.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_broad-axe.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_wasting-wise-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_defiant-boots-of-the-third-war.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_hrothgars-sorrow-promise-ring.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Fallen Faun",
+  "MonsterSlug": "fallen-faun",
+  "Description": "After inspecting it very briefly, you feel very grateful that the bottom half is the part that's a goat.",
+  "MonsterItems": [
+    "Pan Flute",
+    "Alchemic Potions"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 12,
+  "SpecialAbility": {
+    "Id": 18,
+    "SoundSlug": "headbash",
+    "Name": "Headbash",
+    "Description": "Reduces Hero Armor Mitigation Chance by 25% for 3 rounds. Increases Monster Mitigation Chance by 25% for 3 rounds. Increases Monster Damage by 30% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -2500,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 3000,
+        "Duration": 1
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2500,
+        "Duration": 3
+      }
+    ]
+  }
+}

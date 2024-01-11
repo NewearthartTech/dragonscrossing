@@ -1,0 +1,114 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 32,
+    "upper": 51
+  },
+  "ChanceToHit": {
+    "lower": 150,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 300,
+    "upper": 500
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2800
+  },
+  "CritChance": {
+    "lower": 350,
+    "upper": 550
+  },
+  "ParryChance": {
+    "lower": 200,
+    "upper": 600
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 13,
+    "upper": 16
+  },
+  "Level": {
+    "lower": 6,
+    "upper": 7
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1300,
+    "upper": 1900
+  },
+  "ArmorMitigationAmount": {
+    "lower": 3,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 3,
+    "upper": 3
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1500,
+    "upper": 2000
+  },
+  "LootItemsTemplates": {
+    "item_balanced-pike.json": {
+      "ChancesOfDrop": 1950
+    },
+    "item_dancing-rapier.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_heavy-arm-buckler.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_smokeform-robes.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_ring-of-barriers.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-second-wind.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-rending-blow.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-run-like-the-wind.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Beastmaster",
+  "MonsterSlug": "beastmaster",
+  "Description": "This man has tamed some tigers. You might have thought it eccentric, or even charming, but the tigers look hungry, and so does the beastmaster. Things look destined for violence.",
+  "MonsterItems": [
+    "Axe and Buckler"
+  ],
+  "AppearChance": 1000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 8,
+  "SpecialAbility": {
+    "Id": 12,
+    "SoundSlug": "maul",
+    "Name": "Maul",
+    "Description": "Increases Monster damage by 30% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "The monster will deal 30% bonus damage for 1 round.",
+        "AffectAmount": 3000,
+        "Duration": 1
+      }
+    ]
+  }
+}

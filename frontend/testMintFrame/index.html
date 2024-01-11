@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dragon's Crossing</title>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <meta charset="utf-8" />
+    <meta content="Home" property="og:title" />
+    <meta content="Home" property="twitter:title" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="Webflow" name="generator" />
+
+    <style>
+      #inserted-mint {
+        display: none;
+      }
+      #inserted-mint-boosted {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Static web page</h2>
+    <div>
+      <button onClick="openMintForm()">MINT</button>
+      <button onClick="openBoostedMintForm()">BOOSTED MINT</button>
+      <div
+        id="inserted-mint"
+        style="position: fixed; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0, 0, 0); color: black"
+      >
+        <div>
+          <button style="cursor: pointer; position: fixed; right: 6px; top: 6px; height: 38px; width: 38px; z-index: 1000" onclick="closeMintForm()">
+            <span style="position: absolute; font-size: 30px; font-weight: 800; top: -5px; left: 5px;">X</span>
+          </button>
+        </div>
+        <iframe
+          style="position: absolute; width: 100%; height: 100%; border: none"
+          src="http://localhost:3000/mint"
+        ></iframe>
+      </div>
+      <div
+        id="inserted-mint-boosted"
+        style="position: fixed; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0, 0, 0); color: black"
+      >
+        <div>
+          <button style="cursor: pointer; position: fixed; right: 6px; top: 6px; height: 38px; width: 38px; z-index: 1000" onclick="closeBoostedMintForm()">
+            <span style="position: absolute; font-size: 30px; font-weight: 800; top: -5px; left: 5px;">X</span>
+          </button>
+        </div>
+        <iframe
+          style="position: absolute; width: 100%; height: 100%; border: none"
+          src="http://localhost:3000/boosted-mint"
+        ></iframe>
+      </div>
+
+      <script>
+        function openMintForm() {
+          document.getElementById("inserted-mint").style.display = "block";
+        }
+        function closeMintForm() {
+          document.getElementById("inserted-mint").style.display = "none";
+        }
+        function openBoostedMintForm() {
+          document.getElementById("inserted-mint-boosted").style.display = "block";
+        }
+        function closeBoostedMintForm() {
+          document.getElementById("inserted-mint-boosted").style.display = "none";
+        }
+      </script>
+    </div>
+  </body>
+</html>

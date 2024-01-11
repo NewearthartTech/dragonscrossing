@@ -1,0 +1,136 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 125,
+    "upper": 135
+  },
+  "ChanceToHit": {
+    "lower": 325,
+    "upper": 325
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 2000,
+    "upper": 2800
+  },
+  "CritChance": {
+    "lower": 1600,
+    "upper": 2100
+  },
+  "ParryChance": {
+    "lower": 200,
+    "upper": 500
+  },
+  "Charisma": {
+    "lower": 17,
+    "upper": 26
+  },
+  "Quickness": {
+    "lower": 14,
+    "upper": 21
+  },
+  "Level": {
+    "lower": 15,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 2200,
+    "upper": 3400
+  },
+  "ArmorMitigationAmount": {
+    "lower": 9,
+    "upper": 9
+  },
+  "BonusDamage": {
+    "lower": 8,
+    "upper": 9
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2500,
+    "upper": 2500
+  },
+  "LootItemsTemplates": {
+    "item_ring-of-the-arena.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_glass-striding-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_band-of-perfect-light.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_dallans-winter-razor.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_the-blood-infused-kris.json": {
+      "ChancesOfDrop": 1300
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Moros, God of Impending Doom",
+  "MonsterSlug": "moros-god-of-impending-doom",
+  "Description": "Is your adventure destined for death? Will Cocytus save you in this fight? An uneasy anxiety grips you, one you are unaccustomed to.",
+  "MonsterItems": [
+    "Violence Overwhelming",
+    "Spear of Destiny"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 39,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "fate-of-mortals",
+    "Name": "Fate of Mortals",
+    "Description": "Reduces Hero dodge by 80% for 5 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+"Statname": "Q4_ChanceToDodge",
+"FriendlyStatName": "Chance to Dodge",
+"Description": "FILL THIS IN",
+"AffectAmount": -8000,
+"Duration": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 300,
+      "upper": 500
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 2
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "strong-guards-helm",
+  "name": "Strong Guard's Helm",
+  "itemDropSound": "metal-helm",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "strong-guards-helm",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

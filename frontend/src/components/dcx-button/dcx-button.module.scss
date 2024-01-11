@@ -1,0 +1,63 @@
+@use "@/styles/variables" as v;
+
+.actionButtonContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionButton {
+  position: absolute;
+  left: 1px;
+}
+
+.hoverLayer {
+  position: absolute;
+}
+
+.hoverLayer:hover {
+  background-color: v.$color-black;
+  border-radius: 2px;
+  opacity: 0.4;
+}
+
+.disableButton {
+  position: absolute;
+  border-radius: 2px;
+  opacity: 0.4;
+  background-color: v.$color-black;
+}
+
+.inactiveButton {
+  position: absolute;
+  border-radius: 2px;
+  opacity: 0.4;
+  background-color: v.$color-very-dark-gray;
+}
+
+.inactiveButton:hover {
+  position: absolute;
+  border-radius: 2px;
+  opacity: 0;
+  background-color: v.$color-very-dark-gray;
+}
+
+.borderLeftArrow {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 12px;
+  cursor: pointer;
+}
+
+.borderRightArrow {
+  position: absolute;
+  top: 35%;
+  width: 12px;
+}
+
+.actionButtonText {
+  position: absolute;
+  color: v.$color-white;
+}

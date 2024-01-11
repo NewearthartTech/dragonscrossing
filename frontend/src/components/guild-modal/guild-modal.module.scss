@@ -1,0 +1,204 @@
+@use "@/styles/variables" as v;
+$extraLarge: 1669px;
+$medium: 1199px;
+$small: 899px;
+$extraSmall: 599px;
+
+// Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.summoningMainContainer {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 380px;
+  @media screen and (max-width: $medium) {
+    width: 380px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 360px;
+  }
+  padding: 0;
+  margin: 0;
+}
+
+.skillsMainContainer {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 705px;
+  height: 540px;
+  @media screen and (max-width: $medium) {
+    width: 470px;
+    height: 380px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+.summoningCloseButtonContainer {
+  position: absolute;
+  right: -20px;
+  top: 2px;
+  height: 25px;
+  width: 25px;
+  margin-top: 4px;
+  cursor: pointer;
+  z-index: 1;
+  @media screen and (max-width: $extraSmall) {
+    right: 1px;
+  }
+}
+
+.skillsCloseButtonContainer {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  height: 25px;
+  width: 25px;
+  margin-top: 4px;
+  cursor: pointer;
+  z-index: 1;
+  @media screen and (max-width: $extraSmall) {
+    right: 1px;
+  }
+}
+
+.summoningCloseButtonContainer:hover,
+.skillsCloseButtonContainer:hover {
+  opacity: 0.7;
+}
+
+.summoningContainer {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 535px;
+  @media screen and (max-width: $medium) {
+    height: 255px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    height: 280px;
+  }
+}
+
+.identifyContainer {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  width: 705px;
+  height: 500px;
+  @media screen and (max-width: $medium) {
+    height: 329px;
+    width: 485px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    height: 310px;
+    width: 270px;
+  }
+}
+
+.shadowContainer {
+  position: absolute;
+  // box-shadow: 3px 2px 10px 5px v.$color-black;
+  box-shadow: 3px 3px 5px 1px v.$color-black;
+  border-radius: 10px;
+  width: 680px;
+  height: 475px;
+  @media screen and (max-width: $medium) {
+    left: 2px;
+    top: 0px;
+    height: 326px;
+    width: 460px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    left: 2px;
+    top: 0px;
+    height: 303px;
+    width: 252px;
+  }
+}
+
+.guildButtonsContainer {
+  position: relative;
+  justify-content: space-around;
+  width: 360px;
+  margin-bottom: 5px;
+  @media screen and (max-width: $medium) {
+    margin-left: -10px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    margin-left: -40px;
+    width: 340px;
+  }
+}
+
+.summoningTabContainer {
+  position: absolute;
+  justify-content: center;
+  width: 360px;
+  top: -7px;
+  @media screen and (max-width: $medium) {
+    top: -2px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    top: -4px;
+  }
+}
+
+.identifyTabContainer {
+  position: absolute;
+  justify-content: center;
+  top: 20px;
+  width: 670px;
+  height: 455px;
+  @media screen and (max-width: $medium) {
+    width: 450px;
+    height: 300px;
+    top: 12px;
+    left: 10px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 240px;
+    height: 280px;
+    top: 12px;
+    left: 8px;
+  }
+}
+
+.skillsBackgroundContainer {
+  position: absolute;
+  top: -31px;
+  width: 705px;
+  height: 515px;
+  @media screen and (max-width: $medium) {
+    width: 475px;
+    height: 325px;
+    top: -25px;
+    left: -15px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 270px;
+    height: 315px;
+    top: -17px;
+    left: -14px;
+  }
+}

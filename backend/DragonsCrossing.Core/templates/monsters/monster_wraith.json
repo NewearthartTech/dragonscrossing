@@ -1,0 +1,144 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 84,
+    "upper": 91
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 500,
+    "upper": 800
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 900,
+    "upper": 1500
+  },
+  "ParryChance": {
+    "lower": 400,
+    "upper": 600
+  },
+  "Charisma": {
+    "lower": 15,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 16,
+    "upper": 19
+  },
+  "Level": {
+    "lower": 10,
+    "upper": 12
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1700,
+    "upper": 2300
+  },
+  "ArmorMitigationAmount": {
+    "lower": 6,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 5,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_ring-of-ruin.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_wasting-wise-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_greediest-flamberge.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_sunstriking-kopis.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_flashing-diamond-focus.json": {
+      "ChancesOfDrop": 1300
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Wraith",
+  "MonsterSlug": "wraith",
+  "Description": "This wraith must have died a horrible death--its face is locked in a perpetual grimace of pain, and it casts a sickly, green pale all around itself. ",
+  "MonsterItems": [
+    "Arcane Energies",
+    "Malice"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 13,
+  "SpecialAbility": {
+    "Id": 20,
+    "SoundSlug": "horrifying-scream",
+    "Name": "Horrifying Scream",
+    "Description": "Reduces Hero Bonus Damage by 33% for 2 rounds. Increases Monster Difficulty to Hit by 20% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -3300,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q3_DifficultyToHit",
+        "FriendlyStatName": "Difficulty to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2000,
+        "Duration": 2
+      }
+    ]
+  }
+}

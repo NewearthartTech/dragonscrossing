@@ -1,0 +1,31 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 250,
+      "upper": 250
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": "wildPrairie",
+  "slug": "unironically-hideous-cap",
+  "name": "Unironically Hideous Cap",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "leather-cap",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,44 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "Wisdom": {
+      "lower": 2,
+      "upper": 4
+    },
+    "CriticalHitRate": {
+      "lower": 520,
+      "upper": 720
+    },
+    "HitPoints": {
+      "lower": 3,
+      "upper": 4
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "prides-fallen-rod",
+  "name": "Pride's Fallen Rod",
+  "itemDropSound": "wand-rod",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "prides-fallen-rod",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

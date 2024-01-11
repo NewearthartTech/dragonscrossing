@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "Charisma": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "mahogany-wand",
+  "name": "Mahogany Wand",
+  "itemDropSound": "wand-rod",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "mahogany-wand",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

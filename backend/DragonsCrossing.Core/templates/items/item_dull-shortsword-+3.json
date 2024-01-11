@@ -1,0 +1,26 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": "treacherousPeaks",
+  "slug": "dull-shortsword-+3",
+  "name": "Dull Shortsword +3",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "simple-shortsword",
+  "levelRequirement": 10,
+  "type": "ItemTemplate"
+}

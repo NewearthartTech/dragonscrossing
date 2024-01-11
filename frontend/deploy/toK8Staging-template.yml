@@ -1,0 +1,540 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: rabbitmq
+  namespace: dcx-staging
+spec:
+  selector:
+    matchLabels:
+      app: rabbitmq
+  serviceName: rabbitmq
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rabbitmq
+    spec:
+      containers:
+        - image: masstransit/rabbitmq
+          name: rabbitmq
+
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+
+          env:
+            - name: RABBITMQ_DEFAULT_USER
+              value: admin
+            - name: RABBITMQ_DEFAULT_PASS
+              value: admin
+
+          volumeMounts:
+            - name: rabbitmq-data
+              mountPath: /var/lib/rabbitmq
+
+  volumeClaimTemplates:
+    - metadata:
+        name: rabbitmq-data
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq
+  namespace: dcx-staging
+spec:
+  ports:
+    - port: 5672
+  selector:
+    app: rabbitmq
+  clusterIP: None
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: mongodb
+  namespace: dcx-staging
+spec:
+  clusterIP: None
+  ports:
+    - port: 27017
+  selector:
+    app: mongodb
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mongodb-node
+  namespace: dcx-staging
+spec:
+  serviceName: mongodb
+  selector:
+    matchLabels:
+      app: mongodb
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+        - name: mongodb-node
+          image: mongo:4.4
+          command: ["/usr/bin/mongod", "--replSet", "rs0", "--bind_ip_all"]
+          volumeMounts:
+            - mountPath: "/data/db"
+              name: mongo-data
+          ports:
+            - containerPort: 27017
+
+  volumeClaimTemplates:
+    - metadata:
+        name: mongo-data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dcx-server
+  namespace: dcx-staging
+  labels:
+    app: dcx-server
+
+spec:
+  selector:
+    matchLabels:
+      app: dcx-server
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dcx-server
+    spec:
+      imagePullSecrets:
+        - name: newearthcb-azurecr
+
+      containers:
+        - name: dcx-server
+          image: newearthcb.azurecr.io/dcx-server:__TAG__SERVER
+
+          env:
+            - name: mongo__connectionString
+              value: "mongodb://mongodb?connect=direct"
+
+            - name: rabbitmq__host
+              value: "rabbitmq"
+
+            - name: redis__connectionString
+              value: "redis:6379"
+
+            - name: ASPNETCORE_hostBuilder__reloadConfigOnChange
+              value: "false"
+
+            - name: login__PrivateKey
+              value: "XXXXXXXXXXXXXXXXX"
+
+            - name: summonHero__allowSummoning
+              value: "true"
+
+            - name: combat__enableMendrakeRoot
+              value: "true"
+
+            - name: web3__defaultChainId
+              value: "80001"
+
+            - name: web3__chainRpc__80001__name
+              value: "polygon-mumbai"
+            - name: web3__chainRpc__80001__rpcUrl
+              value: "https://rpc.ankr.com/polygon_mumbai"
+            - name: web3__chainRpc__80001__alchemyKey
+              value: "XXXXXXXXXXXXXXXXX"
+
+            - name: web3__contractsForChain__1.0.1313.0__80001__DcxHeroContract
+              value: "0xf7eb8217098b110e0caf7ca6d235269a6e218266"
+            - name: web3__contractsForChain__1.0.1313.0__80001__TokenomicsContract
+              value: "0xD19c7FEB139e4F2F81D5ACD6B96FBaf3094A80D1"
+            - name: web3__contractsForChain__1.0.1313.0__80001__DcxItemsContract
+              value: "0x9eb406b86172c65ee609cd2d978fce2788ca04c4"
+            - name: web3__contractsForChain__1.0.1313.0__80001__dcxTokenContract
+              value: "0x14cea1f2A1D0C197397b2251Fd0B1eE97e27f3e8"
+            - name: web3__contractsForChain__1.0.1313.0__80001__DcxDfkItemsContract
+              value: "0x15F47EE973341803127074D9E9CF8b1A332C35B5"
+            
+            - name: web3__contractsForChain__1.0.1313.0__53935__dcxTokenContract
+              value: "0x3AD9DFE640E1A9Cc1D9B0948620820D975c3803a"
+            
+            - name: web3__devMode
+              value: "true"
+
+            - name: web3__serverPrivateKey
+              valueFrom:
+                secretKeyRef:
+                  name: web3-creds
+                  key: w3PrivateKey
+
+            - name: web3__metaDataBaseURI
+              value: "https://main.staging.dragonscrossing.com/api/metadata/"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dcx-web
+  namespace: dcx-staging
+  labels:
+    app: dcx-web
+
+spec:
+  selector:
+    matchLabels:
+      app: dcx-web
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: dcx-web
+    spec:
+      imagePullSecrets:
+        - name: newearthcb-azurecr
+
+      containers:
+        - name: dcx-web
+          image: newearthcb.azurecr.io/dcx-web:__TAG__FRONTEND
+
+          env:
+            - name: NEXT_PUBLIC_API
+              value: "."
+
+            - name: NEXT_PUBLIC_AVAX_FUJI_RPC_URL
+              value: "https://api.avax-test.network/ext/bc/C/rpc"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dcx-server
+  namespace: dcx-staging
+spec:
+  ports:
+    - name: http
+      port: 80
+  selector:
+    app: dcx-server
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dcx-web
+  namespace: dcx-staging
+spec:
+  ports:
+    - name: http
+      port: 3000
+  selector:
+    app: dcx-web
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dcx-staging-ingress-all
+  namespace: dcx-staging
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  tls:
+    - hosts:
+        - main.staging.dragonscrossing.com
+      secretName: dcx-staging-tls-main
+
+  rules:
+    - host: main.staging.dragonscrossing.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: dcx-web
+                port:
+                  number: 3000
+
+          - pathType: Prefix
+            path: "/api"
+            backend:
+              service:
+                name: dcx-server
+                port:
+                  number: 80
+
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: elasticsearch
+  namespace: dcx-staging
+spec:
+  selector:
+    matchLabels:
+      app: elasticsearch
+  serviceName: elasticsearch
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      securityContext:
+        fsGroup: 1000
+
+      initContainers:
+        - name: init-sysctl
+          image: busybox
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            privileged: true
+          command: ["sysctl", "-w", "vm.max_map_count=262144"]
+
+      containers:
+        - image: docker.elastic.co/elasticsearch/elasticsearch:8.6.0
+          name: elasticsearch
+          securityContext:
+            privileged: true
+            runAsUser: 1000
+            capabilities:
+              add:
+                - IPC_LOCK
+                - SYS_RESOURCE
+
+          ports:
+            - containerPort: 9200
+
+          env:
+            - name: bootstrap.memory_lock
+              value: "false"
+            - name: xpack.security.enabled
+              value: "false"
+            - name: discovery.type
+              value: "single-node"
+            - name: ES_JAVA_OPTS
+              value: "-Xmx256m -Xms256m"
+
+          volumeMounts:
+            - name: elasticsearch-data
+              mountPath: /usr/share/elasticsearch/data
+
+          readinessProbe:
+            httpGet:
+              scheme: HTTP
+              path: /_cluster/health?local=true
+              port: 9200
+            initialDelaySeconds: 5
+
+  #          resources:
+  #            requests:
+  #              memory: "500Mi"
+
+  volumeClaimTemplates:
+    - metadata:
+        name: elasticsearch-data
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 6Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch
+  namespace: dcx-staging
+spec:
+  ports:
+    - port: 9200
+  selector:
+    app: elasticsearch
+  clusterIP: None
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kibana-data-pvc
+  namespace: dcx-staging
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+  namespace: dcx-staging
+  labels:
+    app: kibana
+spec:
+  selector:
+    matchLabels:
+      app: kibana
+  strategy:
+    type: Recreate
+
+  template:
+    metadata:
+      labels:
+        app: kibana
+    spec:
+      containers:
+        - image: docker.elastic.co/kibana/kibana:8.6.0
+          name: kibana
+          ports:
+            - containerPort: 5601
+          env:
+            - name: ELASTICSEARCH_HOSTS
+              value: http://elasticsearch:9200
+
+      # We will populate kibana soon
+      #          volumeMounts:
+      #            - mountPath: /usr/share/kibana/config
+      #              name: kibana-data
+      #              subPath: config
+      #            - mountPath: /usr/share/kibana/data
+      #              name: kibana-data
+      #              subPath: data
+
+      volumes:
+        - name: kibana-data
+          persistentVolumeClaim:
+            claimName: kibana-data-pvc
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana
+  namespace: dcx-staging
+spec:
+  ports:
+    - port: 5601
+  selector:
+    app: kibana
+  clusterIP: None
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dcx-kibana-staging-ingress
+  namespace: dcx-staging
+  annotations:
+    nginx.ingress.kubernetes.io/auth-type: basic
+    nginx.ingress.kubernetes.io/auth-secret: basic-auth
+    nginx.ingress.kubernetes.io/auth-realm: "Authentication Required - coreDevOnly"
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  tls:
+    - hosts:
+        - kibana-main.staging.dragonscrossing.com
+      secretName: dcx-staging-tls-kibana-main
+
+  rules:
+    - host: kibana-main.staging.dragonscrossing.com
+      http:
+        paths:
+          - pathType: Exact
+            path: "/"
+            backend:
+              service:
+                name: kibana
+                port:
+                  number: 5601
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dcx-staging-ingress-kibana-all
+  namespace: dcx-staging
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  tls:
+    - hosts:
+        - kibana-main.staging.dragonscrossing.com
+      secretName: dcx-staging-tls-kibana-main
+
+  rules:
+    - host: kibana-main.staging.dragonscrossing.com
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
+            backend:
+              service:
+                name: kibana
+                port:
+                  number: 5601
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: dcx-staging
+  labels:
+    app: redis
+spec:
+  selector:
+    matchLabels:
+      app: redis
+  strategy:
+    type: Recreate
+
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+        - image: redis:6.2-alpine
+
+          name: redis
+          ports:
+            - containerPort: 6379
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: dcx-staging
+spec:
+  ports:
+    - port: 6379
+  selector:
+    app: redis
+  clusterIP: None

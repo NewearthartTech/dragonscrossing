@@ -1,0 +1,24 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": null,
+  "slug": "simple-shortsword",
+  "name": "Simple Shortsword",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "simple-shortsword",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

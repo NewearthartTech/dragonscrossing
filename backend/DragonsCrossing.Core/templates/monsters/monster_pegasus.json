@@ -1,0 +1,144 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 84,
+    "upper": 91
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 200
+  },
+  "ChanceToDodge": {
+    "lower": 500,
+    "upper": 800
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 1000,
+    "upper": 1400
+  },
+  "ParryChance": {
+    "lower": 400,
+    "upper": 600
+  },
+  "Charisma": {
+    "lower": 15,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 16,
+    "upper": 19
+  },
+  "Level": {
+    "lower": 10,
+    "upper": 12
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1700,
+    "upper": 2300
+  },
+  "ArmorMitigationAmount": {
+    "lower": 6,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 6,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2300,
+    "upper": 2700
+  },
+  "LootItemsTemplates": {
+    "item_ring-of-ruin.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_wasting-wise-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_greediest-flamberge.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_sunstriking-kopis.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_flashing-diamond-focus.json": {
+      "ChancesOfDrop": 1300
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Pegasus",
+  "MonsterSlug": "pegasus",
+  "Description": "A horse that flies would be an invaluable companion on your journeys. Unfortunately, this one wants to fight and would be impossible to tame.",
+  "MonsterItems": [
+    "Winged Majesty",
+    "Unbreakable Hooves"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 32,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "glorious-dive",
+    "Name": "Glorious Dive",
+    "Description": "Increases Monster Bonus Damage by 25% for 2 rounds. Increases Monster Parry by 80% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 8000,
+        "Duration": 2
+      }
+    ]
+  }
+}

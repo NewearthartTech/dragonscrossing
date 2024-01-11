@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 3
+  },
+  "affectedAttributes": {
+    "Wisdom": {
+      "lower": 3,
+      "upper": 5
+    },
+    "ParryRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "CriticalHitRate": {
+      "lower": 700,
+      "upper": 900
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "archmaguss-skeletal-staff",
+  "name": "Archmagus's Skeletal Staff",
+  "itemDropSound": "staff",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 20
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "archmaguss-skeletal-staff",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

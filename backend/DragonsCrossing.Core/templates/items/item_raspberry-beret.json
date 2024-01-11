@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1600,
+      "upper": 2400
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "raspberry-beret",
+  "name": "Raspberry Beret",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "raspberry-beret",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

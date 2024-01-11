@@ -1,0 +1,36 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "Charisma": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "crackling-oak-wand",
+  "name": "Crackling Oak Wand",
+  "itemDropSound": "wand-rod",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "crackling-oak-wand",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

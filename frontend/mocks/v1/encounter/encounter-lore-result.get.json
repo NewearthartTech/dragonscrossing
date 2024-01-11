@@ -1,0 +1,10 @@
+{
+  "answerText": "You can call us Travelers. We protect a realm known as Dragon's Crossing. The affairs of men, elves, and other creatures do not interest us so long as they honor our only law: stay out of Dragon's Crossing. Otherwise, we are happy to observe, and even offer occasional advice.",
+    "gameState": {
+      "slug": "enchantedFields",
+      "zone": {
+        "slug": "wildPrairie",
+        "tiles": []
+      }
+    }
+  }

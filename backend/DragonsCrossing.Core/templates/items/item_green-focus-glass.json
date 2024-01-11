@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 260,
+      "upper": 525
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "green-focus-glass",
+  "name": "Green Focus Glass",
+  "itemDropSound": "gem-focus",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "green-focus-glass",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

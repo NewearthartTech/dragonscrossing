@@ -1,0 +1,185 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$medium: 1199px;
+
+.main {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  justify-content: center;
+  height: 500px;
+  width: 385px;
+}
+
+.topLeft {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.topRight {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+.bottomLeft {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+}
+
+.header {
+  position: absolute;
+  top: -10px;
+  left: 100px;
+}
+
+.headerText {
+  position: absolute;
+  color: v.$color-light-gray;
+  left: 145px;
+  top: -9px;
+  font-size: 20px;
+}
+
+.lootedDcxContainer {
+  position: absolute;
+  top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dcx {
+  color: v.$color-danger-red;
+  font-size: 20px;
+}
+
+.dcxLogoContainer {
+  height: 20px;
+  width: 20px;
+  margin-left: 7px;
+  margin-bottom: 2px;
+}
+
+.wordSpacing {
+  padding-right: 11px;
+}
+
+.topSeparator {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  height: 8px;
+  width: 300px;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  border-radius: 25px;
+}
+
+.bottomSeparator {
+  position: absolute;
+  bottom: 100px;
+  left: 40px;
+  height: 8px;
+  width: 300px;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  border-radius: 25px;
+}
+
+.itemsContainer {
+  position: absolute;
+  width: 240px;
+  top: 130px;
+  left: 78px;
+}
+
+.itemContainer {
+  height: 70px;
+  width: 70px;
+  margin-right: 10px;
+  margin-bottom: 14px;
+}
+
+.noItemsMessageContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  left: 28px;
+  height: 240px;
+  top: 130px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.noItemsMessage {
+  color: v.$color-light-gray;
+  font-size: 18px;
+  text-align: center;
+}
+
+.takeAll {
+  position: absolute;
+  left: 45px;
+  bottom: 40px;
+}
+
+.doneLooting {
+  position: absolute;
+  left: 215px;
+  bottom: 40px;
+}
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContainer {
+  position: relative;
+  justify-content: center;
+  height: 110px;
+  width: 210px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.confirmationBackground {
+  position: absolute;
+}
+
+.confirmText {
+  position: absolute;
+  text-align: center;
+  width: 190px;
+  color: v.$color-light-gray;
+  line-height: 16px;
+  top: 12px;
+}
+
+.confirmDone {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.leaveContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

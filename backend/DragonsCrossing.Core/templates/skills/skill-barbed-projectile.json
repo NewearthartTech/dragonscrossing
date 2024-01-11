@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_barbed_projectile",
+  "slug": "skill-barbed-projectile",
+  "name": "Barbed Projectile",
+  "description": "Deals 1D4 + (Agility / 9) damage and deals an additional 1D4 damage per round for 3 rounds.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 1,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

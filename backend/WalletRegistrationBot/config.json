@@ -1,0 +1,12 @@
+{
+  "discord_configs": {
+    "guild_ids": [955874248008798310],
+    "client_token": "MTA3NjY3Nzg5NTYyNTM3OTkxMA.GV4orr.joBDiwtMhnreKizCI5Sq3mjzD-cFVEmWbCHqSg",
+    "role_name": "Whitelist"
+  },
+  "google_configs": {
+    "spreadsheet_id": "1b1ItrlI-nfItgOPzDb7j8Qygjkf6qgdX5cchK6t6q9k",
+    "codes_range": "Codes",
+    "registrations_range": "Registrations"
+  }
+}

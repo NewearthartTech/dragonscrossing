@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 300,
+      "upper": 450
+    },
+    "ArmorMitigationAmount": {
+      "lower": 1,
+      "upper": 1
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "sturdy-shield",
+  "name": "Sturdy Shield",
+  "itemDropSound": "shield",
+  "slot": "offHand",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "sturdy-shield",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

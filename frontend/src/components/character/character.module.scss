@@ -1,0 +1,414 @@
+@use "@/styles/variables" as v;
+$extra-large: 1669px;
+$small: 899px;
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.characterContainer {
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 680px;
+  max-height: 100vh;
+  @media screen and (max-width: $extra-large) {
+    width: 780px;
+    height: 620px;
+  }
+  @media screen and (max-width: $small) {
+    width: 388px;
+    height: 600px;
+  }
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.subContainer {
+  justify-content: center;
+}
+
+.cardContainer {
+  width: 450px;
+  height: 680px;
+  padding-right: 10px;
+  @media screen and (max-width: $extra-large) {
+    width: 400px;
+    height: 620px;
+    padding-right: 16px;
+  }
+  @media screen and (max-width: $small) {
+    margin-bottom: -30px;
+    padding-right: 2px;
+  }
+  position: relative;
+}
+
+.windowLeftBackground {
+  position: absolute;
+  height: 680px;
+  width: 444px;
+  @media screen and (max-width: $extra-large) {
+    height: 620px;
+    width: 390px;
+  }
+}
+
+.windowRightBackgroundStats {
+  position: absolute;
+}
+
+.windowRightBackgroundSkills {
+  position: absolute;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  right: 24px;
+  top: 17px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.closeButtonContainerSmall {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.closeButtonContainer:hover,
+.closeButtonContainerSmall:hover {
+  opacity: 0.6;
+}
+
+.heroCardContainer {
+  position: absolute;
+  top: 38px;
+  left: -13px;
+  @media screen and (max-width: $extra-large) {
+    top: 36px;
+    left: -19px;
+  }
+  @media screen and (max-width: $small) {
+    left: -13px;
+  }
+}
+
+.hpBar {
+  position: absolute;
+  bottom: 63px;
+  left: -13px;
+  @media screen and (max-width: $extra-large) {
+    bottom: 61px;
+    left: -19px;
+  }
+  @media screen and (max-width: $small) {
+    left: -13px;
+  }
+}
+
+.xpBar {
+  position: absolute;
+  bottom: 26px;
+  left: -13px;
+  @media screen and (max-width: $extra-large) {
+    bottom: 24px;
+    left: -19px;
+  }
+  @media screen and (max-width: $small) {
+    left: -13px;
+  }
+}
+
+.attributesContainer {
+  width: 444px;
+  height: 674px;
+  margin-left: -10px;
+  @media screen and (max-width: $extra-large) {
+    width: 370px;
+    height: 605px;
+    margin-left: -15px;
+  }
+  @media screen and (max-width: $small) {
+    margin-top: 4px;
+    margin-left: -24px;
+  }
+}
+
+.statsContainer {
+  position: relative;
+  width: 444px;
+  height: 381px;
+  margin-top: 12px;
+  @media screen and (max-width: $extra-large) {
+    width: 381px;
+    height: 350px;
+    margin-top: 11px;
+    right: 2px;
+  }
+  @media screen and (max-width: $small) {
+    left: 6px;
+  }
+}
+
+.statsHeaderContainer {
+  position: absolute;
+  top: -18px;
+  @media screen and (max-width: $extra-large) {
+    top: -11px;
+  }
+}
+
+.skillsContainer {
+  position: relative;
+  width: 444px;
+  height: 265px;
+  margin-top: 2px;
+  @media screen and (max-width: $extra-large) {
+    width: 381px;
+    height: 238px;
+    margin-top: 3px;
+    right: 2px;
+  }
+  @media screen and (max-width: $small) {
+    left: 6px;
+  }
+}
+
+.statsHeaderBackground {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 30px;
+  @media screen and (max-width: $extra-large) {
+    top: 21px;
+  }
+}
+
+.statsHeader {
+  position: absolute;
+  font-size: 22px;
+  top: 31px;
+  left: 200px;
+  @media screen and (max-width: $extra-large) {
+    top: 22px;
+    left: 170px;
+  }
+  color: v.$color-gold;
+}
+
+.statDescriptionButtonPlusContainer {
+  position: absolute;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  left: 310px;
+  top: 39px;
+  @media screen and (max-width: $extra-large) {
+    left: 283px;
+    top: 29px;
+  }
+}
+
+.statDescriptionButtonMinusContainer {
+  position: absolute;
+  cursor: pointer;
+  height: 10px;
+  width: 18px;
+  left: 310px;
+  top: 43px;
+  @media screen and (max-width: $extra-large) {
+    left: 283px;
+    top: 33px;
+  }
+}
+
+.statDescriptionButtonPlusContainer:hover,
+.statDescriptionButtonMinusContainer:hover {
+  opacity: 0.4;
+}
+
+.statDescriptionContainer {
+  position: absolute;
+  z-index: 2;
+  height: 260px;
+  width: 374px;
+  top: 50px;
+  left: 33px;
+  @media screen and (max-width: $extra-large) {
+    top: 40px;
+    left: 0px;
+  }
+}
+
+.statDescriptionShadowContainer {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  height: 247px;
+  width: 365px;
+  box-shadow: 4px 4px 5px 1px v.$color-black;
+}
+
+.descriptionsContainer {
+  position: absolute;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+}
+
+.descriptionRow {
+  padding-bottom: 2px;
+}
+
+.descriptionHeader {
+  color: v.$color-gold;
+}
+
+.descriptionText {
+  color: v.$color-light-gray;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.skillsHeaderContainer {
+  position: absolute;
+  top: -20px;
+  @media screen and (max-width: $extra-large) {
+    top: -13px;
+  }
+}
+
+.skillsHeaderBackground {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 31px;
+  @media screen and (max-width: $extra-large) {
+    top: 22px;
+  }
+}
+
+.skillsHeader {
+  position: absolute;
+  font-size: 22px;
+  top: 32px;
+  left: 197px;
+  @media screen and (max-width: $extra-large) {
+    left: 167px;
+    top: 23px;
+  }
+  color: v.$color-gold;
+}
+
+.statContainer {
+  position: absolute;
+  top: 54px;
+  @media screen and (max-width: $extra-large) {
+    top: 50px;
+  }
+}
+
+.stat {
+  color: v.$color-gray;
+  font-size: 16px;
+  line-height: 19.5px;
+  @media screen and (max-width: $extra-large) {
+    line-height: 18px;
+  }
+}
+
+.statWhite {
+  color: v.$color-white;
+  font-size: 16px;
+  line-height: 19.5px;
+  @media screen and (max-width: $extra-large) {
+    line-height: 18px;
+  }
+}
+
+.categoryRow {
+  padding-left: 35px;
+  padding-right: 40px;
+  justify-content: space-between;
+}
+
+.categoryHeader {
+  color: v.$color-gold;
+  font-size: 17px;
+  line-height: 20px;
+  @media screen and (max-width: $extra-large) {
+    line-height: 19px;
+  }
+}
+
+.statRow {
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+}
+
+.skills {
+  position: absolute;
+  color: v.$color-light-gray;
+  top: 92px;
+  @media screen and (max-width: $extra-large) {
+    top: 87px;
+  }
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.skillCategoryHeaders {
+  position: absolute;
+  color: v.$color-light-gray;
+  top: 58px;
+  @media screen and (max-width: $extra-large) {
+    top: 55px;
+  }
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px;
+}
+
+.skillDivider {
+  position: absolute;
+  top: 82px;
+  left: 35px;
+  width: 375px;
+  @media screen and (max-width: $extra-large) {
+    width: 315px;
+    top: 78px;
+  }
+  border-bottom: solid 1px v.$color-light-gray;
+}
+
+.skillRow {
+  padding-bottom: 3px;
+  font-size: 16px;
+  height: 24px;
+}
+
+.uses {
+  text-align: right;
+}
+
+.skillDescription {
+  cursor: pointer;
+}
+
+.clickableImage {
+  cursor: pointer;
+}

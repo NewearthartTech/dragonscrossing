@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "Charisma": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "finnars-spellsword-of-despair",
+  "name": "Finnar's Spellsword of Despair",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "finnars-spellsword-of-despair",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

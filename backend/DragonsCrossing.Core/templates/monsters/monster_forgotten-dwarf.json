@@ -1,0 +1,125 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 15,
+    "upper": 20
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 2800
+  },
+  "CritChance": {
+    "lower": 300,
+    "upper": 500
+  },
+  "ParryChance": {
+    "lower": 500,
+    "upper": 700
+  },
+  "Charisma": {
+    "lower": 1,
+    "upper": 5
+  },
+  "Quickness": {
+    "lower": 4,
+    "upper": 9
+  },
+  "Level": {
+    "lower": 1,
+    "upper": 2
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1300,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 1,
+    "upper": 1
+  },
+  "BonusDamage": {
+    "lower": 1,
+    "upper": 2
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1000,
+    "upper": 2000
+  },
+  "LootItemsTemplates": {
+    "item_heavy-greatsword.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_glowing-staff.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_shoddy-mail.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_wise-glowing-staff.json": {
+      "ChancesOfDrop": 250
+    },
+    "item_used-steel-toes.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_brawny-stubborn-iron-ring.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-mental-knit.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-force-shield.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-magic-missile.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Forgotten Dwarf",
+  "MonsterSlug": "forgotten-dwarf",
+  "Description": "Dwarves, or dwarfs? Big beards and heavy boots seem to be their thing. This one doesn't look too happy to see you.",
+  "MonsterItems": [
+    "Hammer"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "LocationTile": 1,
+  "SpecialAbility": {
+    "Id": 3,
+    "SoundSlug": "dangerous-delve",
+    "Name": "Dangerous Delve",
+    "Description": "Reduces Player armor mitigation by 100% for 2 rounds, and Monster mitigation by 100% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation",
+        "Description": "Reduces Armor Mitigation by 100% for 2 rounds.",
+        "AffectAmount": -10000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation",
+        "Description": "Reduces Armor Mitigation by 100% for 1 round.",
+        "AffectAmount": -10000,
+        "Duration": 1
+      }
+    ]
+  }
+}

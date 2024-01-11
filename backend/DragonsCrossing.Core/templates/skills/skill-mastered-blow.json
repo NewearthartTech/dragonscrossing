@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_mastered_blow",
+  "slug": "skill-mastered-blow",
+  "name": "Mastered Blow",
+  "description": "3D4 + (Strength / 5)",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 7,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

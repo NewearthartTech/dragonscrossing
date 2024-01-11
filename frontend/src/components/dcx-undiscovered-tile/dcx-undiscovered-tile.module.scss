@@ -1,0 +1,56 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+
+.tileContainer {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 305px;
+  width: 425px;
+  @media screen and (max-width: $extraSmall) {
+    height: 232px;
+    width: 323px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tileBorderContainer {
+  position: absolute;
+  z-index: 2;
+  height: 295px;
+  width: 412px;
+  @media screen and (max-width: $extraSmall) {
+    height: 225px;
+    width: 316px;
+  }
+}
+
+.tileImageContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+  margin-bottom: 6px;
+  z-index: 1;
+  background-color: v.$color-dark-gray;
+  height: 238px;
+  width: 371px;
+  @media screen and (max-width: $extraSmall) {
+    height: 180.5px;
+    width: 282px;
+  }
+}
+
+.icon {
+  font-size: 60px;
+  color: v.$color-light-gray;
+}

@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "Agility": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "sunstriking-kopis",
+  "name": "Sunstriking Kopis",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "sunstriking-kopis",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

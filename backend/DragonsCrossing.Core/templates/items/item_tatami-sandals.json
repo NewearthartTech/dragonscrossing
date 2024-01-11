@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 800,
+      "upper": 1200
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 3
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "tatami-sandals",
+  "name": "Tatami Sandals",
+  "itemDropSound": "sandals",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "tatami-sandals",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

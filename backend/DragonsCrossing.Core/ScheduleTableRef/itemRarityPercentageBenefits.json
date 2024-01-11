@@ -1,0 +1,68 @@
+{
+  "Common": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 0,
+      "mysteriousForest": 0,
+      "foulWastes": 0,
+      "treacherousPeaks": 0,
+      "darkTower": 0,
+      "unknown": 0
+    }
+  },
+  "Uncommon": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 175,
+      "mysteriousForest": 225,
+      "foulWastes": 275,
+      "treacherousPeaks": 325,
+      "darkTower": 375,
+      "unknown": 0
+    }
+  },
+  "Rare": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 250,
+      "mysteriousForest": 325,
+      "foulWastes": 400,
+      "treacherousPeaks": 475,
+      "darkTower": 550,
+      "unknown": 0
+    }
+  },
+  "Legendary": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 325,
+      "mysteriousForest": 425,
+      "foulWastes": 525,
+      "treacherousPeaks": 625,
+      "darkTower": 725,
+      "unknown": 0
+    }
+  },
+  "Mythic": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 350,
+      "mysteriousForest": 475,
+      "foulWastes": 600,
+      "treacherousPeaks": 725,
+      "darkTower": 850,
+      "unknown": 0
+    }
+  },
+  "Unknown": {
+    "zoneBoost": {
+      "aedos": 0,
+      "wildPrairie": 0,
+      "mysteriousForest": 0,
+      "foulWastes": 0,
+      "treacherousPeaks": 0,
+      "darkTower": 0,
+      "unknown": 0
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@use "@/styles/variables" as v;
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 120px;
+  width: 250px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.transactionRowsContainer {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.transactionRow {
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.amountContainer {
+  width: 75%;
+  justify-content: flex-end;
+}
+
+.inputFieldContainer {
+  height: 25px;
+  width: 100%;
+}
+
+.detailText {
+  color: v.$color-light-gray;
+}
+
+.buttonContainer {
+  justify-content: center;
+}

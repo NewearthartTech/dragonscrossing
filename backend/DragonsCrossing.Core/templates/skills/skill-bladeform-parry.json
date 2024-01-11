@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_bladeform_parry",
+  "slug": "skill-bladeform-parry",
+  "name": "Bladeform Parry",
+  "description": "Inceases chance to parry by ((Strength + Quickness) * 4)% for 3 rounds.",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 7,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

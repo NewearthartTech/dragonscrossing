@@ -1,0 +1,47 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1000,
+      "upper": 1500
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "DodgeRate": {
+      "lower": 150,
+      "upper": 300
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "pull-up-gray-leather-boots",
+  "name": "Pull up Gray Leather Boots",
+  "itemDropSound": "leather-boots",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "pull-up-gray-leather-boots",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

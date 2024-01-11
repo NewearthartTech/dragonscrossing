@@ -1,0 +1,10 @@
+{
+    "description": "As you your hand comes in contact with the orb, you feel cleansed. You feel a righteous strength fill you, and you know you must discover more about the world of Horizon. You gain 1 additional quest for today.",
+    "gameState": {
+      "slug": "enchantedFields",
+      "zone": {
+        "slug": "wildPrairie",
+        "tiles": []
+      }
+    }
+  }

@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 3
+  },
+  "affectedAttributes": {
+    "Strength": {
+      "lower": 3,
+      "upper": 5
+    },
+    "ParryRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "CriticalHitRate": {
+      "lower": 700,
+      "upper": 900
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "the-facelifter-heirloom-of-horizon",
+  "name": "The Facelifter, Heirloom of Horizon",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 20
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "the-facelifter-heirloom-of-horizon",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

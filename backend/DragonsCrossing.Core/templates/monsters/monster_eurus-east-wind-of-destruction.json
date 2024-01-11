@@ -1,0 +1,161 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 155,
+    "upper": 175
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 200
+  },
+  "ChanceToDodge": {
+    "lower": 50,
+    "upper": 150
+  },
+  "DifficultyToHit": {
+    "lower": 900,
+    "upper": 1400
+  },
+  "CritChance": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "ParryChance": {
+    "lower": 600,
+    "upper": 900
+  },
+  "Charisma": {
+    "lower": 97,
+    "upper": 124
+  },
+  "Quickness": {
+    "lower": 15,
+    "upper": 22
+  },
+  "Level": {
+    "lower": 17,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 3300,
+    "upper": 4100
+  },
+  "ArmorMitigationAmount": {
+    "lower": 12,
+    "upper": 12
+  },
+  "BonusDamage": {
+    "lower": 10,
+    "upper": 10
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_fearsome-zweihander.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_crystal-adorned-elm-staff.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_quick-loading-arbalest.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_prides-fallen-rod.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_phantom-visage-of-the-corrupted-aedosian.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_vest-of-ominous-glory.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_wise-walkers-of-diligence.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_fallen-aedosians-treacherous-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Eurus, East Wind of Destruction",
+  "MonsterSlug": "eurus-east-wind-of-destruction",
+  "Description": "A strange wind blows across your face and you sense your own death is dangerously close. ",
+  "MonsterItems": [
+    "Wings of Command",
+    "Lance of Destruction"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 40,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "east-wind-bloweth",
+    "Name": "East Wind Bloweth",
+    "Description": "Increases Monster chance to hit and difficulty to hit by 80% for 4 rounds. Increases Monster bonus damage by 40% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+"AffectType": "Monster",
+"Statname": "Q3_ChanceToHit",
+"FriendlyStatName": "Chance to Hit",
+"Description": "FILL THIS IN",
+"AffectAmount": 8000,
+"Duration": 4
+},    
+{
+"AffectType": "Monster",
+"Statname": "Q3_DifficultyToHit",
+"FriendlyStatName": "Difficulty to Hit",
+"Description": "FILL THIS IN",
+"AffectAmount": 8000,
+"Duration": 4
+},    
+{   
+"AffectType": "Monster",
+"Statname": "Q8_BonusDamage",
+"FriendlyStatName": "Bonus Damage",
+"Description": "FILL THIS IN",
+"AffectAmount": 4000,
+"Duration": 3
+      }
+    ]
+  }
+}

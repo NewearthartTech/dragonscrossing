@@ -1,0 +1,35 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 900,
+      "upper": 1080
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 5
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "smooth-ring-mail",
+  "name": "Smooth Ring Mail",
+  "itemDropSound": "mail",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "smooth-ring-mail",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

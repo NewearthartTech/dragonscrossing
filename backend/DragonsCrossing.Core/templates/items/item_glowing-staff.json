@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "HitPoints": {
+      "lower": 1,
+      "upper": 2
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 350
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "glowing-staff",
+  "name": "Glowing Staff",
+  "itemDropSound": "staff",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "glowing-staff",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

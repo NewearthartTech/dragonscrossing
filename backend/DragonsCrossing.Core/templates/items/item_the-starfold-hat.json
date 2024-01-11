@@ -1,0 +1,47 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 600,
+      "upper": 1000
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "DodgeRate": {
+      "lower": 100,
+      "upper": 200
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "the-starfold-hat",
+  "name": "The Starfold Hat",
+  "itemDropSound": "leather-helmet",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "the-starfold-hat",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,31 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1620,
+      "upper": 1620
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": "treacherousPeaks",
+  "slug": "hand-me-down-leathers-+3",
+  "name": "Hand me down Leathers +3",
+  "itemDropSound": "leathers",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "broken-in-leathers",
+  "levelRequirement": 10,
+  "type": "ItemTemplate"
+}

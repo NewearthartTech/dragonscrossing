@@ -1,0 +1,118 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 37,
+    "upper": 39
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 700,
+    "upper": 1000
+  },
+  "DifficultyToHit": {
+    "lower": 1800,
+    "upper": 3200
+  },
+  "CritChance": {
+    "lower": 1000,
+    "upper": 1300
+  },
+  "ParryChance": {
+    "lower": 300,
+    "upper": 400
+  },
+  "Charisma": {
+    "lower": 10,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 7,
+    "upper": 9
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1000,
+    "upper": 1700
+  },
+  "ArmorMitigationAmount": {
+    "lower": 3,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 4,
+    "upper": 4
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2200,
+    "upper": 2800
+  },
+  "LootItemsTemplates": {
+    "item_tight-headband.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_gambeson.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_quilted-cloth-armor.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_black-sabatons.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_sunstriking-kopis.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_flashing-diamond-focus.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Unicorn",
+  "MonsterSlug": "unicorn",
+  "Description": "You've heard only the pure in heart; the innocent, can approach them without being attacked or fled from. After what you've done to get where you are, you doubt you qualify.",
+  "MonsterItems": [
+    "Majestic Coat",
+    "Sharp Horn"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 31,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "awe",
+    "Name": "Awe",
+    "Description": "Reduces Hero Bonus Damage by 50% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 3
+      }
+    ]
+  }
+}

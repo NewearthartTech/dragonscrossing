@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "DodgeRate": {
+      "lower": 125,
+      "upper": 225
+    },
+    "CriticalHitRate": {
+      "lower": 250,
+      "upper": 450
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 3
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "brawny-stubborn-iron-ring",
+  "name": "Brawny Stubborn Iron Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "brawny-stubborn-iron-ring",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

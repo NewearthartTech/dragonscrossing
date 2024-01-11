@@ -1,0 +1,120 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+$medium: 1199px;
+
+.main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.itemsContainer {
+  position: absolute;
+  margin-left: 85px;
+  margin-top: 20px;
+  height: 430px;
+  width: 750px;
+  @media screen and (max-width: $medium) {
+    margin-left: 2px;
+    width: 480px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 250px;
+  }
+}
+
+.sellDidContainer{
+  position: relative;
+}
+
+.sellSelectedIcon{
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  color: v.$color-blue;
+  font-size: 26px;
+}
+
+.noItemsMessageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noItemsMessage {
+  color: v.$color-light-gray;
+  font-size: 20px;
+}
+
+// Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmModalContainer {
+  position: relative;
+  height: 125px;
+  width: 262.5px;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.confirmContainer {
+  position: absolute;
+  justify-content: space-between;
+  width: 160px;
+  top: 16px;
+}
+
+.headerText {
+  color: v.$color-light-gray;
+  line-height: 20px;
+}
+
+.itemName {
+  color: v.$color-blue;
+}
+
+.goldText {
+  color: v.$color-gold;
+}
+
+.confirmButton {
+  position: absolute;
+  bottom: 10px;
+  justify-content: center;
+}
+
+.transactionModalContainer {
+  position: relative;
+  height: 80px;
+  width: 168px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.transactionContainer {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.failedMessage {
+  color: v.$color-danger-red;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}

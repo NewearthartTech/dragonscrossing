@@ -1,0 +1,26 @@
+@use "@/styles/variables" as v;
+
+.main {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+
+.opaqueContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  opacity: 0.5;
+}

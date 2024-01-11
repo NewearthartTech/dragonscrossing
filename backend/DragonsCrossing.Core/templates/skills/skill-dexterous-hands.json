@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_dexterous_hands",
+  "slug": "skill-dexterous-hands",
+  "name": "Dexterous Hands",
+  "description": "Increases Hero Crit by 40% + (Agility / 2)% for 3 rounds. Increases Hero Parry by (Strength)% for 3 rounds.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 3,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 7,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

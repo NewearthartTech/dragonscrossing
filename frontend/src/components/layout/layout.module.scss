@@ -1,0 +1,88 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+
+.main {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  background-color: v.$color-dark-gray;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.dailyResetTimeContainer {
+  position: fixed;
+  top: 5px;
+  left: 7px;
+  z-index: 10;
+  height: 34px;
+  width: 80px;
+  justify-content: center;
+}
+
+.disconnectWalletContainer {
+  position: fixed;
+  top: 42px;
+  right: 8px;
+  z-index: 10;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: v.$color-light-gray;
+}
+
+.tooltipContainer {
+  position: fixed;
+  height: 28px;
+  width: 80px;
+  top: 8px;
+  left: 7px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.appVersionContainer {
+  position: fixed;
+  top: 5px;
+  right: 7px;
+  z-index: 10;
+  height: 34px;
+  width: 100px;
+  justify-content: center;
+}
+
+.timeText {
+  position: absolute;
+  color: v.$color-gold;
+  font-size: 20px;
+  margin-top: 2px;
+  letter-spacing: 0.8px;
+}
+
+.headerContainer {
+  position: fixed;
+  top: 10px;
+  z-index: 10;
+  height: 24px;
+  justify-content: center;
+}
+
+.addressText {
+  position: absolute;
+  color: v.$color-gold;
+  font-size: 18px;
+  margin-top: -1px;
+  letter-spacing: 0.8px;
+}
+
+.page {
+  display: flex;
+}
+
+.pageNoFooter {
+  display: flex;
+}

@@ -1,0 +1,158 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 150,
+    "upper": 170
+  },
+  "ChanceToHit": {
+    "lower": 400,
+    "upper": 500
+  },
+  "ChanceToDodge": {
+    "lower": 1000,
+    "upper": 1200
+  },
+  "DifficultyToHit": {
+    "lower": 2500,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 1800,
+    "upper": 2500
+  },
+  "ParryChance": {
+    "lower": 1200,
+    "upper": 1750
+  },
+  "Charisma": {
+    "lower": 49,
+    "upper": 60
+  },
+  "Quickness": {
+    "lower": 30,
+    "upper": 30
+  },
+  "Level": {
+    "lower": 19,
+    "upper": 20
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 4000,
+    "upper": 5000
+  },
+  "ArmorMitigationAmount": {
+    "lower": 7,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 7,
+    "upper": 10
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_thundering-dark-mail-of-ending.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_stormfury-archbane-plate-walkers.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_takhs-shattering-spark-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_renyas-blushing-lily-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_the-infinite-moon-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "skill-thirst-for-blood.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-riposte.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-mastered-blow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-adhesive-application.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sniper.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-custom-poisons.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-fireball.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-ice-tomb.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-hasty-wish.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Fallen Aedosian",
+  "MonsterSlug": "fallen-aedosian",
+  "Description": "\"Can you not see?\" the Aedosian exclaims. \"Abaddon's way is the only way. He is the power here, we are the visitors, clambering about a world we do not understand. He has lived for eons, and will live for eons more! I cannot allow you to interfere with me, or him.\"",
+  "MonsterItems": [
+    "Sinful Mace",
+    "Arcane Energies"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 23,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "magical-enhancement",
+    "Name": "Magical Enhancement",
+    "Description": "Increases Monster Bonus Damage, Parry, and Crit by 20% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Crit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2000,
+        "Duration": 2
+      }
+    ]
+  }
+}

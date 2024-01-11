@@ -1,0 +1,26 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": "wildPrairie",
+  "slug": "dull-shortsword",
+  "name": "Dull Shortsword",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "simple-shortsword",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

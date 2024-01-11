@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_insidious_distraction",
+  "slug": "skill-insidious-distraction",
+  "name": "Insidious Distraction",
+  "description": "Deal 2D6 + Quickness / 5",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 7,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

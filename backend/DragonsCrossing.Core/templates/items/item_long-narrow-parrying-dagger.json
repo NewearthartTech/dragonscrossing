@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 900,
+      "upper": 1200
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "long-narrow-parrying-dagger",
+  "name": "Long Narrow Parrying Dagger",
+  "itemDropSound": "metal-weapon",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "long-narrow-parrying-dagger",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

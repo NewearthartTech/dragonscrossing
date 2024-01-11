@@ -1,0 +1,47 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2970,
+      "upper": 4050
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 7
+    },
+    "DodgeRate": {
+      "lower": 200,
+      "upper": 300
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 5,
+      "upper": 7
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "sorcerios-ruby-robes",
+  "name": "Sorcerio's Ruby Robes",
+  "itemDropSound": "cloth-robes",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "sorcerios-ruby-robes",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

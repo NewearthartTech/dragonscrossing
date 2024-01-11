@@ -1,0 +1,134 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 50,
+    "upper": 60
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 200
+  },
+  "ChanceToDodge": {
+    "lower": 300,
+    "upper": 500
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 800,
+    "upper": 1200
+  },
+  "ParryChance": {
+    "lower": 600,
+    "upper": 800
+  },
+  "Charisma": {
+    "lower": 20,
+    "upper": 25
+  },
+  "Quickness": {
+    "lower": 15,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 9,
+    "upper": 11
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1700,
+    "upper": 2400
+  },
+  "ArmorMitigationAmount": {
+    "lower": 5,
+    "upper": 7
+  },
+  "BonusDamage": {
+    "lower": 4,
+    "upper": 6
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2500,
+    "upper": 3500
+  },
+  "LootItemsTemplates": {
+    "item_stubborn-copper-ring.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_flared-kopis.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_tatami-sandals.json": {
+      "ChancesOfDrop": 1800
+    },
+    "item_greediest-flamberge.json": {
+      "ChancesOfDrop": 250
+    },
+    "item_hrothgars-sorrow-promise-ring.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_helm-of-foul-undoing.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Dangerous Highwayman",
+  "MonsterSlug": "dangerous-highwayman",
+  "Description": "Perhaps your adventuring would go better if you stopped running into those that would prey on unwary travelers. It's time this highwayman learned just how wary you are.",
+  "MonsterItems": [
+    "Shortsword",
+    "Hand Crossbow"
+  ],
+  "AppearChance": 1000,
+  "DieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "LocationTile": 12,
+  "SpecialAbility": {
+    "Id": 19,
+    "SoundSlug": "dangling-dagger",
+    "Name": "Dangling Dagger",
+    "Description": "Increases Monster Crit by 100% for 1 round. Reduces Hero Parry by 100% for 1 round. Reduces Hero Armor Mitigation Chance by 35% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Crit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 10000,
+        "Duration": 1
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -10000,
+        "Duration": 1
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -3500,
+        "Duration": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": null,
+  "slug": "wieldy-bastard",
+  "name": "Wieldy Bastard",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "wieldy-bastard",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

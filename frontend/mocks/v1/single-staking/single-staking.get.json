@@ -1,0 +1,38 @@
+[
+  {
+  "poolType": "Flex",
+  "apr": 20,
+  "expirationDate": 1706667154,
+  "totalDcxStaked": 1000,
+  "totalWalletDcxStaked": 100,
+  "emissionsAllocation": 20,
+  "claimableUnlockedDcx": 3,
+  "claimableLockedDcx": 60,
+  "depositFee": 5,
+  "withdrawalFee": 8
+},
+{
+  "poolType": "Tier 1",
+  "apr": 50,
+  "expirationDate": 1706667154,
+  "totalDcxStaked": 2000,
+  "totalWalletDcxStaked": 100,
+  "emissionsAllocation": 20,
+  "claimableUnlockedDcx": 3,
+  "claimableLockedDcx": 60,
+  "depositFee": 5,
+  "withdrawalFee": 8
+},
+{
+  "poolType": "Tier 2",
+  "apr": 30,
+  "expirationDate": 1706667154,
+  "totalDcxStaked": 3000,
+  "totalWalletDcxStaked": 100,
+  "emissionsAllocation": 20,
+  "claimableUnlockedDcx": 3,
+  "claimableLockedDcx": 60,
+  "depositFee": 5,
+  "withdrawalFee": 8
+}
+]

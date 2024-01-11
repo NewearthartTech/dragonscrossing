@@ -1,0 +1,7 @@
+﻿bin/
+obj/
+./public
+
+# dev settings
+appsettings.Development.json
+deployedContracts.json

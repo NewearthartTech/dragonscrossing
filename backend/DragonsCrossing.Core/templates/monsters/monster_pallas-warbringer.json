@@ -1,0 +1,129 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 85,
+    "upper": 89
+  },
+  "ChanceToHit": {
+    "lower": 400,
+    "upper": 400
+  },
+  "ChanceToDodge": {
+    "lower": 600,
+    "upper": 1000
+  },
+  "DifficultyToHit": {
+    "lower": 1900,
+    "upper": 2700
+  },
+  "CritChance": {
+    "lower": 1700,
+    "upper": 2300
+  },
+  "ParryChance": {
+    "lower": 1900,
+    "upper": 2500
+  },
+  "Charisma": {
+    "lower": 15,
+    "upper": 25
+  },
+  "Quickness": {
+    "lower": 13,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 14,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1300,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 7,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 6,
+    "upper": 8
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 3000,
+    "upper": 4000
+  },
+  "LootItemsTemplates": {
+    "item_raspberry-beret.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_sharp-obsidian-band.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_long-narrow-parrying-dagger.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_band-of-perfect-light.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_wise-walkers-of-diligence.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_fallen-aedosians-treacherous-ring.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Pallas, Warbringer",
+  "MonsterSlug": "pallas-warbringer",
+  "Description": "Pallas looks like someone even more practiced at violence than you are. Perhaps he's been waylaying adventurers for years--it is impossible to know, but clearly he wants to fight.",
+  "MonsterItems": [
+    "Violent Aura",
+    "Cared-For Weapons and Armor"
+  ],
+  "AppearChance": 1000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 38,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "warcraft",
+    "Name": "Warcraft",
+    "Description": "Increases Monster Bonus Damage by 25% for 2 rounds. Increases Monster Chance to Hit by 80% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "Statname": "Q3_ChanceToHit",
+        "FriendlyStatName": "Chance to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 8000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "Statname": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2500,
+        "Duration": 2
+      }
+    ]
+  }
+}

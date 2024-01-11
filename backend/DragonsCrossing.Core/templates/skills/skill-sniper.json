@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_sniper",
+  "slug": "skill-sniper",
+  "name": "Sniper",
+  "description": "Increase chance to crit by (Agility * 8)% for 2 rounds and Chance to Hit by a flat 10% till the end of combat.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "Agility": {
+      "lower": 1,
+      "upper": 1
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 450
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "one-handed-ruby-claymore",
+  "name": "One Handed Ruby Claymore",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "one-handed-ruby-claymore",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

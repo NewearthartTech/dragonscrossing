@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "mysteriousForest",
+    "encounterType": "Location",
+    "encounterName": "mysteriousForest",
+    "introText": "The homeworld of the elves, orcs, and other lesser races dabbled in magic frequently. They are exiles here as much as Aedos is, cast out for their hubris.",
+    "narratedText": "The forest which rings the wild prairie is lush and wondrous. The trees look unfamiliar, and some at the edge appear to be dying. When you step in, you hear curious languages whispered in the leaves, and the wind brings the smell of adventure. The forest must have come from a world with fey and unruly creatures. You catch flashes of them wherever you step. "
+  },
+  {
+    "slug": "wildPrairie",
+    "encounterType": "Lore",
+    "narratedText": "The feeling you get from this traveler is strange, even for this new frontier of Horizon. He motions for you to come talk to him. \"Not from around here, are you?\" he asks, not expecting an answer. \"Call me Acheron, and ask me one question; I'll answer truthfully. Others of my order may not be so kind, but I think it only fair that I start you off on your journey with the right information.\" Something about this traveler reeks with power, and you cannot even consider attacking him.",
+    "dialogues": [
+      {
+        "slug": "5",
+        "questionText": "What is this \"order\" you speak of and what is their purpose?",
+        "answerText": "You can call us Travelers. We protect a realm known as Dragon's Crossing. The affairs of men, elves, and other creatures do not interest us so long as they honor our only law: stay out of Dragon's Crossing. Otherwise, we are happy to observe, and even offer occasional advice."
+      },
+      {
+        "slug": "6",
+        "questionText": "What do you know about the magical calamity that ripped Aedos from its home and placed it here in Horizon?",
+        "answerText": "The disaster that befell Aedos is the result of the hubris of the powerful. It is their folly that caused your removal from your previous realm. It was both accidental and intentional. The nexus that some tried to touch and steal from is dangerous and unpredictable, though the tragedy that Aedos has suffered was preventable. Every area you venture into is from another world that dared interfere with Dragons Crossing."
+      },
+      {
+        "slug": "7",
+        "questionText": "Is there something I should be particularly careful of while I'm off adventuring?",
+        "answerText": "There is much you should be cautious of in the world you call Horizon. First in your mind and closest to Aedos, and a grand threat, is Abaddon. He ruminates not far from here, enslaving the weak-willed and those that lust for power. The elves nearby have been scattered as a result of their conflict with him. Do not cross him lightly."
+      }
+    ]
+  }
+]

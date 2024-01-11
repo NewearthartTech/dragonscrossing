@@ -1,0 +1,31 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 800,
+      "upper": 800
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": "darkTower",
+  "slug": "ill-fitted-sandals-+4",
+  "name": "Ill Fitted Sandals +4",
+  "itemDropSound": "sandals",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "rough-slippers",
+  "levelRequirement": 14,
+  "type": "ItemTemplate"
+}

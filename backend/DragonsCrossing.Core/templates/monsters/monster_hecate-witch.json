@@ -1,0 +1,137 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 70,
+    "upper": 78
+  },
+  "ChanceToHit": {
+    "lower": 139,
+    "upper": 139
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1800,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 1000,
+    "upper": 1500
+  },
+  "ParryChance": {
+    "lower": 700,
+    "upper": 1100
+  },
+  "Charisma": {
+    "lower": 16,
+    "upper": 25
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 13,
+    "upper": 16
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "ArmorMitigationAmount": {
+    "lower": 5,
+    "upper": 7
+  },
+  "BonusDamage": {
+    "lower": 4,
+    "upper": 6
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1900,
+    "upper": 3800
+  },
+  "LootItemsTemplates": {
+    "item_jane-and-mary-brand-walking-shoes.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_steel-cervelliere.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_bright-dory-spear.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_pappenheimer.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_prides-fallen-rod.json": {
+      "ChancesOfDrop": 125
+    },
+    "item_phantom-visage-of-the-corrupted-aedosian.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Hecate, Witch",
+  "MonsterSlug": "hecate-witch",
+  "Description": "You feel an oppressive aura that is doubtless emanating from this gorgeous woman. \"I am mistress of all magic,\" you hear in your head, and you feel an urge to kneel.",
+  "MonsterItems": [
+    "Awesome Presence",
+    "Enchanted Helm and Bracelet"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 38,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "magic-of-ages",
+    "Name": "Magic of Ages",
+    "Description": "Increases Monster Armor Mitigation Amount, Parry, and Dodge by 50% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "Statname": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 3300,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Monster",
+        "Statname": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 5000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Monster",
+        "Statname": "Q4_ChanceToDodge",
+        "FriendlyStatName": "Chance to Dodge",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 5000,
+        "Duration": 3
+      }
+    ]
+  }
+}

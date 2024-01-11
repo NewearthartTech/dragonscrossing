@@ -1,0 +1,48 @@
+{
+  "id": "1",
+  "items": [
+    {
+      "id": "980",
+      "name": "Stubborn Iron Ring",
+      "type": "ring",
+      "url": "/img/api/items/stubborn_iron_ring",
+      "rarity": "uncommon",
+      "crit": 1,
+      "doubleAttack": 1,
+      "requiredLevel": 4
+    },
+    {
+      "id": "981",
+      "name": "Used Steel Toes",
+      "type": "feet",
+      "url": "/img/api/items/used_steel_toes",
+      "rarity": "common",
+      "armor": 1,
+      "dodge": 1,
+      "requiredLevel": 5
+    },
+    {
+      "id": "982",
+      "name": "Offhand Basic Mace",
+      "type": "off-hand",
+      "url": "/img/api/items/basic_mace",
+      "rarity": "epic",
+      "damage": 1,
+      "doubleAttack": 2,
+      "requiredLevel": 1
+    },
+    {
+      "id": "983",
+      "name": "Basic Short Sword",
+      "type": "main-hand",
+      "url": "/img/api/items/basic_shortsword",
+      "rarity": "legendary",
+      "damage": 3,
+      "crit": 1,
+      "doubleAttack": 2,
+      "requiredLevel": 2
+    }
+  ],
+  "gold": 53,
+  "dcx": 6
+}

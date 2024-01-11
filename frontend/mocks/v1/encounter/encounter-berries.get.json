@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "30",
+    "encounterType": "Foreign Berries",
+    "introText": "While wandering through this strange land you come across some colorful looking berries. What will you do?",
+    "choices": [
+      {
+        "slug": "5",
+        "choiceText": "Eat the berries, they look delicious!",
+        "goodOutcomeChance": 70
+      },
+      {
+        "slug": "6",
+        "choiceText": "Test the berries, I'm no fool!",
+        "goodOutcomeChance": 80
+      },
+      {
+        "slug": "7",
+        "choiceText": "Leave the berries, they're not worth the risk.",
+        "goodOutcomeChance": 100
+      }
+    ]
+  }
+]

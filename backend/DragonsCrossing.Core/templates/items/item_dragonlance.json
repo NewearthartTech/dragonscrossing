@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "CriticalHitRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "dragonlance",
+  "name": "Dragonlance",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "dragonlance",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

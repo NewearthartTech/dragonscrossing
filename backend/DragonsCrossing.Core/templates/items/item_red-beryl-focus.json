@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 500,
+      "upper": 700
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "red-beryl-focus",
+  "name": "Red Beryl Focus",
+  "itemDropSound": "gem-focus",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "red-beryl-focus",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

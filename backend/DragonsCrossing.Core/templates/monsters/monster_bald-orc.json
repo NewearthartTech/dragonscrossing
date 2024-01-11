@@ -1,0 +1,114 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 30,
+    "upper": 41
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 200,
+    "upper": 300
+  },
+  "DifficultyToHit": {
+    "lower": 1200,
+    "upper": 3000
+  },
+  "CritChance": {
+    "lower": 200,
+    "upper": 400
+  },
+  "ParryChance": {
+    "lower": 300,
+    "upper": 600
+  },
+  "Charisma": {
+    "lower": 5,
+    "upper": 12
+  },
+  "Quickness": {
+    "lower": 8,
+    "upper": 12
+  },
+  "Level": {
+    "lower": 5,
+    "upper": 6
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1100,
+    "upper": 1500
+  },
+  "ArmorMitigationAmount": {
+    "lower": 3,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 2,
+    "upper": 3
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1000,
+    "upper": 1500
+  },
+  "LootItemsTemplates": {
+    "item_steel-parrying-dagger.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_leather-cap.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_smooth-ring-mail.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_dragonlance.json": {
+      "ChancesOfDrop": 250
+    },
+    "item_smokeform-robes.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-second-wind.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-rending-blow.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-run-like-the-wind.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Bald Orc",
+  "MonsterSlug": "bald-orc",
+  "Description": "It looks like the monstrous older cousin of the goblins you've seen in the Wild Prairie. Covered in scars, he pulses with muscle and barely controlled rage, and he speaks only in grunts of anger and frustration. ",
+  "MonsterItems": [
+    "Brutal Double Axes"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 8,
+  "SpecialAbility": {
+    "Id": 9,
+    "SoundSlug": "explosive-onslaught",
+    "Name": "Explosive Onslaught",
+    "Description": "Increases Monster damage by 20% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "The monster will deal 20% bonus damage for 2 rounds.",
+        "AffectAmount": 2000,
+        "Duration": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_run_like_the_wind",
+  "slug": "skill-run-like-the-wind",
+  "name": "Run Like the Wind",
+  "description": "Guaranteed Flee Next Round.",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 4,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

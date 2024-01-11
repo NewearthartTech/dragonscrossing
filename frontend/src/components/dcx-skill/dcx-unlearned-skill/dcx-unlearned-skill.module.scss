@@ -1,0 +1,274 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+$medium: 1199px;
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @media screen and (max-width: $medium) {
+    cursor: pointer;
+  }
+}
+
+.skillImage {
+  position: absolute;
+  left: 4px;
+}
+
+.skillImageSmall {
+  position: absolute;
+  left: 1px;
+}
+
+.skillIcon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  z-index: 2;
+}
+
+.skillNameBackground {
+  position: absolute;
+  bottom: 4px;
+  background-color: v.$color-black;
+  opacity: 0.5;
+  height: 30px;
+  z-index: 2;
+}
+
+.skillNameText {
+  position: absolute;
+  bottom: 6px;
+  color: v.$color-light-gray;
+  font-size: 16px;
+  z-index: 2;
+}
+
+.skillClassSymbolContainer {
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  height: 25px;
+  width: 25px;
+}
+
+.actionsContainer {
+  position: absolute;
+}
+
+.actionsContainerBackground {
+  background-color: v.$color-black;
+  opacity: 0.5;
+}
+
+.actionButtonContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.learnActionButton {
+  width: 90px;
+}
+
+.equipActionButton {
+  width: 60px;
+}
+
+.button {
+  padding-bottom: 5px;
+}
+
+.detailsContainer {
+  margin-top: -4px;
+  position: relative;
+}
+
+.requiredStatsContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 1px;
+}
+
+.verticalDivider {
+  width: 1px;
+  height: 11px;
+  background-color: v.$color-light-gray;
+}
+
+.requiredStatsSection {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.requiredPointsText {
+  color: v.$color-light-gold;
+  font-size: 14px;
+}
+
+.warningText {
+  color: v.$color-danger-red-lightish;
+  font-size: 14px;
+}
+
+.skillDescriptionContainer {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  top: 22px;
+}
+
+.skillDescriptionText {
+  color: v.$color-light-gray;
+  font-size: 13px;
+  line-height: 12px;
+}
+
+// Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContainer {
+  height: 160px;
+  width: 290px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.learnConfirmationBackground {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 290px;
+}
+
+.learnCostContainer {
+  position: absolute;
+  top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.costContainer {
+  width: 80px;
+  justify-content: end;
+}
+
+.lineContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.confirmText {
+  color: v.$color-light-gray;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.dcxLogoContainer {
+  height: 20px;
+  width: 20px;
+  margin-left: 7px;
+  margin-top: -2px;
+}
+
+.helperTextContainer {
+}
+
+.helperText {
+  color: v.$color-light-gray;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+.learnConfirmButton {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 12px;
+}
+
+.hoverPointer {
+  cursor: pointer;
+}
+
+// Pending Transaction Modal Styles
+.pendingTransactionModalContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  height: 180px;
+  width: 300px;
+}
+
+.pendingTransactionModalContainerError {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  height: 450px;
+  width: 380px;
+}
+
+.learnSkillStatusContainer {
+  position: absolute;
+  display: inline-block;
+  overflow-wrap: break-word;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.spinnerContainer {
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.spinner {
+  color: v.$color-light-gray;
+}
+
+.message {
+  text-align: center;
+  color: v.$color-light-gray;
+  margin-top: 6px;
+}

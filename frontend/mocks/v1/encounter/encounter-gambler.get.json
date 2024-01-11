@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "32",
+    "encounterType": "Gambler",
+    "introText": "A hooded individual of indeterminate heritage approaches you and offers you the chance to double your money. You can't place their accent, but you definitely recognize their lust for currency.",
+    "choices": [
+      {
+        "slug": "11",
+        "choiceText": "Throw some dice, and wager 10/100/1000 gold. Let's see if you can double this.",
+        "goodOutcomeChance": 51
+      },
+      {
+        "slug": "12",
+        "choiceText": "Attempt a swindle by suggesting a convoluted arrangement of odds that leaves you more favored.",
+        "goodOutcomeChance": 30
+      },
+      {
+        "slug": "13",
+        "choiceText": "Refuse to engage in this destructive vice.",
+        "goodOutcomeChance": 100
+      }
+    ]
+  }
+]

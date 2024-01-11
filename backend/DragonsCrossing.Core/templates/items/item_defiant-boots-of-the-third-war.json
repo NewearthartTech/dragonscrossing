@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 700,
+      "upper": 1100
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 4
+    },
+    "CriticalHitRate": {
+      "lower": 100,
+      "upper": 200
+    },
+    "Quickness": {
+      "lower": 3,
+      "upper": 5
+    },
+    "Agility": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "defiant-boots-of-the-third-war",
+  "name": "Defiant Boots of the Third War",
+  "itemDropSound": "leather-boots",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "defiant-boots-of-the-third-war",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

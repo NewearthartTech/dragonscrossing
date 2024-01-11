@@ -1,0 +1,136 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 80,
+    "upper": 100
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 300
+  },
+  "DifficultyToHit": {
+    "lower": 1000,
+    "upper": 1900
+  },
+  "CritChance": {
+    "lower": 2000,
+    "upper": 2200
+  },
+  "ParryChance": {
+    "lower": 100,
+    "upper": 300
+  },
+  "Charisma": {
+    "lower": 18,
+    "upper": 24
+  },
+  "Quickness": {
+    "lower": 15,
+    "upper": 22
+  },
+  "Level": {
+    "lower": 15,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 2000,
+    "upper": 2500
+  },
+  "ArmorMitigationAmount": {
+    "lower": 6,
+    "upper": 10
+  },
+  "BonusDamage": {
+    "lower": 4,
+    "upper": 6
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 3300,
+    "upper": 4200
+  },
+  "LootItemsTemplates": {
+    "item_tattered-leather-loop.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_handsome-vest-of-leather.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_red-cotton-robes.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_glass-striding-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_vest-of-ominous-glory.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_wise-walkers-of-diligence.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Winter Grizzly",
+  "MonsterSlug": "winter-grizzly",
+  "Description": "Bears, it seems, are not just native to your home world. Horizon's bears look even bigger, and even more apex, somehow. ",
+  "MonsterItems": [
+    "Bear Claws"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 8
+    },
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 17,
+  "SpecialAbility": {
+    "Id": 26,
+    "SoundSlug": "thick-claws",
+    "Name": "Thick Claws",
+    "Description": "Decreases Hero armor mitigation amount and armor mitigation chance by 40% for 3 rounds. Increased Monster bonus damage by 40% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -4000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -4000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 4000,
+        "Duration": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 450,
+      "upper": 750
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 3
+    },
+    "ParryRate": {
+      "lower": 300,
+      "upper": 400
+    },
+    "Strength": {
+      "lower": 3,
+      "upper": 5
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "greaves-of-miracles",
+  "name": "Greaves of Miracles",
+  "itemDropSound": "stompers",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "greaves-of-miracles",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

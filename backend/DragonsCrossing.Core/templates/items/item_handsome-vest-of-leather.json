@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1980,
+      "upper": 2880
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "handsome-vest-of-leather",
+  "name": "Handsome Vest of Leather",
+  "itemDropSound": "leathers",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "handsome-vest-of-leather",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

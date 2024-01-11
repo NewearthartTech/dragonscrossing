@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 810,
+      "upper": 1080
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    },
+    "HitPoints": {
+      "lower": 4,
+      "upper": 5
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "balanced-red-and-black-kite-shield",
+  "name": "Balanced Red and Black Kite Shield",
+  "itemDropSound": "shield",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "balanced-red-and-black-kite-shield",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

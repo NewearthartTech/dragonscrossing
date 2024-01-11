@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_thunderous_bellow",
+  "slug": "skill-thunderous-bellow",
+  "name": "Thunderous Bellow",
+  "description": "Reduce the monster's parry and dodge by ((Strength + Wisdom) / 1.5 )% for 2 rounds. Increases Hero parry by (Charisma / 1.5) % until the end of combat.",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 7,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

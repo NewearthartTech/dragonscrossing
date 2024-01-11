@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigationAmount": {
+      "lower": 1,
+      "upper": 1
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "agile-simple-shortsword",
+  "name": "Agile Simple Shortsword",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "agile-simple-shortsword",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

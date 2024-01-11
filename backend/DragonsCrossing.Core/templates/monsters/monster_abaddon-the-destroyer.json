@@ -1,0 +1,130 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 225,
+    "upper": 225
+  },
+  "ChanceToHit": {
+    "lower": 550,
+    "upper": 550
+  },
+  "ChanceToDodge": {
+    "lower": 1000,
+    "upper": 1000
+  },
+  "DifficultyToHit": {
+    "lower": 2500,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 2000,
+    "upper": 2000
+  },
+  "ParryChance": {
+    "lower": 1800,
+    "upper": 1800
+  },
+  "Charisma": {
+    "lower": 194,
+    "upper": 227
+  },
+  "Quickness": {
+    "lower": 40,
+    "upper": 40
+  },
+  "Level": {
+    "lower": 21,
+    "upper": 21
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 3800,
+    "upper": 3800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 11,
+    "upper": 11
+  },
+  "BonusDamage": {
+    "lower": 11,
+    "upper": 11
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 2000
+  },
+  "LootItemsTemplates": {
+    "item_golemflesh-greatsword.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_griffonbone-crossbow.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_abaddons-twisted-staff.json": {
+      "ChancesOfDrop": 10000
+    }
+  },
+  "Name": "Abaddon the Destroyer",
+  "MonsterSlug": "abaddon-the-destroyer",
+  "Description": "All of your adventuring has led you here--to Abaddon. You do not doubt that he has warped the world to his will, and has the heritage of an ancient, awesome power. Everything you've found and everything you've destroyed has brought you to this balanced moment.",
+  "MonsterItems": [
+    "Wisdom of the Ages",
+    "Power Overwhelming"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 26,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "deluge-of-misery",
+    "Name": "Deluge of Misery",
+    "Description": "Decreases Hero Armor Mitigation Amount, Armor Mitigation Chance, Parry, and Dodge by 25% for 2 rounds. ",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -2200,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -2200,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -2200,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q4_ChanceToDodge",
+        "FriendlyStatName": "Chance to Dodge",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -2200,
+        "Duration": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 600,
+      "upper": 800
+    },
+    "DodgeRate": {
+      "lower": 650,
+      "upper": 850
+    },
+    "CriticalHitRate": {
+      "lower": 900,
+      "upper": 1200
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 3,
+      "upper": 5
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "renyas-blushing-lily-ring",
+  "name": "Renya's Blushing Lily Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "renyas-blushing-lily-ring",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

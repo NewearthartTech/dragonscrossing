@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_second_wind",
+  "slug": "skill-second-wind",
+  "name": "Second Wind",
+  "description": "Heals 1D10% + (Wisdom / 8)%.",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 4,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 4,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

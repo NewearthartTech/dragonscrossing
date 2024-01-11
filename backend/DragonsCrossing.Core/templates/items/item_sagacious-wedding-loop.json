@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "DodgeRate": {
+      "lower": 150,
+      "upper": 250
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 400
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "sagacious-wedding-loop",
+  "name": "Sagacious Wedding Loop",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "sagacious-wedding-loop",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

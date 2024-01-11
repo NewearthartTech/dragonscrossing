@@ -1,0 +1,95 @@
+{
+  "heroId": 1,
+  "unsecuredDCX": 25,
+  "gold": 100,
+  "items": [
+    {
+      "id": 1,
+      "name": "Very Fine Hat",
+      "slot": "Head",
+      "imageUrl": "/img/api/items/very-fine-hat",
+      "itemClass": "Warrior",
+      "rarity": "Rare",
+      "armor": 2,
+      "requiredLevel": 1,
+      "sellPrice": 60
+    },
+    {
+      "id": 2,
+      "name": "Basic Leather",
+      "slot": "Chest",
+      "imageUrl": "/img/api/items/basic-leather",
+      "itemClass": "Warrior",
+      "rarity": "Common",
+      "armor": 3,
+      "criticalHitRate": 1,
+      "requiredLevel": 1,
+      "sellPrice": 20
+    },
+    {
+      "id": 3,
+      "name": "Basic Staff",
+      "slot": "TwoHand",
+      "imageUrl": "/img/api/items/basic-staff",
+      "itemClass": "Mage",
+      "rarity": "Uncommon",
+      "die": {
+        "sides": 4
+      },
+      "bonusDamage": 1,
+      "requiredLevel": 1,
+      "sellPrice": 30
+    },
+    {
+      "id": 4,
+      "name": "Stubborn Iron Ring",
+      "slot": "Ring",
+      "imageUrl": "/img/api/items/stubborn-iron-ring",
+      "itemClass": "Warrior",
+      "rarity": "Common",
+      "armor": 1,
+      "doubleHitRate": 1,
+      "requiredLevel": 1,
+      "sellPrice": 20
+    },
+    {
+      "id": 5,
+      "name": "Used Steel Toes",
+      "slot": "Feet",
+      "imageUrl": "/img/api/items/used-steel-toes",
+      "itemClass": "Warrior",
+      "rarity": "Legendary",
+      "armor": 2,
+      "requiredLevel": 1,
+      "sellPrice": 470
+    },
+    {
+      "id": 6,
+      "name": "Basic Mace",
+      "slot": "OffHand",
+      "imageUrl": "/img/api/items/basic-mace",
+      "itemClass": "Warrior",
+      "rarity": "Epic",
+      "die": {
+        "sides": 4
+      },
+      "bonusDamage": -1,
+      "requiredLevel": 1,
+      "sellPrice": 180
+    },
+    {
+      "id": 7,
+      "name": "Basic Shortsword",
+      "slot": "MainHand",
+      "imageUrl": "/img/api/items/basic-shortsword",
+      "itemClass": "Warrior",
+      "rarity": "common",
+      "die": {
+        "sides": 4
+      },
+      "bonusDamage": 0,
+      "requiredLevel": 1,
+      "sellPrice": 25
+    }
+  ]
+}

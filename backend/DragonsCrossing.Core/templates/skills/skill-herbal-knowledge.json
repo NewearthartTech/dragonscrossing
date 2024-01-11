@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_herbal_knowledge",
+  "slug": "skill-herbal-knowledge",
+  "name": "Herbal Knowledge",
+  "description": "Heals 3 + (Wisdom / 8) HP and increases dodge by  15% + (Wisdom / 6)% for 2 rounds.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 4,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 1,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

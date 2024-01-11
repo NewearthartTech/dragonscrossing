@@ -1,0 +1,84 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$medium: 1199px;
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.modalContainer {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 390px;
+}
+
+.container {
+  position: relative;
+  height: 300px;
+  width: 390px;
+}
+
+.backgroundImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.topLeft {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+}
+
+.topRight {
+  position: absolute;
+  top: 3px;
+  right: -5px;
+}
+
+.bottomLeft {
+  position: absolute;
+  bottom: 3px;
+  left: 2px;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: 3px;
+  right: 2px;
+}
+
+.victoryContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 40px;
+}
+
+.victoryText {
+  position: absolute;
+  top: 50px;
+  color: v.$color-green;
+  font-size: 30px;
+}
+
+.defeatText {
+  position: absolute;
+  top: 48px;
+  color: v.$color-danger-red;
+  font-size: 30px;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 50px;
+}

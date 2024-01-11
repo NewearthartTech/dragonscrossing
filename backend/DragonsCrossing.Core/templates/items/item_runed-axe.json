@@ -1,0 +1,24 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 1
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": null,
+  "slug": "runed-axe",
+  "name": "Runed Axe",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "runed-axe",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

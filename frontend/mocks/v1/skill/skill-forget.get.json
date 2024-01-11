@@ -1,0 +1,136 @@
+[
+  {
+    "id": "2",
+    "url": "/img/api/skills/mage/ice_tomb",
+    "name": "ice tomb",
+    "status": "learned",
+    "effect": "Deals 50 damage",
+    "requiredSkillPoints": 1,
+    "uses": 3,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "3",
+    "url": "/img/api/skills/mage/drowse",
+    "name": "drowse",
+    "status": "learned",
+    "effect": "Deals 50 damage",
+    "requiredSkillPoints": 1,
+    "uses": 0,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "4",
+    "url": "/img/api/skills/mage/heal",
+    "name": "heal",
+    "status": "learned",
+    "effect": "Deals 50 damage",
+    "requiredSkillPoints": 1,
+    "uses": 1,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "5",
+    "url": "/img/api/skills/mage/magic_missile",
+    "name": "magic missile",
+    "status": "learned",
+    "effect": "Deals 50 damage",
+    "requiredSkillPoints": 1,
+    "uses": 1,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "6",
+    "url": "/img/api/skills/mage/ray_of_frost",
+    "name": "ray of frost",
+    "status": "unlearned",
+    "effect": "Deals 50 damage",
+    "requiredSkillPoints": 1,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "7",
+    "url": "/img/api/skills/mage/shield",
+    "name": "shield",
+    "status": "unlearned",
+    "effect": "Deals 50 damage",
+    "requiredSkillPoints": 1,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "8",
+    "url": "/img/api/skills/mage/teleport",
+    "name": "teleport",
+    "status": "learned",
+    "effect": "Deals 50 damage",
+    "requiredSkillPoints": 1,
+    "uses": 0,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "13",
+    "referenceId": "203",
+    "url": "/img/api/skills/mage/fireball",
+    "name": "fireball",
+    "status": "unlearned",
+    "effect": "Deals 90 damage and inflicts 20 burn damage for 2 turns",
+    "requiredSkillPoints": 2,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "14",
+    "referenceId": "204",
+    "url": "/img/api/skills/mage/wish",
+    "name": "wish",
+    "status": "unlearned",
+    "effect": "Deals 110 damage and freezes the enemy for the next turn",
+    "requiredSkillPoints": 3,
+    "dcxToIdentify": 5,
+    "goldToLearn": 100,
+    "dcxToLearn": 10
+  },
+  {
+    "id": "10",
+    "referenceId": "200",
+    "status": "unidentified",
+    "url": "/img/api/skills/unidentified_skill",
+    "dcxToIdentify": 5
+  },
+  {
+    "id": "11",
+    "referenceId": "201",
+    "status": "unidentified",
+    "url": "/img/api/skills/unidentified_skill",
+    "dcxToIdentify": 5
+  },
+  {
+    "id": "98",
+    "referenceId": "200",
+    "status": "unidentified",
+    "url": "/img/api/skills/unidentified_skill",
+    "dcxToIdentify": 5
+  },
+  {
+    "id": "99",
+    "referenceId": "201",
+    "status": "unidentified",
+    "url": "/img/api/skills/unidentified_skill",
+    "dcxToIdentify": 5
+  }
+]

@@ -1,0 +1,151 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 85,
+    "upper": 95
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 200
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 300
+  },
+  "DifficultyToHit": {
+    "lower": 1100,
+    "upper": 1800
+  },
+  "CritChance": {
+    "lower": 2000,
+    "upper": 2200
+  },
+  "ParryChance": {
+    "lower": 200,
+    "upper": 400
+  },
+  "Charisma": {
+    "lower": 18,
+    "upper": 24
+  },
+  "Quickness": {
+    "lower": 15,
+    "upper": 22
+  },
+  "Level": {
+    "lower": 15,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 2100,
+    "upper": 2400
+  },
+  "ArmorMitigationAmount": {
+    "lower": 8,
+    "upper": 9
+  },
+  "BonusDamage": {
+    "lower": 5,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 3300,
+    "upper": 4200
+  },
+  "LootItemsTemplates": {
+    "item_tattered-leather-loop.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_handsome-vest-of-leather.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_red-cotton-robes.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_glass-striding-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_vest-of-ominous-glory.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_wise-walkers-of-diligence.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Plutus, Wealthy",
+  "MonsterSlug": "plutus-wealthy",
+  "Description": "You get a sense of decadence from every glance you steal at him. His face, clothes, and weapons are absurdly refined.",
+  "MonsterItems": [
+    "Expensive Haircut",
+    "Dazzling Breastplate"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 8
+    },
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 38,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "indiscriminate-bestowal",
+    "Name": "Indiscriminate Bestowal",
+    "Description": "Increases Hero Armor Mitigation Amount and Parry by 25% for 2 rounds. Increases Monster Armor Mitigation Chance and Bonus Damage by 33% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+"AffectType": "Hero",
+"Statname": "Q10_ArmorMitigationAmount",
+"FriendlyStatName": "Armor Mitigation Amount",
+"Description": "FILL THIS IN",
+"AffectAmount": 2500,
+"Duration": 2  
+
+},    
+{
+
+"AffectType": "Monster",
+"Statname": "Q8_BonusDamage",
+"FriendlyStatName": "Bonus Damage",
+"Description": "FILL THIS IN",
+"AffectAmount": 3300,
+"Duration": 3  
+
+},    
+{  
+
+"AffectType": "Monster",
+"Statname": "Q8_ArmorMitigation",
+"FriendlyStatName": "Armor Mitigation Chance",
+"Description": "FILL THIS IN",
+"AffectAmount": 3300,
+"Duration": 3
+
+},    
+{    
+
+"AffectType": "Hero",
+"Statname": "Q5_Parry",
+"FriendlyStatName": "Parry",
+"Description": "FILL THIS IN",
+"AffectAmount": 2500,
+"Duration": 2
+      }
+    ]
+  }
+}

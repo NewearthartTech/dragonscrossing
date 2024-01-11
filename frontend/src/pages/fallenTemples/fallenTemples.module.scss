@@ -1,0 +1,27 @@
+@use "@/styles/variables" as v;
+
+.main {
+  position: relative;
+  background-image: url(../../../public/img/backgrounds/fallenTemples-interior.jpg);
+  min-height: 100vh;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  padding-top: 30px;
+  justify-content: space-around;
+  margin-bottom: 75px;
+}
+
+.opaqueContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  opacity: 0.5;
+}

@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1620,
+      "upper": 2250
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 6
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 3
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "ornate-plackart",
+  "name": "Ornate Plackart",
+  "itemDropSound": "mail",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "ornate-plackart",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

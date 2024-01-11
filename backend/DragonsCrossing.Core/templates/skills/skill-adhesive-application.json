@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_adhesive_application",
+  "slug": "skill-adhesive-application",
+  "name": "Adhesive Application",
+  "description": "Reduces Monster Difficulty to Hit by ((Strength + Agility) / 1.5)% for 2 rounds. Reduces Monster Dodge by (Wisdom *2)% for 3 rounds.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

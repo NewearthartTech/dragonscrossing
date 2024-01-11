@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 360,
+      "upper": 540
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "20-sided-stone",
+  "name": "20 sided Stone",
+  "itemDropSound": "gem-focus",
+  "slot": "offHand",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Mage"
+  ],
+  "imageSlug": "20-sided-stone",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

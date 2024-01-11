@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2970,
+      "upper": 4050
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    },
+    "CriticalHitRate": {
+      "lower": 150,
+      "upper": 300
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "white-lined-robes-of-black-velvet",
+  "name": "White Lined Robes of Black Velvet",
+  "itemDropSound": "cloth-robes",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "white-lined-robes-of-black-velvet",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "HitPoints": {
+      "lower": 1,
+      "upper": 2
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 350
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "heavy-greatsword",
+  "name": "Heavy Greatsword",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "heavy-greatsword",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

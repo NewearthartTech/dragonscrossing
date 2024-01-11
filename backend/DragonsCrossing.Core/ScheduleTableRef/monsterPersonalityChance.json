@@ -1,0 +1,50 @@
+{
+  "Sickly": {
+    "lower": 1,
+    "upper": 7
+  },
+  "Inspired": {
+    "lower": 8,
+    "upper": 14
+  },
+  "Fatigued": {
+    "lower": 15,
+    "upper": 21
+  },
+  "Brutal": {
+    "lower": 22,
+    "upper": 28
+  },
+  "Lazy": {
+    "lower": 29,
+    "upper": 35
+  },
+  "Lean": {
+    "lower": 36,
+    "upper": 42
+  },
+  "Stupid": {
+    "lower": 43,
+    "upper": 49
+  },
+  "Arcane": {
+    "lower": 50,
+    "upper": 56
+  },
+  "Impotent": {
+    "lower": 57,
+    "upper": 63
+  },
+  "Reckless": {
+    "lower": 64,
+    "upper": 70
+  },
+  "Deadly": {
+    "lower": 71,
+    "upper": 77
+  },
+  "None": {
+    "lower": 78,
+    "upper": 100
+  }
+}

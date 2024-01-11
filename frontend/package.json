@@ -1,0 +1,62 @@
+{
+    "name": "dcx",
+    "version": "1.0.1361",
+    "private": true,
+    "scripts": {
+        "dev:localServer": "docker-compose -f ./node_modules/@dcx/dcx-backend/lib/docker-compose.server.yml up -d && env-cmd -f config/.env.development node server.js",
+        "dev:backend": "docker-compose -f ./node_modules/@dcx/dcx-backend/lib/docker-compose.server.yml up -d",
+        "dev": "env-cmd -f config/.env.development node server.js",
+        "build": "next build",
+        "start": "node server.js",
+        "next-start": "next start",
+        "lint": "next lint",
+        "typeCheck:regular": "tsc --noEmit --watch",
+        "typeCheck": "tsc-silent --noEmit -p ./tsconfig.json --suppress 2533,2532@/src/",
+        "downServer": "docker-compose -f ./node_modules/@dcx/dcx-backend/lib/docker-compose.server.yml down"
+    },
+    "dependencies": {
+        "@dcx/dcx-backend": "1.0.1360",
+        "@dcx/dcx-contracts": "1.0.1313",
+        "@emotion/react": "11.8.1",
+        "@emotion/styled": "11.8.1",
+        "@mui/icons-material": "5.6.1",
+        "@mui/material": "5.4.4",
+        "@reduxjs/toolkit": "1.8.0",
+        "@types/react-custom-scrollbars": "4.0.10",
+        "axios": "0.26.1",
+        "constate": "3.3.2",
+        "copyfiles": "2.4.1",
+        "env-cmd": "10.1.0",
+        "ethers": "5.6.9",
+        "express": "4.17.3",
+        "graphql": "^16.8.1",
+        "graphql-request": "^6.1.0",
+        "http-proxy-middleware": "2.0.6",
+        "jwt-decode": "3.1.2",
+        "next": "12.1.0",
+        "ra-data-graphql": "^4.14.0",
+        "react": "17.0.2",
+        "react-audio-player": "0.17.0",
+        "react-custom-scrollbars": "4.2.1",
+        "react-dom": "17.0.2",
+        "react-drag-drop-container": "6.1.1",
+        "react-player": "2.10.0",
+        "react-redux": "7.2.6",
+        "rxjs": "7.5.5",
+        "sass": "1.49.9",
+        "sharp": "0.32.0",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "17.0.29",
+        "@types/react": "17.0.39",
+        "@types/uuid": "^9.0.2",
+        "eslint": "8.10.0",
+        "eslint-config-next": "12.1.0",
+        "tsc-silent": "1.2.2",
+        "typescript": "4.6.2"
+    },
+    "engines": {
+        "node": ">=16.0.0 <17.0.0"
+    }
+}

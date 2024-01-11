@@ -1,0 +1,117 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 14,
+    "upper": 18
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 200,
+    "upper": 400
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 2800
+  },
+  "CritChance": {
+    "lower": 300,
+    "upper": 500
+  },
+  "ParryChance": {
+    "lower": 400,
+    "upper": 600
+  },
+  "Charisma": {
+    "lower": 1,
+    "upper": 5
+  },
+  "Quickness": {
+    "lower": 1,
+    "upper": 5
+  },
+  "Level": {
+    "lower": 1,
+    "upper": 2
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1200,
+    "upper": 1200
+  },
+  "ArmorMitigationAmount": {
+    "lower": 1,
+    "upper": 1
+  },
+  "BonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1000,
+    "upper": 1500
+  },
+  "LootItemsTemplates": {
+    "item_runed-axe.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_wand-of-force.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_simple-linens.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_strong-runed-axe.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_rough-slippers.json": {
+      "ChancesOfDrop": 1000
+    },
+    "item_agile-broken-in-leathers.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-second-wind.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-rending-blow.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-run-like-the-wind.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Wandering Goblin",
+  "MonsterSlug": "wandering-goblin",
+  "Description": "Grumbling, stumbling, filthy and ragged, this little green creature's size does little to hide the wanton violence begging to burst at the first thing that looks at him the wrong way. For better or worse, today that happens to be you.",
+  "MonsterItems": [
+    "Dirty Spear"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "LocationTile": 1,
+  "SpecialAbility": {
+    "Id": 1,
+    "SoundSlug": "whirly-gig",
+    "Name": "Whirly Gig",
+    "Description": "Increases Monster damage by 20% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "The monster will deal 20% bonus damage for 1 round.",
+        "AffectAmount": 2000,
+        "Duration": 1
+      }
+    ]
+  }
+}

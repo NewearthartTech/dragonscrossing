@@ -1,0 +1,161 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 145,
+    "upper": 185
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 50,
+    "upper": 150
+  },
+  "DifficultyToHit": {
+    "lower": 900,
+    "upper": 1400
+  },
+  "CritChance": {
+    "lower": 1600,
+    "upper": 2400
+  },
+  "ParryChance": {
+    "lower": 400,
+    "upper": 800
+  },
+  "Charisma": {
+    "lower": 97,
+    "upper": 124
+  },
+  "Quickness": {
+    "lower": 15,
+    "upper": 22
+  },
+  "Level": {
+    "lower": 17,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 3300,
+    "upper": 4100
+  },
+  "ArmorMitigationAmount": {
+    "lower": 10,
+    "upper": 14
+  },
+  "BonusDamage": {
+    "lower": 8,
+    "upper": 12
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_fearsome-zweihander.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_crystal-adorned-elm-staff.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_quick-loading-arbalest.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_prides-fallen-rod.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_phantom-visage-of-the-corrupted-aedosian.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_vest-of-ominous-glory.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_wise-walkers-of-diligence.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_fallen-aedosians-treacherous-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Stone Golem",
+  "MonsterSlug": "stone-golem",
+  "Description": "The Golem towers over you. You find it difficult to believe that your weapons will even be able to damage it. This fight will require quick thinking and a bit of luck.",
+  "MonsterItems": [
+    "Weight of the Mountain",
+    "Bulk"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 19,
+  "SpecialAbility": {
+    "Id": 29,
+    "SoundSlug": "rock-smash",
+    "Name": "Rock Smash",
+    "Description": "Increases Monster bonus damage by 60% for 1 round. Reduces Hero armor mitigation amount by 70% for 3 rounds. Reduces Hero parry by 100% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 6000,
+        "Duration": 1
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -7000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -10000,
+        "Duration": 1
+      }
+    ]
+  }
+}

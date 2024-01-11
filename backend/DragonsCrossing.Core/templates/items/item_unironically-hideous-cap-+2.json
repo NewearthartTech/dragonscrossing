@@ -1,0 +1,31 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 500,
+      "upper": 500
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": "foulWastes",
+  "slug": "unironically-hideous-cap-+2",
+  "name": "Unironically Hideous Cap +2",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "leather-cap",
+  "levelRequirement": 6,
+  "type": "ItemTemplate"
+}

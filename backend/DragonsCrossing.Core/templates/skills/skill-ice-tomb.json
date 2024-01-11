@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_ice_tomb",
+  "slug": "skill-ice-tomb",
+  "name": "Ice Tomb",
+  "description": "Deals 3D4+3 damage and lowers Monster Armor Mitigation Chance by (Wisdom / 1.75)% until end of combat.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

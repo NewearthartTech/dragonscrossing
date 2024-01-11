@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_berserk",
+  "slug": "skill-berserk",
+  "name": "Berserk",
+  "description": "Increase Hero Bonus Damage by 75% + 1 for 3 rounds. Decrease Hero Armor Mitigation Chance by 30% - (Quickness / 5)% for 2 rounds.",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 4,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 7,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

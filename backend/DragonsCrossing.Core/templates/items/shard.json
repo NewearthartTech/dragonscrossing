@@ -1,0 +1,6 @@
+{
+  "slot": "shard",
+  "slug": "shard",
+  "type": "ItemDto",
+  "itemDropSound": "shard"
+}

@@ -1,0 +1,59 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 500,
+      "upper": 900
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 3
+    },
+    "DodgeRate": {
+      "lower": 100,
+      "upper": 200
+    },
+    "CriticalHitRate": {
+      "lower": 100,
+      "upper": 200
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 3,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 3,
+      "upper": 4
+    },
+    "Wisdom": {
+      "lower": 3,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 3,
+      "upper": 5
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "the-forests-tian-shang-boots",
+  "name": "The Forest's Tian Shang Boots",
+  "itemDropSound": "leather-boots",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "the-forests-tian-shang-boots",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

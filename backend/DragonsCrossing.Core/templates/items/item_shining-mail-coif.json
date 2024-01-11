@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1150,
+      "upper": 1800
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 6
+    },
+    "DodgeRate": {
+      "lower": 150,
+      "upper": 300
+    },
+    "Strength": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "shining-mail-coif",
+  "name": "Shining Mail Coif",
+  "itemDropSound": "metal-helm",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "shining-mail-coif",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,26 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {},
+  "blackSmithZone": "foulWastes",
+  "slug": "dull-shortsword-+2",
+  "name": "Dull Shortsword +2",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "simple-shortsword",
+  "levelRequirement": 6,
+  "type": "ItemTemplate"
+}

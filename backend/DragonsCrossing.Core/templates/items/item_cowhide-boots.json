@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 900,
+      "upper": 1400
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "cowhide-boots",
+  "name": "Cowhide Boots",
+  "itemDropSound": "leather-boots",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "cowhide-boots",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

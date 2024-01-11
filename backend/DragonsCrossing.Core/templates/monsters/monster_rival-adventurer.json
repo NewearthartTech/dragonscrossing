@@ -1,0 +1,117 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 14,
+    "upper": 20
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 250
+  },
+  "ChanceToDodge": {
+    "lower": 200,
+    "upper": 400
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 2800
+  },
+  "CritChance": {
+    "lower": 250,
+    "upper": 450
+  },
+  "ParryChance": {
+    "lower": 500,
+    "upper": 700
+  },
+  "Charisma": {
+    "lower": 5,
+    "upper": 10
+  },
+  "Quickness": {
+    "lower": 2,
+    "upper": 6
+  },
+  "Level": {
+    "lower": 1,
+    "upper": 2
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1200,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 1,
+    "upper": 1
+  },
+  "BonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1000,
+    "upper": 1500
+  },
+  "LootItemsTemplates": {
+    "item_yew-crossbow.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_very-fine-hat.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_rough-slippers.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_strong-guards-helm.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_stubborn-iron-ring.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_dexterous-commoners-band.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-apply-poultice.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-improvised-trap.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-pocket-sand.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Rival Adventurer",
+  "MonsterSlug": "rival-adventurer",
+  "Description": "Ah, a fellow adventurer. He's using that whetstone with skill; he has seen a thing or two, and you think you've seen him in town before.",
+  "MonsterItems": [
+    "Ancestral Axe"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 4
+    }
+  ],
+  "LocationTile": 1,
+  "SpecialAbility": {
+    "Id": 2,
+    "SoundSlug": "runic-axe",
+    "Name": "Runic Axe",
+    "Description": "Reduces Player parry by 50% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "Reduces Parry by 50% for 2 rounds",
+        "AffectAmount": -5000,
+        "Duration": 2
+      }
+    ]
+  }
+}

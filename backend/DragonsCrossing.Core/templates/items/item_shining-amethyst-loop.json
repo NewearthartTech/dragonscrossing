@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 500,
+      "upper": 700
+    },
+    "DodgeRate": {
+      "lower": 275,
+      "upper": 500
+    },
+    "CriticalHitRate": {
+      "lower": 725,
+      "upper": 1100
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "shining-amethyst-loop",
+  "name": "Shining Amethyst Loop",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "shining-amethyst-loop",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

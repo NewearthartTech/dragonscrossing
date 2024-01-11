@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "31",
+    "encounterType": "Freshwater Orb",
+    "introText": "On your home world, there would be no reason at all that a freestanding orb of water would appear in front of springs, rivers, and waterfalls. On Horizon? Apparently these things happen.",
+    "choices": [
+      {
+        "slug": "8",
+        "choiceText": "Touch the orb.",
+        "goodOutcomeChance": 50
+      },
+      {
+        "slug": "9",
+        "choiceText": "Rest in front of the orb, and ponder its mysteries.",
+        "goodOutcomeChance": 90
+      },
+      {
+        "slug": "10",
+        "choiceText": "Walk away from this natural wonder.",
+        "goodOutcomeChance": 100
+      }
+    ]
+  }
+]

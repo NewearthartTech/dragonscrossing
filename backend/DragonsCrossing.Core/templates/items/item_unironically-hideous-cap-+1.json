@@ -1,0 +1,31 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 340,
+      "upper": 340
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": "mysteriousForest",
+  "slug": "unironically-hideous-cap-+1",
+  "name": "Unironically Hideous Cap +1",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "leather-cap",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

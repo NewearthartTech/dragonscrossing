@@ -1,0 +1,126 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 43,
+    "upper": 48
+  },
+  "ChanceToHit": {
+    "lower": 150,
+    "upper": 150
+  },
+  "ChanceToDodge": {
+    "lower": 500,
+    "upper": 1200
+  },
+  "DifficultyToHit": {
+    "lower": 2200,
+    "upper": 2700
+  },
+  "CritChance": {
+    "lower": 1200,
+    "upper": 1400
+  },
+  "ParryChance": {
+    "lower": 1800,
+    "upper": 2500
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 12,
+    "upper": 17
+  },
+  "Level": {
+    "lower": 8,
+    "upper": 10
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1400,
+    "upper": 2200
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 5
+  },
+  "BonusDamage": {
+    "lower": 3,
+    "upper": 5
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_rigid-metal-cuirass.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_platinum-band.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_amethyst-glower.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_mahogany-wand.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_mask-of-the-antler-king.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_glassmail.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Brownie",
+  "MonsterSlug": "brownie",
+  "Description": "It might be that this Brownie was a helpful house creature at one point, but no longer. ",
+  "MonsterItems": [
+    "Broom Handle",
+    "Knife"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 31,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "kitchen-knife",
+    "Name": "Kitchen Knife",
+    "Description": "Increases Monster Bonus Damage by 25% for 2 rounds. Increases Monster Parry by 75% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 7500,
+        "Duration": 3
+      }
+    ]
+  }
+}

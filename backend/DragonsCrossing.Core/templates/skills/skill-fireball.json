@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_fireball",
+  "slug": "skill-fireball",
+  "name": "Fireball",
+  "description": "Deals 2D4 + (Wisdom / 7) damage, and deals an additional 1D4 + (Charisma / 9) damage per round for 3 rounds.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 7,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

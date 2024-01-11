@@ -1,0 +1,243 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
+    <PackageReference Include="Dcx.DcxContract" Version="1.0.1313" />
+
+    <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.10" />
+    <PackageReference Include="MassTransit.MongoDb" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DragonsCrossing.Domain\DragonsCrossing.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Nethereum.Web3" />
+    <None Remove="Microsoft.Extensions.Configuration.Binder" />
+    <None Remove="MongoDB.Driver" />
+    <None Remove="Contracts\Api\Dto\Weapons\" />
+    <None Remove="ScheduleTableRef\heroRarityBoostShardDropRate.json" />
+    <None Remove="ScheduleTableRef\heroRarityBoostSkillDropRate.json" />
+    <None Remove="ScheduleTableRef\itemRarityPercentageBenefits.json" />
+    <None Remove="ScheduleTableRef\levelUpClassSpecificBenefit.json" />
+    <None Remove="ScheduleTableRef\monsterPersonalityChance.json" />
+    <None Remove="templates\herbalist\herbalist.json" />
+    <None Remove="templates\Hero_Names\hero_last_names.json" />
+    <None Remove="templates\items\item_20-sided-stone.json" />
+    <None Remove="templates\items\item_agile-broken-in-leathers.json" />
+    <None Remove="templates\items\item_agile-simple-shortsword.json" />
+    <None Remove="templates\items\item_amethyst-glower.json" />
+    <None Remove="templates\items\item_archmagus's-skeletal-staff.json" />
+    <None Remove="templates\items\item_balanced-pike.json" />
+    <None Remove="templates\items\item_balanced-red-and-black-kite-shield.json" />
+    <None Remove="templates\items\item_band-of-perfect-light.json" />
+    <None Remove="templates\items\item_beastly-mask.json" />
+    <None Remove="templates\items\item_black-sabatons.json" />
+    <None Remove="templates\items\item_boiled-leather-armor.json" />
+    <None Remove="templates\items\item_brawny-stubborn-iron-ring.json" />
+    <None Remove="templates\items\item_bright-dory-spear.json" />
+    <None Remove="templates\items\item_broad-axe.json" />
+    <None Remove="templates\items\item_broken-in-leathers.json" />
+    <None Remove="templates\items\item_casual-offroad-walkers.json" />
+    <None Remove="templates\items\item_commoner's-band.json" />
+    <None Remove="templates\items\item_copper-coated-xiphos.json" />
+    <None Remove="templates\items\item_cowhide-boots.json" />
+    <None Remove="templates\items\item_crackling-oak-wand.json" />
+    <None Remove="templates\items\item_crystal-adorned-elm-staff.json" />
+    <None Remove="templates\items\item_curious-band-of-amber.json" />
+    <None Remove="templates\items\item_dallan's-winter-razor.json" />
+    <None Remove="templates\items\item_dancing-rapier.json" />
+    <None Remove="templates\items\item_dark-metal-rod.json" />
+    <None Remove="templates\items\item_defiant-boots-of-the-third-war.json" />
+    <None Remove="templates\items\item_dexterous-commoner's-band.json" />
+    <None Remove="templates\items\item_diamond-tipped-sabre.json" />
+    <None Remove="templates\items\item_discarded-wedding-loop.json" />
+    <None Remove="templates\items\item_double-bit-axe.json" />
+    <None Remove="templates\items\item_dragonlance.json" />
+    <None Remove="templates\items\item_dragonslayer's-ring.json" />
+    <None Remove="templates\items\item_dull-shortsword-+1.json" />
+    <None Remove="templates\items\item_dull-shortsword-+2.json" />
+    <None Remove="templates\items\item_dull-shortsword-+3.json" />
+    <None Remove="templates\items\item_dull-shortsword-+4.json" />
+    <None Remove="templates\items\item_dull-shortsword.json" />
+    <None Remove="templates\items\item_elven-ring.json" />
+    <None Remove="templates\items\item_expensive-moissanite-band.json" />
+    <None Remove="templates\items\item_fallen-aedosian's-treacherous-ring.json" />
+    <None Remove="templates\items\item_fearsome-zweihänder.json" />
+    <None Remove="templates\items\item_finnar's-spellsword-of-despair.json" />
+    <None Remove="templates\items\item_flared-kopis.json" />
+    <None Remove="templates\items\item_flashing-diamond-focus.json" />
+    <None Remove="templates\items\item_frayed-jute-loop.json" />
+    <None Remove="templates\items\item_gambeson.json" />
+    <None Remove="templates\items\item_gladiator-leather-sandals.json" />
+    <None Remove="templates\items\item_glass-striding-ring.json" />
+    <None Remove="templates\items\item_glassmail.json" />
+    <None Remove="templates\items\item_glowing-staff.json" />
+    <None Remove="templates\items\item_goblin-dagger.json" />
+    <None Remove="templates\items\item_gray-hood-of-mystery.json" />
+    <None Remove="templates\items\item_greaves-of-miracles.json" />
+    <None Remove="templates\items\item_greediest-flamberge.json" />
+    <None Remove="templates\items\item_green-focus-glass.json" />
+    <None Remove="templates\items\item_guard's-helm.json" />
+    <None Remove="templates\items\item_hand-me-down-leathers-+1.json" />
+    <None Remove="templates\items\item_hand-me-down-leathers-+2.json" />
+    <None Remove="templates\items\item_hand-me-down-leathers-+3.json" />
+    <None Remove="templates\items\item_hand-me-down-leathers-+4.json" />
+    <None Remove="templates\items\item_hand-me-down-leathers.json" />
+    <None Remove="templates\items\item_handsome-vest-of-leather.json" />
+    <None Remove="templates\items\item_heater-shield.json" />
+    <None Remove="templates\items\item_heavy-arm-buckler.json" />
+    <None Remove="templates\items\item_heavy-flamberge.json" />
+    <None Remove="templates\items\item_heavy-greatsword.json" />
+    <None Remove="templates\items\item_helm-of-foul-undoing.json" />
+    <None Remove="templates\items\item_horizon's-wild-prairie-coat.json" />
+    <None Remove="templates\items\item_hrothgar's-sorrow-promise-ring.json" />
+    <None Remove="templates\items\item_ill-fitted-sandals-+1.json" />
+    <None Remove="templates\items\item_ill-fitted-sandals-+2.json" />
+    <None Remove="templates\items\item_ill-fitted-sandals-+3.json" />
+    <None Remove="templates\items\item_ill-fitted-sandals-+4.json" />
+    <None Remove="templates\items\item_ill-fitted-sandals.json" />
+    <None Remove="templates\items\item_iron-greaves-and-boots.json" />
+    <None Remove="templates\items\item_iron-shod-staff.json" />
+    <None Remove="templates\items\item_ivory-ring.json" />
+    <None Remove="templates\items\item_jane-and-mary-brand-walking-shoes.json" />
+    <None Remove="templates\items\item_khula-zira.json" />
+    <None Remove="templates\items\item_leather-boots-of-martin.json" />
+    <None Remove="templates\items\item_leather-cap.json" />
+    <None Remove="templates\items\item_leather-legion-helmet.json" />
+    <None Remove="templates\items\item_light-spear.json" />
+    <None Remove="templates\items\item_long-narrow-parrying-dagger.json" />
+    <None Remove="templates\items\item_magnus's-mask-of-annihilation.json" />
+    <None Remove="templates\items\item_mahogany-wand.json" />
+    <None Remove="templates\items\item_mask-of-the-antler-king.json" />
+    <None Remove="templates\items\item_morty's-ring-of-charm.json" />
+    <None Remove="templates\items\item_oiled-scale-mail.json" />
+    <None Remove="templates\items\item_one-handed-ruby-claymore.json" />
+    <None Remove="templates\items\item_orichalcum-cube.json" />
+    <None Remove="templates\items\item_ornate-plackart.json" />
+    <None Remove="templates\items\item_pappenheimer.json" />
+    <None Remove="templates\items\item_phantom-visage-of-the-corrupted-aedosian.json" />
+    <None Remove="templates\items\item_pike-of-burning-light.json" />
+    <None Remove="templates\items\item_pistol-crossbows.json" />
+    <None Remove="templates\items\item_platinum-band.json" />
+    <None Remove="templates\items\item_praetorian-leather-crest-helm.json" />
+    <None Remove="templates\items\item_pride's-fallen-rod.json" />
+    <None Remove="templates\items\item_pull-up-gray-leather-boots.json" />
+    <None Remove="templates\items\item_quick-loading-arbalest.json" />
+    <None Remove="templates\items\item_quickstrike,-crossbow-of-closing-eyes.json" />
+    <None Remove="templates\items\item_quilted-cloth-armor.json" />
+    <None Remove="templates\items\item_raspberry-beret.json" />
+    <None Remove="templates\items\item_red-beryl-focus.json" />
+    <None Remove="templates\items\item_red-cotton-robes.json" />
+    <None Remove="templates\items\item_red-targe.json" />
+    <None Remove="templates\items\item_renya's-blushing-lily-ring.json" />
+    <None Remove="templates\items\item_rigid-flower-loop.json" />
+    <None Remove="templates\items\item_rigid-metal-cuirass.json" />
+    <None Remove="templates\items\item_ring-of-barriers.json" />
+    <None Remove="templates\items\item_ring-of-ruin.json" />
+    <None Remove="templates\items\item_ring-of-the-arena.json" />
+    <None Remove="templates\items\item_rough-slippers.json" />
+    <None Remove="templates\items\item_runed-axe.json" />
+    <None Remove="templates\items\item_sagacious-rough-slippers.json" />
+    <None Remove="templates\items\item_sagacious-wedding-loop.json" />
+    <None Remove="templates\items\item_seax.json" />
+    <None Remove="templates\items\item_sharp-obsidian-band.json" />
+    <None Remove="templates\items\item_sharp-shooter's-black-vest.json" />
+    <None Remove="templates\items\item_shining-amethyst-loop.json" />
+    <None Remove="templates\items\item_shining-mail-coif.json" />
+    <None Remove="templates\items\item_shoddy-mail.json" />
+    <None Remove="templates\items\item_silken-tricorne.json" />
+    <None Remove="templates\items\item_silver-schynbald-and-boots.json" />
+    <None Remove="templates\items\item_simple-linens.json" />
+    <None Remove="templates\items\item_simple-shortsword.json" />
+    <None Remove="templates\items\item_singing-spellsword.json" />
+    <None Remove="templates\items\item_skullcap.json" />
+    <None Remove="templates\items\item_smokeform-robes.json" />
+    <None Remove="templates\items\item_smooth-ring-mail.json" />
+    <None Remove="templates\items\item_sorcerio's-ruby-robes.json" />
+    <None Remove="templates\items\item_starchy-robes.json" />
+    <None Remove="templates\items\item_steel-cervelliere.json" />
+    <None Remove="templates\items\item_steel-knee-highs.json" />
+    <None Remove="templates\items\item_steel-parrying-dagger.json" />
+    <None Remove="templates\items\item_stormfury-archbane-plate-walkers.json" />
+    <None Remove="templates\items\item_strong-guard's-helm.json" />
+    <None Remove="templates\items\item_strong-runed-axe.json" />
+    <None Remove="templates\items\item_stubborn-copper-ring.json" />
+    <None Remove="templates\items\item_stubborn-iron-ring.json" />
+    <None Remove="templates\items\item_sturdy-shield.json" />
+    <None Remove="templates\items\item_sunstriking-kopis.json" />
+    <None Remove="templates\items\item_takh's-shattering-spark-ring.json" />
+    <None Remove="templates\items\item_tapered-spatha.json" />
+    <None Remove="templates\items\item_tarnished-silver-ring.json" />
+    <None Remove="templates\items\item_tatami-sandals.json" />
+    <None Remove="templates\items\item_tattered-leather-loop.json" />
+    <None Remove="templates\items\item_taylor's-laced-black-canvas-shoes.json" />
+    <None Remove="templates\items\item_the-blood-infused-kris.json" />
+    <None Remove="templates\items\item_the-facelifter,-heirloom-of-horizon.json" />
+    <None Remove="templates\items\item_the-forest's-tian-shang-boots.json" />
+    <None Remove="templates\items\item_the-infinite-moon-ring.json" />
+    <None Remove="templates\items\item_the-starfold-hat.json" />
+    <None Remove="templates\items\item_threaded-golden-rod.json" />
+    <None Remove="templates\items\item_thundering-dark-mail-of-ending.json" />
+    <None Remove="templates\items\item_tight-headband.json" />
+    <None Remove="templates\items\item_unironically-hideous-cap-+1.json" />
+    <None Remove="templates\items\item_unironically-hideous-cap-+2.json" />
+    <None Remove="templates\items\item_unironically-hideous-cap-+3.json" />
+    <None Remove="templates\items\item_unironically-hideous-cap-+4.json" />
+    <None Remove="templates\items\item_unironically-hideous-cap.json" />
+    <None Remove="templates\items\item_used-steel-toes.json" />
+    <None Remove="templates\items\item_very-fine-hat.json" />
+    <None Remove="templates\items\item_vest-of-ominous-glory.json" />
+    <None Remove="templates\items\item_visored-steel-helm.json" />
+    <None Remove="templates\items\item_wand-of-force.json" />
+    <None Remove="templates\items\item_wasting-wise-ring.json" />
+    <None Remove="templates\items\item_white-lined-robes-of-black-velvet.json" />
+    <None Remove="templates\items\item_wicked-bardiche.json" />
+    <None Remove="templates\items\item_wieldy-bastard.json" />
+    <None Remove="templates\items\item_wise-glowing-staff.json" />
+    <None Remove="templates\items\item_wise-walkers-of-diligence.json" />
+    <None Remove="templates\items\item_worn-traveling-boots.json" />
+    <None Remove="templates\items\item_yew-crossbow.json" />
+    <None Remove="templates\items\shard.json" />
+    <None Remove="templates\items\skill_Grapple.json" />
+    <None Remove="templates\nonCombat\chanceEncounter_result.json" />
+    <None Remove="templates\nonCombat\lore_answer.json" />
+    <None Remove="templates\monsters\monster_brigand.json" />
+    <None Remove="templates\monsters\monster_dwarf.json" />
+    <None Remove="templates\monsters\monster_rival_adventurer.json" />
+    <None Remove="templates\monsters\monster_stag.json" />
+    <None Remove="templates\monsters\monster_troll.json" />
+    <None Remove="templates\monsters\monster_wandering_goblin.json" />
+    <None Remove="mqWatchers\" />
+    <None Remove="MassTransit.RabbitMQ" />
+    <None Remove="MassTransit.MongoDb" />
+    <None Remove="templates\skills\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="templates\**\*.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ScheduleTableRef\*.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Contracts\Api\Dto\Weapons\**" />
+    <EmbeddedResource Remove="Contracts\Api\Dto\Weapons\**" />
+    <None Remove="Contracts\Api\Dto\Weapons\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sagas\" />
+    <Folder Include="templates\skills\" />
+  </ItemGroup>
+</Project>

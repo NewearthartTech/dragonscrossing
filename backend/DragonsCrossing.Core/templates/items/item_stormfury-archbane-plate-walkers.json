@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 900,
+      "upper": 1350
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 5
+    },
+    "DodgeRate": {
+      "lower": 200,
+      "upper": 300
+    },
+    "Strength": {
+      "lower": 3,
+      "upper": 5
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "stormfury-archbane-plate-walkers",
+  "name": "Stormfury Archbane Plate Walkers",
+  "itemDropSound": "stompers",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "stormfury-archbane-plate-walkers",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

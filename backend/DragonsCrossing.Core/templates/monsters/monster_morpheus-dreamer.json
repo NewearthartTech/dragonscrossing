@@ -1,0 +1,139 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 77,
+    "upper": 85
+  },
+  "ChanceToHit": {
+    "lower": 175,
+    "upper": 175
+  },
+  "ChanceToDodge": {
+    "lower": 200,
+    "upper": 400
+  },
+  "DifficultyToHit": {
+    "lower": 1900,
+    "upper": 2400
+  },
+  "CritChance": {
+    "lower": 1100,
+    "upper": 1700
+  },
+  "ParryChance": {
+    "lower": 600,
+    "upper": 1200
+  },
+  "Charisma": {
+    "lower": 16,
+    "upper": 20
+  },
+  "Quickness": {
+    "lower": 13,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 15,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "ArmorMitigationAmount": {
+    "lower": 5,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 5,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_leather-legion-helmet.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_one-handed-ruby-claymore.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_diamond-tipped-sabre.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_ring-of-the-arena.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_phantom-visage-of-the-corrupted-aedosian.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_vest-of-ominous-glory.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Morpheus, Dreamer",
+  "MonsterSlug": "morpheus-dreamer",
+  "Description": "Even looking directly at him makes you feel sleepy. Is this truly the king of dreams?",
+  "MonsterItems": [
+    "Sand",
+    "Dream-crafted Bracers"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 8
+    },
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 38,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "terror-of-dreams",
+    "Name": "Terror of Dreams",
+    "Description": "Reduces Hero Bonus Damage, Crit, and Armor Mitigation Amount by 50% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+"AffectType": "Hero",
+"Statname": "Q8_BonusDamage",
+"FriendlyStatName": "Bonus Damage",
+"Description": "FILL THIS IN",
+"AffectAmount": -5000,
+"Duration": 3    
+},
+{
+"AffectType": "Hero",
+"Statname": "Q7_Crit",
+"FriendlyStatName": "Crit",
+"Description": "FILL THIS IN",
+"AffectAmount": -5000,
+"Duration": 3
+
+},    
+{    
+
+"AffectType": "Hero",
+"Statname": "Q10_ArmorMitigationAmount",
+"FriendlyStatName": "Armor Mitigation Amount",
+"Description": "FILL THIS IN",
+"AffectAmount": -5000,
+"Duration": 3
+      }
+    ]
+  }
+}

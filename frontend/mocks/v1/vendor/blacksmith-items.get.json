@@ -1,0 +1,144 @@
+[
+  {
+    "id": "80",
+    "slug": "very-fine-hat",
+    "name": "Very Fine Hat",
+    "slot": "Head",
+    "allowedHeroClassList": ["Mage"],
+    "heroStatComplianceDictionary": {
+      "strength": 5,
+      "agility": 5
+    },
+    "rarity": "Common",
+    "dieDamage": [],
+    "armor": 2,
+    "requiredLevel": 1,
+    "purchasePrice": 150,
+    "affectedAttributes": {},
+    "itemDropSound": "cloth-robes"
+  },
+  {
+    "id": "81",
+    "slug": "cloth-robes",
+    "name": "Cloth Robes",
+    "slot": "Chest",
+    "allowedHeroClassList": ["Mage"],
+    "heroStatComplianceDictionary": {
+      "strength": 5,
+      "agility": 5
+    },
+    "rarity": "Common",
+    "dieDamage": [],
+    "armor": 3,
+    "dodgeRate": 1,
+    "requiredLevel": 1,
+    "purchasePrice": 110,
+    "affectedAttributes": {
+      "strength": 2
+    },
+    "itemDropSound": "cloth-robes"
+  },
+  {
+    "id": "82",
+    "slug": "basic-staff",
+    "name": "Basic Staff",
+    "slot": "TwoHand",
+    "allowedHeroClassList": ["Mage"],
+    "heroStatComplianceDictionary": {
+      "strength": 5,
+      "agility": 5
+    },
+    "rarity": "Uncommon",
+    "dieDamage": [
+      {
+        "sides": 6
+      }
+    ],
+    "parryRate": 1,
+    "requiredLevel": 1,
+    "purchasePrice": 380,
+    "affectedAttributes": {},
+    "itemDropSound": "cloth-robes"
+  },
+  {
+    "id": "83",
+    "slug": "stubborn-iron-ring",
+    "name": "Stubborn Iron Ring",
+    "slot": "Ring",
+    "allowedHeroClassList": ["Mage"],
+    "heroStatComplianceDictionary": {
+      "strength": 5,
+      "agility": 5
+    },
+    "rarity": "Common",
+    "dieDamage": [],
+    "criticalHitRate": 1,
+    "requiredLevel": 1,
+    "purchasePrice": 200,
+    "affectedAttributes": {},
+    "itemDropSound": "cloth-robes"
+  },
+  {
+    "id": "84",
+    "slug": "worn-traveling-boots",
+    "name": "Worn Traveling Boots",
+    "slot": "Feet",
+    "allowedHeroClassList": ["Mage"],
+    "heroStatComplianceDictionary": {
+      "strength": 5,
+      "agility": 5
+    },
+    "rarity": "Common",
+    "dieDamage": [],
+    "armor": 1,
+    "dodgeRate": 1,
+    "requiredLevel": 1,
+    "purchasePrice": 80,
+    "affectedAttributes": {},
+    "itemDropSound": "cloth-robes"
+  },
+  {
+    "id": "85",
+    "slug": "basic-gem-focus",
+    "name": "Basic Gem Focus",
+    "slot": "OffHand",
+    "allowedHeroClassList": ["Mage"],
+    "heroStatComplianceDictionary": {
+      "strength": 5,
+      "agility": 5
+    },
+    "rarity": "Rare",
+    "dieDamage": [
+      {
+        "sides": 4
+      }
+    ],
+    "requiredLevel": 1,
+    "purchasePrice": 450,
+    "affectedAttributes": {},
+    "itemDropSound": "cloth-robes"
+  },
+  {
+    "id": "86",
+    "slug": "basic-wand",
+    "name": "Basic Wand",
+    "slot": "MainHand",
+    "allowedHeroClassList": ["Mage"],
+    "heroStatComplianceDictionary": {
+      "strength": 5,
+      "agility": 5
+    },
+    "rarity": "Common",
+    "dieDamage": [
+      {
+        "sides": 4
+      }
+    ],
+    "bonusDamage": 1,
+    "criticalHitRate": 3,
+    "requiredLevel": 1,
+    "purchasePrice": 170,
+    "affectedAttributes": {},
+    "itemDropSound": "cloth-robes"
+  }
+]

@@ -1,0 +1,144 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 120,
+    "upper": 140
+  },
+  "ChanceToHit": {
+    "lower": 250,
+    "upper": 400
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1900,
+    "upper": 2900
+  },
+  "CritChance": {
+    "lower": 1500,
+    "upper": 2200
+  },
+  "ParryChance": {
+    "lower": 200,
+    "upper": 500
+  },
+  "Charisma": {
+    "lower": 17,
+    "upper": 26
+  },
+  "Quickness": {
+    "lower": 14,
+    "upper": 21
+  },
+  "Level": {
+    "lower": 15,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 2200,
+    "upper": 3400
+  },
+  "ArmorMitigationAmount": {
+    "lower": 8,
+    "upper": 10
+  },
+  "BonusDamage": {
+    "lower": 7,
+    "upper": 9
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2500,
+    "upper": 2500
+  },
+  "LootItemsTemplates": {
+    "item_ring-of-the-arena.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_glass-striding-ring.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_band-of-perfect-light.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_dallans-winter-razor.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_the-blood-infused-kris.json": {
+      "ChancesOfDrop": 1300
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Griffon",
+  "MonsterSlug": "griffon",
+  "Description": "The griffon is barded and geared for battle. Abbadon has been preparing these for war.",
+  "MonsterItems": [
+    "Golden Barding",
+    "Vicious Beak and Claws"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 18,
+  "SpecialAbility": {
+    "Id": 28,
+    "SoundSlug": "beak-strike",
+    "Name": "Beak Strike",
+    "Description": "Reduces Hero armor mitigation amount by 50% for 3 rounds. Increases Monster bonus damage by 40% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 4000,
+        "Duration": 2
+      }
+    ]
+  }
+}

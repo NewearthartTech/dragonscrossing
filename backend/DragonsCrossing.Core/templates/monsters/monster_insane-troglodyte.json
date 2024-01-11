@@ -1,0 +1,137 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 60,
+    "upper": 67
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 200
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 1500,
+    "upper": 2000
+  },
+  "ParryChance": {
+    "lower": 800,
+    "upper": 1000
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 14
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 12,
+    "upper": 14
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1200,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 3,
+    "upper": 6
+  },
+  "BonusDamage": {
+    "lower": 2,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2200,
+    "upper": 2600
+  },
+  "LootItemsTemplates": {
+    "item_ornate-plackart.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_red-targe.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_tarnished-silver-ring.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_threaded-golden-rod.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_the-blood-infused-kris.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_prides-fallen-rod.json": {
+      "ChancesOfDrop": 125
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Insane Troglodyte",
+  "MonsterSlug": "insane-troglodyte",
+  "Description": "This thing emerges from a small cave against a mountain peak and glares at you with undisguised hatred. What foul lineage spawned this monster?",
+  "MonsterItems": [
+    "Claws",
+    "Disintegrated Leathers"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 17,
+  "SpecialAbility": {
+    "Id": 23,
+    "SoundSlug": "insanity",
+    "Name": "Insanity",
+    "Description": "Increases Monster difficulty to hit by 35% for 2 rounds. Reduces Hero Crit and Parry by 75% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q3_DifficultyToHit",
+        "FriendlyStatName": "Difficulty to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 3500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Crit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -7500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -7500,
+        "Duration": 2
+      }
+    ]
+  }
+}

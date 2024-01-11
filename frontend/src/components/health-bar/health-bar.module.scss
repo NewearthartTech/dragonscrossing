@@ -1,0 +1,38 @@
+@use "@/styles/variables" as v;
+
+.container {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.healthBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.trimmedContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.healthBar {
+  position: absolute;
+  left: 0;
+  top: 50;
+  background: radial-gradient(v.$color-red, v.$color-hp-bar-dark);
+  box-sizing: border-box;
+}
+
+.healthBarLabel {
+  color: v.$color-light-gray;
+  font-size: 15px;
+  position: absolute;
+}

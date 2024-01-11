@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1100,
+      "upper": 1800
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "leather-legion-helmet",
+  "name": "Leather Legion Helmet",
+  "itemDropSound": "leather-helmet",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "leather-legion-helmet",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

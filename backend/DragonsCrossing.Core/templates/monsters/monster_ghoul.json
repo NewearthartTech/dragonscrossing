@@ -1,0 +1,137 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 72,
+    "upper": 89
+  },
+  "ChanceToHit": {
+    "lower": 100,
+    "upper": 250
+  },
+  "ChanceToDodge": {
+    "lower": 200,
+    "upper": 400
+  },
+  "DifficultyToHit": {
+    "lower": 1800,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 1000,
+    "upper": 1800
+  },
+  "ParryChance": {
+    "lower": 600,
+    "upper": 1200
+  },
+  "Charisma": {
+    "lower": 16,
+    "upper": 20
+  },
+  "Quickness": {
+    "lower": 13,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 15,
+    "upper": 17
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "ArmorMitigationAmount": {
+    "lower": 5,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 5,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_leather-legion-helmet.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_one-handed-ruby-claymore.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_diamond-tipped-sabre.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_ring-of-the-arena.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_phantom-visage-of-the-corrupted-aedosian.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_vest-of-ominous-glory.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Ghoul",
+  "MonsterSlug": "ghoul",
+  "Description": "For some reason, this ghoul has equipped itself with an impressive array of armors and weapons. Its ghastly grin strikes fear into your living heart.",
+  "MonsterItems": [
+    "Disturbing Wand",
+    "Decaying Plate"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 8
+    },
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 17,
+  "SpecialAbility": {
+    "Id": 25,
+    "SoundSlug": "rend-flesh",
+    "Name": "Rend Flesh",
+    "Description": "Increases Monster crit by 65% for 2 rounds. Decreases Hero armor mitigation chance by 65% for 2 rounds. Increases monster bonus damage by 35% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Crit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 6500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -6500,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 3500,
+        "Duration": 1
+      }
+    ]
+  }
+}

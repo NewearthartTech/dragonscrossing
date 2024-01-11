@@ -1,0 +1,36 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "CriticalHitRate": {
+      "lower": 520,
+      "upper": 720
+    },
+    "HitPoints": {
+      "lower": 3,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "bright-dory-spear",
+  "name": "Bright Dory Spear",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "bright-dory-spear",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

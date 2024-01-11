@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_mental_knit",
+  "slug": "skill-mental-knit",
+  "name": "Mental Knit",
+  "description": "Heals 1D10% + (Wisdom / 8)%.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 4,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

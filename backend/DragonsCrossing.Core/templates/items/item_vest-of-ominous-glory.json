@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2160,
+      "upper": 3240
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 6
+    },
+    "CriticalHitRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "Quickness": {
+      "lower": 4,
+      "upper": 6
+    },
+    "Agility": {
+      "lower": 4,
+      "upper": 6
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "vest-of-ominous-glory",
+  "name": "Vest of Ominous Glory",
+  "itemDropSound": "leathers",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "vest-of-ominous-glory",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,137 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+$medium: 1199px;
+
+.main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+}
+
+.itemsContainer {
+  height: 450px;
+  @media screen and (max-width: $medium) {
+    width: 440px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 240px;
+  }
+}
+
+.itemContainer {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 25px;
+  height: 225px;
+  @media screen and (max-width: $medium) {
+    padding-bottom: 20px;
+  }
+}
+
+.priceContainer {
+  width: 100px;
+  position: absolute;
+  justify-content: center;
+  bottom: 65px;
+  left: 58px;
+  @media screen and (max-width: $medium) {
+    bottom: 65px;
+  }
+}
+
+.buyButton {
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  font-size: 18px;
+  color: v.$color-gold;
+}
+
+.noItemsMessageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noItemsMessage {
+  color: v.$color-light-gray;
+  font-size: 20px;
+}
+
+// Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmModalContainer {
+  position: relative;
+  height: 125px;
+  width: 262.5px;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.confirmContainer {
+  position: absolute;
+  justify-content: space-between;
+  width: 180px;
+  top: 16px;
+}
+
+.headerText {
+  color: v.$color-light-gray;
+  line-height: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.itemName {
+  color: v.$color-blue;
+  font-size: 18px;
+}
+
+.goldText {
+  color: v.$color-gold;
+  font-size: 18px;
+}
+
+.confirmButton {
+  position: absolute;
+  bottom: 12px;
+  justify-content: center;
+}
+
+.transactionModalContainer {
+  position: relative;
+  height: 80px;
+  width: 168px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.transactionContainer {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.failedMessage {
+  color: v.$color-danger-red;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}

@@ -1,0 +1,153 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 111,
+    "upper": 116
+  },
+  "ChanceToHit": {
+    "lower": 250,
+    "upper": 250
+  },
+  "ChanceToDodge": {
+    "lower": 300,
+    "upper": 600
+  },
+  "DifficultyToHit": {
+    "lower": 2400,
+    "upper": 2600
+  },
+  "CritChance": {
+    "lower": 1200,
+    "upper": 1600
+  },
+  "ParryChance": {
+    "lower": 500,
+    "upper": 700
+  },
+  "Charisma": {
+    "lower": 89,
+    "upper": 106
+  },
+  "Quickness": {
+    "lower": 20,
+    "upper": 20
+  },
+  "Level": {
+    "lower": 13,
+    "upper": 13
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 2000,
+    "upper": 2600
+  },
+  "ArmorMitigationAmount": {
+    "lower": 6,
+    "upper": 8
+  },
+  "BonusDamage": {
+    "lower": 7,
+    "upper": 8
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2300,
+    "upper": 2700
+  },
+  "LootItemsTemplates": {
+    "item_one-handed-ruby-claymore.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_pappenheimer.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_diamond-tipped-sabre.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_mask-of-the-antler-king.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_glassmail.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_defiant-boots-of-the-third-war.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_hrothgars-sorrow-promise-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_helm-of-foul-undoing.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Hydra",
+  "MonsterSlug": "hydra",
+  "Description": "Its many heads snap and hiss at once, and you feel like you're listening to the beginnings of an insanity.",
+  "MonsterItems": [
+    "Many Heads",
+    "Spitting Venom"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 33,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "multibite",
+    "Name": "Multibite",
+    "Description": "Increases Monster Bonus Damage by 25% for 2 rounds. Increases Monster Chance to Hit by 80% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q3_ChanceToHit",
+        "FriendlyStatName": "Chance to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 8000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2500,
+        "Duration": 2
+      }
+    ]
+  }
+}

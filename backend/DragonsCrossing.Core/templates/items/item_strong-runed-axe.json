@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "Strength": {
+      "lower": 1,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "strong-runed-axe",
+  "name": "Strong Runed Axe",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 6
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "strong-runed-axe",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,163 @@
+@use "@/styles/variables" as v;
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 390px;
+  height: 320px;
+  margin-bottom: 75px;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.containerBackground {
+  position: absolute;
+  width: 390px;
+  height: 308px;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 16px;
+}
+
+.header {
+  color: v.$color-gold;
+  font-size: 22px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.closeButtonContainer:hover {
+  opacity: 0.6;
+}
+
+.infoContainer {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 25px;
+  top: 21px;
+  cursor: pointer;
+}
+
+.infoIcon {
+  color: v.$color-white;
+  font-size: 22px;
+}
+
+.divider {
+  position: absolute;
+  top: 51px;
+  left: 20px;
+  width: 350px;
+  height: 2px;
+  background-color: v.$color-gold;
+  opacity: 0.4;
+}
+
+.contentContainer {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  justify-content: space-between;
+  width: 330px;
+}
+
+.rowText {
+  color: v.$color-light-gray;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.openText {
+  color: v.$color-light-green;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.closedText {
+  color: v.$color-danger-red-lightish;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.costContainer {
+  justify-content: flex-end;
+  align-items: center;
+  width: 100px;
+}
+
+.dcxLogoContainer {
+  height: 20px;
+  width: 20px;
+  margin-left: 6px;
+  margin-top: -4px;
+}
+
+.buttonContainer {
+  padding-top: 8px;
+  justify-content: center;
+}
+
+// Status Modal
+.pendingTransactionModalContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  height: 170px;
+  width: 280px;
+}
+
+.registrationStatusContainer {
+  position: absolute;
+  display: inline-block;
+  overflow-wrap: break-word;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.spinnerContainer {
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.spinner {
+  color: v.$color-light-gray;
+}
+
+.message {
+  text-align: center;
+  color: v.$color-light-gray;
+  margin-top: 6px;
+}

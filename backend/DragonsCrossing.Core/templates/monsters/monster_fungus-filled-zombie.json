@@ -1,0 +1,126 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 37,
+    "upper": 47
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1000,
+    "upper": 2200
+  },
+  "CritChance": {
+    "lower": 300,
+    "upper": 500
+  },
+  "ParryChance": {
+    "lower": 100,
+    "upper": 200
+  },
+  "Charisma": {
+    "lower": 9,
+    "upper": 13
+  },
+  "Quickness": {
+    "lower": 9,
+    "upper": 12
+  },
+  "Level": {
+    "lower": 7,
+    "upper": 9
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 900,
+    "upper": 1600
+  },
+  "ArmorMitigationAmount": {
+    "lower": 3,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 2,
+    "upper": 4
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1800,
+    "upper": 2500
+  },
+  "LootItemsTemplates": {
+    "item_pistol-crossbows.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_visored-steel-helm.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_silken-tricorne.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_shining-amethyst-loop.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_flashing-diamond-focus.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_mask-of-the-antler-king.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-dexterous-hands.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sly-evasion.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-insidious-distraction.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Fungus-Filled Zombie",
+  "MonsterSlug": "fungus-filled-zombie",
+  "Description": "An undead zombie stands before you, looking bloated from the fungus growing on and in it. ",
+  "MonsterItems": [
+    "Overfull Stomach",
+    "Broken Spear"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 12,
+  "SpecialAbility": {
+    "Id": 15,
+    "SoundSlug": "vomit",
+    "Name": "Vomit",
+    "Description": "Reduces Player Difficulty to Hit by 50% for 4 rounds. Increases Monster Damage by 25% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q3_DifficultyToHit",
+        "FriendlyStatName": "Difficulty to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 4
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 2500,
+        "Duration": 2
+      }
+    ]
+  }
+}

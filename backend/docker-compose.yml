@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  createtemplates:
+    image: ${DOCKER_REGISTRY-}createtemplates
+    build:
+      context: .
+      dockerfile: createTemplates/Dockerfile

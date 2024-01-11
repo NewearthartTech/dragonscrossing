@@ -1,0 +1,237 @@
+{
+  "actionType": "attack",
+  "round": 1,
+  "isCombatOpportunityAvailable": false,
+  "isCharismaOpportunittAvailable": false,
+  "monsterResults": {
+    "monster": {
+      "id": "1",
+      "areaId": "1",
+      "name": "Gargoyle",
+      "personality": "Enraged",
+      "description": "Grumbling, stumbling, filthy and ragged, this little red creature's size does little to hide the wanton violence begging to burst at the first thing that looks at him the wrong way. Today, that happens to be you.",
+      "type": "warrior",
+      "url": "/img/api/monsters/gargoyle_fiend",
+      "power": 6,
+      "difficultyToHit": 3,
+      "armor": "Torn Rags and Leather",
+      "items": [
+        {
+          "name": "Runed Axe",
+          "url": "/img/api/items/runed_axe",
+          "rarity": "legendary"
+        },
+        {
+          "name": "Simple Shortsword",
+          "url": "/img/api/items/simple_shortsword",
+          "rarity": "epic"
+        }
+      ],
+      "attackType": "melee",
+      "healthStatus": "Fresh",
+      "totalHitpoints": 30,
+      "currentHitpoints": 0,
+      "range": 1,
+      "damage": 3,
+      "strength": 6,
+      "totalStrength": 6,
+      "agility": 5,
+      "totalAgility": 5,
+      "wisdom": 5,
+      "totalWisdom": 5,
+      "quickness": 7,
+      "totalQuickness": 7,
+      "level": 3,
+      "skills": []
+    },
+    "roll": {
+      "isHit": false,
+      "initiative": true
+    },
+    "isDead": true,
+    "isSpecialAbilityUsed": false
+  },
+  "heroResults": {
+    "hero": {
+      "id": "4",
+      "name": "Mabel The Mighty",
+      "url": "/img/api/heroes/female_warrior_gen_0",
+      "type": "warrior",
+      "gender": "female",
+      "generation": 0,
+      "isHearthstoneAvailable": false,
+      "currentZone": "enchanted-fields",
+      "totalHitpoints": 120,
+      "currentHitpoints": 53,
+      "power": 16,
+      "difficultyToHit": 4,
+      "damage": 16,
+      "attackSpeed": 7,
+      "strength": 10,
+      "totalStrength": 12,
+      "agility": 6,
+      "totalAgility": 6,
+      "wisdom": 8,
+      "totalWisdom": 8,
+      "quickness": 5,
+      "totalQuickness": 6,
+      "charisma": 5,
+      "totalCharisma": 5,
+      "gold": 100,
+      "availableStats": 5,
+      "rarity": "legendary",
+      "ascended": false,
+      "level": 10,
+      "experience": 12000,
+      "currentLvlStartExp": 11500,
+      "nextLvlExp": 13500,
+      "remainingQuests": 15,
+      "totalQuests": 20,
+      "unsecuredDCX": 20,
+      "learnedSkillCapacity": 8,
+      "remainingSkillPoints": 3,
+      "totalSkillPoints": 8,
+      "skills": [
+        {
+          "id": "1",
+          "url": "/img/api/skills/mage/firebolt",
+          "name": "firebolt",
+          "status": "learned",
+          "effect": "Deals 50 damage Deals 50 damage Deals 50 damage Deals 50 damage Deals 50 damage Deals 50 damage Deals 50 damage Deals 50 damage.",
+          "requiredSkillPoints": 1,
+          "uses": 2
+        },
+        {
+          "id": "2",
+          "url": "/img/api/skills/mage/ice_tomb",
+          "name": "ice tomb",
+          "status": "learned",
+          "effect": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 3
+        },
+        {
+          "id": "3",
+          "url": "/img/api/skills/mage/drowse",
+          "name": "drowse",
+          "status": "learned",
+          "effect": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 0
+        },
+        {
+          "id": "4",
+          "url": "/img/api/skills/mage/heal",
+          "name": "heal",
+          "status": "learned",
+          "effect": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 1
+        },
+        {
+          "id": "5",
+          "url": "/img/api/skills/mage/magic_missile",
+          "name": "magic missile",
+          "status": "learned",
+          "effect": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 1
+        },
+        {
+          "id": "6",
+          "url": "/img/api/skills/mage/ray_of_frost",
+          "name": "ray of frost",
+          "status": "unlearned",
+          "effect": "Deals 50 damage",
+          "requiredSkillPoints": 1
+        },
+        {
+          "id": "7",
+          "url": "/img/api/skills/mage/shield",
+          "name": "shield",
+          "status": "unlearned",
+          "effect": "Deals 50 damage",
+          "requiredSkillPoints": 1
+        },
+        {
+          "id": "8",
+          "url": "/img/api/skills/mage/teleport",
+          "name": "teleport",
+          "status": "learned",
+          "effect": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 0
+        },
+        {
+          "id": "13",
+          "referenceId": "203",
+          "url": "/img/api/skills/mage/fireball",
+          "name": "fireball",
+          "status": "unlearned",
+          "effect": "Deals 90 damage and inflicts 20 burn damage for 2 turns",
+          "requiredSkillPoints": 2
+        },
+        {
+          "id": "14",
+          "referenceId": "204",
+          "url": "/img/api/skills/mage/wish",
+          "name": "wish",
+          "status": "unlearned",
+          "effect": "Deals 110 damage and freezes the enemy for the next turn",
+          "requiredSkillPoints": 3
+        },
+        {
+          "id": "10",
+          "referenceId": "200",
+          "status": "unidentified",
+          "url": "/img/api/skills/unidentified_skill"
+        },
+        {
+          "id": "11",
+          "referenceId": "201",
+          "status": "unidentified",
+          "url": "/img/api/skills/unidentified_skill"
+        }
+      ],
+      "equippedItems": [
+        {
+          "id": "4",
+          "name": "Cloth Robes",
+          "type": "chest",
+          "url": "/img/api/items/cloth_robes",
+          "rarity": "rare",
+          "damage": 0,
+          "armor": 1,
+          "parry": 1,
+          "dodge": 0,
+          "crit": 0,
+          "doubleAttack": 0
+        }
+      ]
+    },
+    "roll": {
+      "isHit": true,
+      "initiative": false,
+      "dice": [
+        {
+          "sides": 6,
+          "result": 5
+        },
+        {
+          "sides": 4,
+          "result": 2
+        },
+        {
+          "sides": 20,
+          "result": 14
+        }
+      ],
+      "totalDamage": 16,
+      "bonusDamage": 3,
+      "critDamage": 6,
+      "armorMitigation": 8,
+      "parryMitigation": 4
+    },
+    "isDead": false
+  }
+}

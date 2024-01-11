@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 450,
+      "upper": 725
+    },
+    "DodgeRate": {
+      "lower": 200,
+      "upper": 300
+    },
+    "CriticalHitRate": {
+      "lower": 400,
+      "upper": 700
+    },
+    "HitPoints": {
+      "lower": 3,
+      "upper": 7
+    },
+    "Charisma": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Agility": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "ring-of-barriers",
+  "name": "Ring of Barriers",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "ring-of-barriers",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_overhand_chop",
+  "slug": "skill-overhand-chop",
+  "name": "Overhand Chop",
+  "description": "Deals 1D6 + (Strength / 7)",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 1,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

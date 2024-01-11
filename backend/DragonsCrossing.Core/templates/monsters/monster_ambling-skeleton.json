@@ -1,0 +1,126 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 41,
+    "upper": 50
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 2200
+  },
+  "CritChance": {
+    "lower": 700,
+    "upper": 900
+  },
+  "ParryChance": {
+    "lower": 400,
+    "upper": 800
+  },
+  "Charisma": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 8,
+    "upper": 10
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1200,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 4
+  },
+  "BonusDamage": {
+    "lower": 2,
+    "upper": 3
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2500,
+    "upper": 3500
+  },
+  "LootItemsTemplates": {
+    "item_gladiator-leather-sandals.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_heavy-flamberge.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_iron-shod-staff.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_ring-of-ruin.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_glassmail.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_defiant-boots-of-the-third-war.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Ambling Skeleton",
+  "MonsterSlug": "ambling-skeleton",
+  "Description": "An undead skeleton is shambling about, and you feel a revulsion creep up in you at its unnatural gait and presence. This thing needs to be put down.",
+  "MonsterItems": [
+    "Surprisingly Well-Kept Sword",
+    "Bracer"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 12,
+  "SpecialAbility": {
+    "Id": 17,
+    "SoundSlug": "flail",
+    "Name": "Flail",
+    "Description": "Lowers Monster Armor Mitigation Chance by 40% for 1 round. Increases Monster Damage by 35% for 1 round.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 3500,
+        "Duration": 1
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -4000,
+        "Duration": 1
+      }
+    ]
+  }
+}

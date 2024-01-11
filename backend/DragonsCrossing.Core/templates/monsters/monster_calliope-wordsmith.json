@@ -1,0 +1,136 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 62,
+    "upper": 67
+  },
+  "ChanceToHit": {
+    "lower": 375,
+    "upper": 375
+  },
+  "ChanceToDodge": {
+    "lower": 600,
+    "upper": 800
+  },
+  "DifficultyToHit": {
+    "lower": 2500,
+    "upper": 2900
+  },
+  "CritChance": {
+    "lower": 1500,
+    "upper": 1700
+  },
+  "ParryChance": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "Charisma": {
+    "lower": 12,
+    "upper": 15
+  },
+  "Quickness": {
+    "lower": 14,
+    "upper": 22
+  },
+  "Level": {
+    "lower": 11,
+    "upper": 13
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 700,
+    "upper": 1300
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 7
+  },
+  "BonusDamage": {
+    "lower": 3,
+    "upper": 5
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 2500
+  },
+  "LootItemsTemplates": {
+    "item_wicked-bardiche.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_iron-greaves-and-boots.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_orichalcum-cube.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_cowhide-boots.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_dallans-winter-razor.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_the-blood-infused-kris.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-haste.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-drowse.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-teleport.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Calliope, Wordsmith",
+  "MonsterSlug": "calliope-wordsmith",
+  "Description": "You are deeply inspired by her profound beaty, and have the urge to right a song, or create art with your weapons.",
+  "MonsterItems": [
+    "Inspiring Presence",
+    "Sparkling Hands"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "LocationTile": 38,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "inspiration",
+    "Name": "Inspiration",
+    "Description": "Increases Monster Bonus Damage and Crit by 30% for 2 rounds. Reduces Hero Chance to Hit by 25% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+{
+"AffectType": "Monster",
+"Statname": "Q8_BonusDamage",
+"FriendlyStatName": "Bonus Damage",
+"Description": "FILL THIS IN",
+"AffectAmount": 3000,
+"Duration": 2
+
+},    
+{
+"AffectType": "Monster",
+"Statname": "Q7_Crit",
+"FriendlyStatName": "Crit",
+"Description": "FILL THIS IN",
+"AffectAmount": 3000,
+"Duration": 2  
+
+},    
+{
+"AffectType": "Hero",
+"Statname": "Q3_ChanceToHit",
+"FriendlyStatName": "Chance to Hit",
+"Description": "FILL THIS IN",
+"AffectAmount": -2500,
+"Duration": 2
+      }
+    ]
+  }
+}

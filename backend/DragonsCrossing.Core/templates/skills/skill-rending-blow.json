@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_rending_blow",
+  "slug": "skill-rending-blow",
+  "name": "Rending Blow",
+  "description": "Deals 1D10 + ((Wisdom + Agility) / 13) damage and reduces Monster mitigation chance by 15% until end of combat",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 4,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

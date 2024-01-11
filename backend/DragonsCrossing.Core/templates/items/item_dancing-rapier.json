@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 200,
+      "upper": 350
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "dancing-rapier",
+  "name": "Dancing Rapier",
+  "itemDropSound": "metal-weapon",
+  "slot": "mainHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "dancing-rapier",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,196 @@
+[
+	{
+		"Slug": "30",
+		"EncounterName": "Foreign Berries",
+		"ChanceEncounterType": "foreignBerries",
+		"IntroText": "The world of Horizon is new to everyone. These berries look edible, and smell sweet.",
+		"Choices": [
+			{
+				"choiceSlug": "5",
+				"choiceText": "Eat the berries. Berries are universally delicious, right?",
+				"goodOutcomeChance": 50,
+				"goodOutcomeText": "The alien berries do wonders for your constitution. You recover a good amount of your health. [heal for 15%]",
+				"badOutcomeText": "The berries, while delicious, give you a tummy ache that leave you wondering why you ever try new food. You feel a little weaker. [Damaged for -5% health]"
+			},
+			{
+				"choiceSlug": "6",
+				"choiceText": "Carefully test one part of one berry and wait an hour. Can't be too careful with unknown fruit.",
+				"goodOutcomeChance": 70,
+				"goodOutcomeText": "Sweet berries were a boon to mankind on your old world, and here it seems they are no different. You recover a little bit of health. [heal for 8%]",
+				"badOutcomeText": "The berries, while sweet, give the feeling that they might cause horrific stomach problems. You decide to err on the side of caution. [Nothing happens]"
+			},
+			{
+				"choiceSlug": "7",
+				"choiceText": "You leave the berries to their own devices.",
+				"goodOutcomeChance": 100,
+				"goodOutcomeText": "The berries remain uneaten, and for the moment, you remain unchanged."
+			}
+		],
+		"type": "ChanceEncounterTemplate"
+	},
+	{
+		"Slug": "31",
+		"EncounterName": "Freshwater Orb",
+		"ChanceEncounterType": "freshwaterOrb",
+		"IntroText": "On your home world, there would be no reason at all that a freestanding orb of water would appear in front of springs, rivers, and waterfalls. On Horizon? Apparently these things happen.",
+		"Choices": [
+			{
+				"choiceSlug": "8",
+				"choiceText": "Touch the orb.",
+				"goodOutcomeChance": 15,
+				"goodOutcomeText": "As you your hand comes in contact with the orb, you feel cleansed. You feel a righteous strength fill you, and you know you must discover more about the world of Horizon. You feel yourself become a bit more enlightened. [Difficult to Hit +1%]",
+				"badOutcomeText": "The orb pops as your brutish hand comes in contact with it. You feel a little sad knowing if things had gone differently, it might have been a significant boon in your journey. [Nothing happens]"
+			},
+			{
+				"choiceSlug": "9",
+				"choiceText": "Rest in front of the orb, and ponder its mysteries.",
+				"goodOutcomeChance": 55,
+				"goodOutcomeText": "Pondering has given you a new understanding of Horizon. You are more used to the world now, and you have some new tricks you want to try next time you're in combat. [+1 Charisma, +1 Quickness]",
+				"badOutcomeText": "You took a little too much time off. You feel a little strength leave your body. [-1 Charisma, -1 Quickness]"
+			},
+			{
+				"choiceSlug": "10",
+				"choiceText": "The orb is probably better left alone.",
+				"goodOutcomeChance": 65,
+				"goodOutcomeText": "You walk away from this natural wonder reinvigorated. [+1 quest refunded]",
+				"badOutcomeText": "You walk away from this natural wonder feeling tired from your detour. [No quest refunded]"
+			}
+		],
+		"type": "ChanceEncounterTemplate"
+	},
+	{
+		"Slug": "32",
+		"EncounterName": "Gambler",
+		"ChanceEncounterType": "gambler",
+		"IntroText": "A hooded individual of indeterminate heritage approaches you and offers you the opportunity for some high risk high reward games of chance. You can't place their accent, but you definitely recognize their lust for gain.",
+		"Choices": [
+			{
+				"choiceSlug": "11",
+				"choiceText": "",
+				"goodOutcomeChance": 3,
+				"goodOutcomeText": "You feel more confident in hitting monsters. [Chance to hit +1.5% permanently]",
+				"badOutcomeText": "You feel a little more sluggish. [Chance to hit -1% permanently]"
+			},
+			{
+				"choiceSlug": "12",
+				"choiceText": "",
+				"goodOutcomeChance": 3,
+				"goodOutcomeText": "You feel significantly beefier, as if raised from a hearty stock. [+3 hit points permanently]",
+				"badOutcomeText": "Your beef factor reduces significantly. [-2 hit points permanently]"
+			},
+			{
+				"choiceSlug": "13",
+				"choiceText": "",
+				"goodOutcomeChance": 3,
+				"goodOutcomeText": "The gambler snarls as the dice rolls in your favor. You are infused with gambling goodness.[A permanent +1 strength, +1 wisdom, +1 agility]",
+				"badOutcomeText": "Your luck is horrid, and you watch with dismay as the gambler snatches up precoius attribute juice from your body. [A permanent -1 strength, -1 wisdom, -1 agility]"
+			},
+			{
+				"choiceSlug": "14",
+				"choiceText": "",
+				"goodOutcomeChance": 6,
+				"goodOutcomeText": "No risk, no reward!"
+			}
+		],
+		"type": "ChanceEncounterTemplate"
+	},
+	{
+		"Slug": "33",
+		"EncounterName": "Wandering Wizard Cocytus",
+		"ChanceEncounterType": "wonderingWizard",
+		"IntroText": "Hello, Adventurer. I am new to Horizon, though not new to life…I sense my siblings here have run amok. Do you want to return to your home city? I can send you there easily. If not, you must perform a test of strength–but don’t worry, I am fairly weak in physical strength.",
+		"Choices": [
+			{
+				"choiceSlug": "15",
+				"choiceText": "Yes, send me back to Aedos, Cocytus.",
+				"goodOutcomeChance": 100,
+				"goodOutcomeText": "Back to Aedos you go!",
+				"badOutcomeText": ""
+			},
+			{
+				"choiceSlug": "16",
+				"choiceText": "I think I’ll try my luck at arm wrestling you.",
+				"goodOutcomeChance": 18,
+				"goodOutcomeText": "Ok, have a nice day, see you around. [+1 experience point].",
+				"badOutcomeText": "Your strength is unimpressive. I'll send you back to Aedos for safekeeping."
+			}
+		],
+		"type": "ChanceEncounterTemplate"
+	},
+	{
+		"Slug": "34",
+		"EncounterName": "Mysterious Treasure Box",
+		"ChanceEncounterType": "rustingArandomWeapon",
+		"IntroText": "This is a suspicious looking treasure chest, and it appears unlocked. You get a sense of unease from it, and you find yourself suddenly surrounded by a disquieting mist.",
+		"Choices": [
+			{
+				"choiceSlug": "17",
+				"choiceText": "Open the chest.",
+				"goodOutcomeChance": 65,
+				"goodOutcomeText": "While no treasure is found, you leave with a fine sense of accomplishment as the mist disperses. [+2 experience]",
+				"badOutcomeText": "The acidic mist overtakes you, and you're forced to drop one of your items to survive. [You lost 1 equipped item at random]"
+			},
+			{
+				"choiceSlug": "18",
+				"choiceText": "Try to leave this box, and this mist, by running.",
+				"goodOutcomeChance": 75,
+				"goodOutcomeText": "You're a little worn out, a little wiser, and safe. For now. [+1 experience]",
+				"badOutcomeText": "The acidic mist overtakes you, and you're forced to drop one of your items to survive. [You lost 1 equipped item at random]"
+			}
+		],
+		"type": "ChanceEncounterTemplate"
+	},
+	{
+		"Slug": "36",
+		"EncounterName": "The Sphynx",
+		"ChanceEncounterType": "riddler",
+		"IntroText": "A creature appears that you could only identify from the vague descriptions you heard at your mother's knee in stories she told before bed. It flexes its ennormous knotted muscles and smiles down at you. 'What goes on four legs in the morning, two legs in the afternoon, and three legs in the evening?'",
+		"Choices": [
+			{
+				"choiceSlug": "19",
+				"choiceText": "You clear your throat, and say the first thing comes to your mind.",
+				"goodOutcomeChance": 60,
+				"goodOutcomeText": "'A man', you croak. 'You are correct! Enjoy this gift.' [+1% Chance to hit]",
+				"badOutcomeText": "'A diseased frog', you say, chest puffed out, certain your answer is correct. 'Wrong!' the Sphynx screeches, and it mauls you with its massive paw, leaving you on the cusp of death. [HP is set to 1%]"
+			},
+			{
+				"choiceSlug": "20",
+				"choiceText": "You don't feel quite smart enough to answer this riddle. The monster seems to be distracted, and you bolt.",
+				"goodOutcomeChance": 50,
+				"goodOutcomeText": "You can hear the monster screeching in rage. You hide behind a boulder and let out a relieved sigh.",
+				"badOutcomeText": "You thought you were quick, but the Sphynx was quicker. It's able to swipe you with its claws before you escape through a maze of trees. [-20% HP]"
+			}
+		],
+		"type": "ChanceEncounterTemplate"
+	},
+	{
+		"Slug": "37",
+		"EncounterName": "Lovecraftian monster",
+		"ChanceEncounterType": "lovecraftianMonster ",
+		"IntroText": "A horror not from Horizon or your own original world is floating and moving erratically towards you. Before you can react it appears to “skip” through reality and appears before you.",
+		"Choices": [
+			{
+				"choiceSlug": "21",
+				"choiceText": "Use body language, grunts, and hand gestures to convince it to leave.",
+				"goodOutcomeChance": 42,
+				"goodOutcomeText": "You feel the world of Horizon itself heave a sigh of relief as the Horror agrees, and steps through a purple crack in reality and disappears. [+1 Charisma +1 Hit Point]",
+				"badOutcomeText": "The creature utters horrible sounds that crush your sanity and you feel less connected to humanity. It floats away, bored with you. [-1 Charisma]"
+			},
+			{
+				"choiceSlug": "22",
+				"choiceText": "Run for help. This thing is way too scary.",
+				"goodOutcomeChance": 42,
+				"goodOutcomeText": "You and another adventurer put aside your differences to poke and prod at the Horror until it screams in frustration and disappears with a dull boom. [+1 Quickness +1 Hit Point]",
+				"badOutcomeText": "The Horror took your sudden flee as a sign of aggression and it wraps a tendril around both of your legs. Finding nothing of value there, it floats away. [-1 Quickness]"
+			},
+			{
+				"choiceSlug": "23",
+				"choiceText": "Back away slowly while trying not to listen to the gibbering madness that comes from its orifices.",
+				"goodOutcomeChance": 100,
+				"goodOutcomeText": "The horror ignores you and your slightly soiled linens.",
+				"badOutcomeText": ""
+			}
+		],
+		"type": "ChanceEncounterTemplate"
+	}
+]

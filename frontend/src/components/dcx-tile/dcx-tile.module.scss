@@ -1,0 +1,112 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+
+.tileContainer {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 302px;
+  width: 422px;
+  @media screen and (max-width: $extraSmall) {
+    height: 232px;
+    width: 323px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.tileContainerDisabled {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 302px;
+  width: 422px;
+  @media screen and (max-width: $extraSmall) {
+    height: 232px;
+    width: 323px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.tileContainer:hover {
+  background-color: v.$color-white;
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tileDisabled {
+  position: absolute;
+  background-color: v.$color-black;
+  opacity: 0.3;
+  height: 295px;
+  width: 410px;
+  z-index: 4;
+}
+
+// wooden-tile-border styles
+// .tileBorderContainer {
+//   position: absolute;
+//   z-index: 2;
+//   height: 305px;
+//   width: 425px;
+//   @media screen and (max-width: $extraSmall) {
+//     height: 232px;
+//     width: 323px;
+//   }
+// }
+
+.tileBorderContainer {
+  position: absolute;
+  z-index: 2;
+  height: 295px;
+  width: 412px;
+  @media screen and (max-width: $extraSmall) {
+    height: 225px;
+    width: 316px;
+  }
+}
+
+.tileImageContainer {
+  position: absolute;
+  margin-right: 3px;
+  margin-bottom: 6px;
+  z-index: 1;
+  height: 238px;
+  width: 371px;
+  @media screen and (max-width: $extraSmall) {
+    height: 180.5px;
+    width: 282px;
+  }
+}
+
+.tileTitleDescriptionContainer {
+  position: absolute;
+  z-index: 3;
+  justify-content: center;
+}
+
+.tileTitle {
+  color: v.$color-white;
+  margin-bottom: -5px;
+}
+
+.tileDescription {
+  color: v.$color-white;
+}
+
+.clickableTile {
+  cursor: pointer;
+}
+
+.tileStatus {
+  color: v.$color-danger-red-light;
+  font-size: 18px;
+}

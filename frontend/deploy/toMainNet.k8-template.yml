@@ -1,0 +1,499 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: rabbitmq
+  namespace: dcx-mainnet
+spec:
+  selector:
+    matchLabels:
+      app: rabbitmq
+  serviceName: rabbitmq
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: rabbitmq
+    spec:
+      containers:
+        - image: masstransit/rabbitmq
+
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "500m"
+
+          name: rabbitmq
+
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+
+          env:
+            - name: RABBITMQ_DEFAULT_USER
+              value: admin
+            - name: RABBITMQ_DEFAULT_PASS
+              value: admin
+
+          volumeMounts:
+            - name: rabbitmq-data
+              mountPath: /var/lib/rabbitmq
+
+  volumeClaimTemplates:
+    - metadata:
+        name: rabbitmq-data
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbitmq
+  namespace: dcx-mainnet
+spec:
+  ports:
+    - port: 5672
+  selector:
+    app: rabbitmq
+  clusterIP: None
+
+
+---
+
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: dcx-server
+    namespace: dcx-mainnet
+    labels:
+      app: dcx-server
+
+spec:
+  selector:
+    matchLabels:
+        app: dcx-server
+  replicas: 3
+  template:
+
+    metadata:
+        labels:
+            app: dcx-server
+    spec:
+
+        imagePullSecrets:
+        - name: newearthcb-azurecr
+
+        containers:
+        -   name: dcx-server
+            image: newearthcb.azurecr.io/dcx-server:__TAG__SERVER
+
+            resources:
+              requests:
+                memory: "500Mi"
+                cpu: "500m"
+
+
+            env:
+
+            -   name: mongo__connectionString
+                value: "mongodb+srv://doadmin:7B58JN09ES4lWp21@private-db-dcx-mainnet-a75ac727.mongo.ondigitalocean.com"
+
+            -   name: rabbitmq__host
+                value: "rabbitmq"
+
+            - name: redis__connectionString
+              value: "redis:6379"
+
+
+            -   name: ASPNETCORE_hostBuilder__reloadConfigOnChange
+                value: "false"
+
+            - name: login__PrivateKey
+              value: "awwpcmlbhbbetoseqfhswcdaglctwemxdfoegdonpjxkduywgaxefbvalqupjyjl"	
+
+
+            -   name: summonHero__priceInDcx
+                value: "10"
+
+            -   name: whitelist__whiteListFolder
+                value: "whitelist_production"
+
+            -   name: seasons__seasonsFolder
+                value: "production"
+
+            -   name: rewards__dcxRewardsFolder
+                value: "rewards_production"
+
+            -   name: summonHero__allowSummoning
+                value: "true"	
+
+            - name: combat__enableMendrakeRoot
+              value: "true"
+
+            -   name: web3__defaultChainId
+                value: "42161"
+
+            -   name: web3__chainRpc__42161__name
+                value: "arb-mainnet"
+            -   name: web3__chainRpc__42161__rpcUrl
+                value: "https://arb-mainnet.g.alchemy.com/v2/XXXXXXXXXXXXXXXXX"
+            -   name: web3__chainRpc__42161__alchemyKey
+                value: "XXXXXXXXXXXXXXXXX"
+
+            -   name: web3__contractsForChain__1.0.1313.0__42161__DcxHeroContract
+                value: "0xFdac927E174Fe3EeA7F1492Feb37F323E29D56A9"
+            -   name: web3__contractsForChain__1.0.1313.0__42161__TokenomicsContract
+                value: "0xfb7F863429801B2DBe14B77A323e9CCFd5aF6AB6"
+            -   name: web3__contractsForChain__1.0.1313.0__42161__DcxItemsContract
+                value: "0x64f18f8158ad4BA764bd864d4fFa9dF46eedB4Ce"
+            -   name: web3__contractsForChain__1.0.1313.0__42161__dcxTokenContract
+                value: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8"
+            -   name: web3__contractsForChain__1.0.1313.0__42161__DcxDfkItemsContract
+                value: "0xd4Cb0f3660Fb38d47dF9c63C280466b8E0463047"
+
+            - name: web3__contractsForChain__1.0.1313.0__53935__dcxTokenContract
+              value: "0x3AD9DFE640E1A9Cc1D9B0948620820D975c3803a"
+
+
+            -   name: web3__tokenCacheUpdateInveral
+                value: "300"
+
+            -   name: web3__isTestEndPointAvailable
+                value: "false"
+
+            -   name: web3__reservedHeroCount
+                value: "12"
+
+
+            -   name: web3__serverPrivateKey
+                valueFrom:
+                  secretKeyRef:
+                    name: web3-creds
+                    key: w3PrivateKey
+            
+            -   name: web3__metaDataBaseURI
+                value: "https://game.dragonscrossing.com/api/metadata/"
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: dcx-web
+    namespace: dcx-mainnet
+    labels:
+      app: dcx-web
+
+spec:
+  selector:
+    matchLabels:
+        app: dcx-web
+  replicas: 3
+  template:
+
+    metadata:
+        labels:
+            app: dcx-web
+    spec:
+
+        imagePullSecrets:
+        - name: newearthcb-azurecr
+
+        containers:
+        -   name: dcx-web
+            image: newearthcb.azurecr.io/dcx-web:__TAG__FRONTEND
+
+            resources:
+              requests:
+                memory: "1000Mi"
+                cpu: "500m"
+
+
+            env:
+
+            -   name: NEXT_PUBLIC_API
+                value: "."
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    name: dcx-server
+    namespace: dcx-mainnet
+spec:
+    ports:
+    -   name: http 
+        port: 80
+    selector:
+        app: dcx-server
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    name: dcx-web
+    namespace: dcx-mainnet
+spec:
+    ports:
+    -   name: http 
+        port: 3000
+    selector:
+        app: dcx-web
+
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dcx-mainnet-ingress-all
+  namespace: dcx-mainnet
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  tls:
+    - hosts:
+      - game.dragonscrossing.com
+      secretName: dcx-mainnet-tls-main
+
+  rules:
+  - host: game.dragonscrossing.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: dcx-web
+            port: 
+              number: 3000
+      
+      - pathType: Prefix
+        path: "/api"
+        backend:
+          service:
+            name: dcx-server
+            port: 
+              number: 80
+
+---
+
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: elasticsearch
+  namespace: dcx-mainnet
+spec:
+  selector:
+    matchLabels:
+      app: elasticsearch
+  serviceName: elasticsearch
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      securityContext:
+        fsGroup: 1000
+
+      initContainers:
+        - name: init-sysctl
+          image: busybox
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            privileged: true
+          command: ["sysctl", "-w", "vm.max_map_count=262144"]
+
+      containers:
+        - image: docker.elastic.co/elasticsearch/elasticsearch:8.6.0
+
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "500m"
+
+          name: elasticsearch
+          securityContext:
+            privileged: true
+            runAsUser: 1000
+            capabilities:
+              add:
+                - IPC_LOCK
+                - SYS_RESOURCE
+
+          ports:
+            - containerPort: 9200
+
+          env:
+            - name: bootstrap.memory_lock
+              value: "false"
+            - name: xpack.security.enabled
+              value: "false"
+            - name: discovery.type
+              value: "single-node"
+            - name: ES_JAVA_OPTS
+              value: "-Xmx256m -Xms256m"
+
+          volumeMounts:
+            - name: elasticsearch-data
+              mountPath: /usr/share/elasticsearch/data
+
+          readinessProbe:
+            httpGet:
+              scheme: HTTP
+              path: /_cluster/health?local=true
+              port: 9200
+            initialDelaySeconds: 5
+
+
+  volumeClaimTemplates:
+    - metadata:
+        name: elasticsearch-data
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 6Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: elasticsearch
+  namespace: dcx-mainnet
+spec:
+  ports:
+    - port: 9200
+  selector:
+    app: elasticsearch
+  clusterIP: None
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: kibana-data-pvc
+  namespace: dcx-mainnet
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+  namespace: dcx-mainnet
+  labels:
+    app: kibana
+spec:
+  selector:
+    matchLabels:
+      app: kibana
+  strategy:
+    type: Recreate
+
+  template:
+    metadata:
+      labels:
+        app: kibana
+    spec:
+      containers:
+        - image: docker.elastic.co/kibana/kibana:8.6.0
+
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "100m"
+
+          name: kibana
+          ports:
+            - containerPort: 5601
+          env:
+            - name: ELASTICSEARCH_HOSTS
+              value: http://elasticsearch:9200
+
+      # We will populate kibana soon
+      #          volumeMounts:
+      #            - mountPath: /usr/share/kibana/config
+      #              name: kibana-data
+      #              subPath: config
+      #            - mountPath: /usr/share/kibana/data
+      #              name: kibana-data
+      #              subPath: data
+
+      volumes:
+        - name: kibana-data
+          persistentVolumeClaim:
+            claimName: kibana-data-pvc
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana
+  namespace: dcx-mainnet
+spec:
+  ports:
+    - port: 5601
+  selector:
+    app: kibana
+  clusterIP: None
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: dcx-mainnet
+  labels:
+    app: redis
+spec:
+  selector:
+    matchLabels:
+      app: redis
+  strategy:
+    type: Recreate
+
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+        - image: redis:6.2-alpine
+
+          resources:
+            requests:
+              memory: "500Mi"
+              cpu: "200m"
+
+          name: redis
+          ports:
+            - containerPort: 6379
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: dcx-mainnet
+spec:
+  ports:
+    - port: 6379
+  selector:
+    app: redis
+  clusterIP: None

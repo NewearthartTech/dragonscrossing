@@ -1,0 +1,47 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1900,
+      "upper": 2400
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 6
+    },
+    "CriticalHitRate": {
+      "lower": 400,
+      "upper": 800
+    },
+    "Quickness": {
+      "lower": 5,
+      "upper": 7
+    },
+    "Agility": {
+      "lower": 5,
+      "upper": 7
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "magnuss-mask-of-annihilation",
+  "name": "Magnus's Mask of Annihilation",
+  "itemDropSound": "leather-helmet",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "magnuss-mask-of-annihilation",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

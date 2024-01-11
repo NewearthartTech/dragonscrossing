@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 500,
+      "upper": 700
+    },
+    "DodgeRate": {
+      "lower": 325,
+      "upper": 550
+    },
+    "CriticalHitRate": {
+      "lower": 650,
+      "upper": 950
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Agility": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "ring-of-ruin",
+  "name": "Ring of Ruin",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "ring-of-ruin",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

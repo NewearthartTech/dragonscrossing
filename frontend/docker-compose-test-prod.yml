@@ -1,0 +1,12 @@
+# this is used to generate compose file for front end devs to run
+version: "2"
+
+services:
+  dcx-test-web:
+    image: dcx-web-test-build
+    build: .
+    environment:
+      - NEXT_PUBLIC_API=http://localhost:8080
+      - NEXT_PUBLIC_DCXHERO_CONTRACT_ADDRESS=0x680687b3ed789625af150d6d3a8341c02c98422b
+    ports:
+      - 3010:3000

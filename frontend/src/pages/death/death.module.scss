@@ -1,0 +1,25 @@
+@use "@/styles/variables" as v;
+
+.main {
+  position: relative;
+  background-image: url(../../../public/img/backgrounds/wildPrairie-interior.jpg);
+  min-height: 100vh;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // Footer Padding
+  padding-bottom: 75px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opaqueContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  opacity: 0.5;
+}

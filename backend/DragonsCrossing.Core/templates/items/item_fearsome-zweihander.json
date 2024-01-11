@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "CriticalHitRate": {
+      "lower": 620,
+      "upper": 820
+    },
+    "HitPoints": {
+      "lower": 3,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "fearsome-zweihander",
+  "name": "Fearsome Zweihänder",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 20
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "fearsome-zweihander",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

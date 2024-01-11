@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1170,
+      "upper": 1710
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 5
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 2
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "rigid-metal-cuirass",
+  "name": "Rigid Metal Cuirass",
+  "itemDropSound": "mail",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "rigid-metal-cuirass",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2160,
+      "upper": 2880
+    },
+    "ArmorMitigationAmount": {
+      "lower": 8,
+      "upper": 9
+    },
+    "ParryRate": {
+      "lower": 300,
+      "upper": 450
+    },
+    "Strength": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "oiled-scale-mail",
+  "name": "Oiled Scale Mail",
+  "itemDropSound": "mail",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "oiled-scale-mail",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

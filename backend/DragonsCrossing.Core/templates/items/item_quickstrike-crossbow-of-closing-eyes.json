@@ -1,0 +1,37 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 3
+  },
+  "affectedAttributes": {
+    "Agility": {
+      "lower": 3,
+      "upper": 5
+    },
+    "ParryRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "CriticalHitRate": {
+      "lower": 700,
+      "upper": 900
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "quickstrike-crossbow-of-closing-eyes",
+  "name": "Quickstrike, Crossbow of Closing Eyes",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 20
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "quickstrike-crossbow-of-closing-eyes",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

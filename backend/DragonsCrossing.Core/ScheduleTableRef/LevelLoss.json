@@ -1,0 +1,82 @@
+[
+  {
+    "level": 1,
+    "loss": 0
+  },
+  {
+    "level": 2,
+    "loss": 1
+  },
+  {
+    "level": 3,
+    "loss": 1
+  },
+  {
+    "level": 4,
+    "loss": 1
+  },
+  {
+    "level": 5,
+    "loss": 2
+  },
+  {
+    "level": 6,
+    "loss": 2
+  },
+  {
+    "level": 7,
+    "loss": 2
+  },
+  {
+    "level": 8,
+    "loss": 3
+  },
+  {
+    "level": 9,
+    "loss": 3
+  },
+  {
+    "level": 10,
+    "loss": 3
+  },
+  {
+    "level": 11,
+    "loss": 4
+  },
+  {
+    "level": 12,
+    "loss": 4
+  },
+  {
+    "level": 13,
+    "loss": 4
+  },
+  {
+    "level": 14,
+    "loss": 5
+  },
+  {
+    "level": 15,
+    "loss": 5
+  },
+  {
+    "level": 16,
+    "loss": 5
+  },
+  {
+    "level": 17,
+    "loss": 6
+  },
+  {
+    "level": 18,
+    "loss": 6
+  },
+  {
+    "level": 19,
+    "loss": 6
+  },
+  {
+    "level": 20,
+    "loss": 7
+  }
+]

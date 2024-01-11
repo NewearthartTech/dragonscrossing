@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_thirst_for_blood",
+  "slug": "skill-thirst-for-blood",
+  "name": "Thirst for Blood",
+  "description": "Deals 2D6 + (Strength / 6). If a monster is killed with this attack, heal 2D6 + (Wisdom / 6).",
+  "skillClass": "Warrior",
+  "requiredSkillPoints": 6,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 600,
+      "upper": 800
+    },
+    "DodgeRate": {
+      "lower": 400,
+      "upper": 650
+    },
+    "CriticalHitRate": {
+      "lower": 1000,
+      "upper": 1400
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "tattered-leather-loop",
+  "name": "Tattered Leather Loop",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "tattered-leather-loop",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

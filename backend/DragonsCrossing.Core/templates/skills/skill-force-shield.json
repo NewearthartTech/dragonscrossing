@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_force_shield",
+  "slug": "skill-force-shield",
+  "name": "Force Shield",
+  "description": "Increases Hero Armor Mitigation Amount by 30% + ((Strength + Charisma ) / 2)% + 1 for 3 rounds. Increaseses Hero Armor Mitigation Chance by ((Agility + Wisdom) / 2)% for 2 rounds.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 4,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 4,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

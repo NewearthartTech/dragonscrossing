@@ -1,0 +1,158 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 540px;
+  height: 750px;
+  @media screen and (max-width: $extraSmall) {
+    width: 370px;
+    height: 550px;
+  }
+  margin-bottom: 80px;
+  margin-top: 5px;
+}
+
+.backgroundImage {
+  position: absolute;
+}
+
+.headerContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 30px;
+  @media screen and (max-width: $extraSmall) {
+    top: 21px;
+  }
+}
+
+.headerText {
+  color: v.$color-gold;
+  font-size: 24px;
+}
+
+.orbImageContainer {
+  position: absolute;
+  top: 68px;
+  justify-content: center;
+  @media screen and (max-width: $extraSmall) {
+    top: 55px;
+  }
+}
+
+.orbBackgroundImage {
+  position: absolute;
+  top: 0px;
+  justify-content: center;
+  height: 350px;
+  width: 380px;
+  @media screen and (max-width: $extraSmall) {
+    height: 220px;
+    width: 306px;
+  }
+}
+
+.orbImage {
+  position: absolute;
+  top: 16px;
+  justify-content: center;
+  height: 320px;
+  width: 360px;
+  @media screen and (max-width: $extraSmall) {
+    top: 10px;
+    height: 200px;
+    width: 290px;
+  }
+}
+
+.textContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 420px;
+  width: 460px;
+  height: 140px;
+  @media screen and (max-width: $extraSmall) {
+    width: 320px;
+    height: 80px;
+    top: 280px;
+  }
+}
+
+.text {
+  color: v.$color-light-gray;
+  font-size: 18px;
+  padding-bottom: 20px;
+  @media screen and (max-width: $extraSmall) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.optionsContainer {
+  position: absolute;
+  justify-content: center;
+  bottom: 16px;
+  left: 22px;
+  width: 496px;
+  height: 165px;
+  @media screen and (max-width: $extraSmall) {
+    width: 340px;
+    bottom: 14px;
+    left: 15px;
+  }
+}
+
+.leaveOptionsContainer {
+  position: absolute;
+  justify-content: center;
+  bottom: 16px;
+  left: 22px;
+  width: 496px;
+  height: 55px;
+  @media screen and (max-width: $extraSmall) {
+    width: 340px;
+    bottom: 14px;
+    left: 15px;
+  }
+}
+
+.optionContainer {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.opacityContainer {
+  background-color: v.$color-black;
+  height: 100%;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: v.$color-gold;
+  opacity: 0.4;
+}
+
+.optionText {
+  position: absolute;
+  cursor: pointer;
+  color: v.$color-light-gray;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+}

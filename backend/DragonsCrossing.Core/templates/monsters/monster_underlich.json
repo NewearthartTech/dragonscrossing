@@ -1,0 +1,123 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 32,
+    "upper": 44
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 200,
+    "upper": 300
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 3100
+  },
+  "CritChance": {
+    "lower": 300,
+    "upper": 500
+  },
+  "ParryChance": {
+    "lower": 200,
+    "upper": 400
+  },
+  "Charisma": {
+    "lower": 15,
+    "upper": 20
+  },
+  "Quickness": {
+    "lower": 8,
+    "upper": 10
+  },
+  "Level": {
+    "lower": 5,
+    "upper": 7
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 900,
+    "upper": 1300
+  },
+  "ArmorMitigationAmount": {
+    "lower": 2,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 2,
+    "upper": 2
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1200,
+    "upper": 2200
+  },
+  "LootItemsTemplates": {
+    "item_khula-zira.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_light-spear.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_leather-boots-of-martin.json": {
+      "ChancesOfDrop": 1300
+    },
+    "item_finnars-spellsword-of-despair.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_greaves-of-miracles.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-mental-knit.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-force-shield.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-magic-missile.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Underlich",
+  "MonsterSlug": "underlich",
+  "Description": "This thing is pure skeleton wrapped in plate. The crystal in his chest gleams with unholy power. ",
+  "MonsterItems": [
+    "Arcane Plate",
+    "Nefarious Staff"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 8,
+  "SpecialAbility": {
+    "Id": 10,
+    "SoundSlug": "icy-touch",
+    "Name": "Icy Touch",
+    "Description": "Increases Monster damage by 15% for 1 round. Increases Monster Critical by 100% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Critical Chance",
+        "Description": "Increases Critical Chance by 100% for 2 rounds.",
+        "AffectAmount": 10000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "The monster will deal 15% bonus damage for 1 round.",
+        "AffectAmount": 1500,
+        "Duration": 1
+      }
+    ]
+  }
+}

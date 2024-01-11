@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_sly_evasion",
+  "slug": "skill-sly-evasion",
+  "name": "Sly Evasion",
+  "description": "Add 5% + (Wisdom / 1.25)% flat chance to dodge for 3 rounds.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 7,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

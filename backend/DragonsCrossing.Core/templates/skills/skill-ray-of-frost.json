@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_ray_of_frost",
+  "slug": "skill-ray-of-frost",
+  "name": "Ray of Frost",
+  "description": "Deals 1D4 + (Wisdom / 8) damage and lowers monster DTH by (Agility)% for 2 rounds.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 4,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 1,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

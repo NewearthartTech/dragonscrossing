@@ -1,0 +1,526 @@
+@use "@/styles/variables" as v;
+$extra-extra-large: 1920px;
+$extra-large: 1670px;
+$medium: 1199px;
+$small: 899px;
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // Footer Padding
+  padding-bottom: 75px;
+  padding-top: 10px;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.parentContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+  width: 1190px;
+  margin-top: 50px;
+  @media screen and (max-width: $extra-large) {
+    height: 695px;
+    margin-top: 30px;
+  }
+  @media screen and (max-width: $medium) {
+    height: 750px;
+    width: 880px;
+  }
+  @media screen and (max-width: $small) {
+    margin-top: 25px;
+    height: 1440px;
+    width: 375px;
+  }
+}
+
+.subContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.heroContainer {
+  position: absolute;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 461px;
+  @media screen and (max-width: $medium) {
+    width: 411px;
+    top: 0px;
+  }
+  @media screen and (max-width: $small) {
+    width: 375px;
+    left: -3px;
+    top: 0px;
+  }
+}
+
+.warningMessageContainer {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  @media screen and (max-width: $extra-large) {
+    top: 40px;
+    left: 80px;
+  }
+  @media screen and (max-width: $medium) {
+    left: 56px;
+  }
+  @media screen and (max-width: $small) {
+    left: 38px;
+  }
+}
+
+.warningIcon {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+  color: v.$color-danger-red-light;
+  font-size: 26px;
+}
+
+.monsterContainer {
+  position: absolute;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 461px;
+  @media screen and (max-width: $medium) {
+    width: 411px;
+    top: 0px;
+  }
+  @media screen and (max-width: $small) {
+    width: 375px;
+    height: 600px;
+    top: 840px;
+  }
+}
+
+.characterBorder {
+  position: absolute;
+}
+
+.cardBgContainer {
+  position: absolute;
+  z-index: 0;
+}
+
+.shadowContainer {
+  position: absolute;
+  box-shadow: 3px 2px 10px 5px v.$color-black;
+  border-radius: 10px;
+  height: 490px;
+  width: 360px;
+  left: 54px;
+  top: 22px;
+  @media screen and (max-width: $extra-large) {
+    height: 440px;
+    width: 320px;
+    left: 75px;
+    bottom: -6px;
+  }
+  @media screen and (max-width: $medium) {
+    left: 50px;
+    bottom: -6px;
+  }
+  @media screen and (max-width: $small) {
+    left: 33px;
+    top: 33px;
+  }
+}
+
+.bottomLeftOrnamentContainer {
+  position: absolute;
+  z-index: 3;
+  bottom: 5px;
+  left: -1px;
+  height: 27px;
+  width: 27px;
+  @media screen and (max-width: $extra-large) {
+    left: -2px;
+  }
+}
+
+.bottomRightOrnamentContainer {
+  position: absolute;
+  z-index: 3;
+  bottom: 5px;
+  right: 2px;
+  height: 27px;
+  width: 27px;
+  @media screen and (max-width: $extra-large) {
+    right: 1px;
+  }
+}
+
+.cardHeaderContainer {
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+}
+
+.characterLevelBackground {
+  position: absolute;
+  z-index: 3;
+  top: -13px;
+  right: -19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  @media screen and (max-width: $extra-large) {
+    height: 72px;
+    width: 72px;
+  }
+}
+
+.monsterLevel {
+  position: absolute;
+  color: v.$color-white;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.characterImageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 520px;
+  width: 398.5px;
+  @media screen and (max-width: $extra-large) {
+    height: 468px;
+    width: 358.65px;
+  }
+}
+
+.monsterImage {
+  position: absolute;
+  margin-top: 24px;
+  left: 11px;
+  @media screen and (max-width: $extra-large) {
+    margin-top: 22px;
+    left: 10px;
+  }
+}
+
+.characterNameContainer {
+  position: absolute;
+  height: 24px;
+  width: 90%;
+  z-index: 5;
+  top: 15px;
+  margin-right: 10px;
+  justify-content: center;
+  @media screen and (max-width: $extra-large) {
+    top: 12px;
+  }
+}
+
+.characterPersonality {
+  color: v.$color-white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 5px;
+  font-family: Whatacolour, Verdana, serif, sans-serif, "Segoe UI", "Roboto";
+}
+
+.characterName {
+  color: v.$color-white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.characterStatContainer {
+  position: relative;
+  height: 75px;
+  width: 398.5px;
+  @media screen and (max-width: $extra-large) {
+    height: 70px;
+    width: 358.65px;
+  }
+  margin-top: -30px;
+}
+
+.heroStatShadowContainer {
+  position: absolute;
+  box-shadow: 3px 2px 10px 5px v.$color-black;
+  border-radius: 10px;
+  height: 65px;
+  width: 362px;
+  top: 6px;
+  left: 19px;
+  @media screen and (max-width: $extra-large) {
+    height: 60px;
+    width: 323px;
+  }
+}
+
+.monsterStatShadowContainer {
+  position: absolute;
+  box-shadow: 3px 2px 10px 5px v.$color-black;
+  border-radius: 10px;
+  height: 64px;
+  width: 369px;
+  top: 6px;
+  left: 15px;
+  @media screen and (max-width: $extra-large) {
+    height: 59px;
+    width: 329px;
+  }
+}
+
+.characterStatBackground {
+  margin-left: 6px !important;
+}
+
+.statContainer {
+  position: absolute;
+  padding-top: 5px;
+  @media screen and (max-width: $extra-large) {
+    padding-top: 3px;
+  }
+}
+
+.statRow {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.statHeader {
+  display: flex;
+  justify-content: left;
+  color: v.$color-white;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.stat {
+  display: flex;
+  justify-content: right;
+  color: v.$color-white;
+}
+
+.statText {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.descriptionContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  color: v.$color-white;
+  width: 980px;
+}
+
+.descriptionText {
+  line-height: 24px;
+}
+
+.centerContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 260px;
+  height: 420px;
+  margin-bottom: 40px;
+  @media screen and (max-width: $medium) {
+    bottom: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 130px;
+  }
+  @media screen and (max-width: $small) {
+    top: 590px;
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.statusEffectsContainer {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 180px;
+  @media screen and (max-width: $medium) {
+    left: 115px;
+  }
+  @media screen and (max-width: $small) {
+    left: 98px;
+    top: 125px;
+  }
+}
+
+.effectsShadowContainer {
+  position: absolute;
+  box-shadow: 3px 2px 10px 5px v.$color-black;
+  border-radius: 10px;
+  height: 129px;
+  width: 175px;
+  top: 0px;
+  left: 2px;
+}
+
+.statusEffectsHeaderContainer {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  height: 35px;
+  width: 180px;
+}
+
+.statusEffectsHeader {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: -19px;
+  color: v.$color-light-gray;
+  font-size: 17px;
+}
+
+.statusEffects {
+  position: absolute;
+  top: 15px;
+}
+
+.statusEffectContainer {
+  justify-content: center;
+  padding-bottom: 4px;
+  font-size: 17px;
+}
+
+.statusEffectContainer .specialAbility {
+  color: v.$color-danger-red-light;
+  line-height: 14.2px;
+}
+
+.statusEffectContainer .skill {
+  color: v.$color-gold;
+  line-height: 14.2px;
+}
+
+.buttonsContainer {
+  position: absolute;
+  bottom: 30px;
+  height: 210px;
+  @media screen and (max-width: $medium) {
+    right: 25px;
+    bottom: 5px;
+    height: 110px;
+    width: 365px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: $small) {
+    right: 3px;
+    margin-bottom: 0px;
+    bottom: 152px;
+    height: 110px;
+    width: 375px;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: $medium) {
+    width: 155px;
+  }
+}
+
+.heroHealthBarContainer {
+  position: relative;
+  margin-top: -72px;
+}
+
+.healthBarContainer {
+  position: relative;
+  margin-top: -38px;
+}
+
+.healthBarFadeInContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 1;
+  height: 57px;
+  width: 80px;
+  transition: opacity 0.5s linear;
+  top: -25px;
+  left: 189px;
+  @media screen and (max-width: $medium) {
+    left: 165px;
+  }
+  @media screen and (max-width: $small) {
+    left: 147px;
+  }
+}
+
+.healthBarFadeOutContainer {
+  position: absolute;
+  justify-content: center;
+  opacity: 0;
+  height: 57px;
+  width: 80px;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+  top: -25px;
+  left: 189px;
+  @media screen and (max-width: $medium) {
+    left: 165px;
+  }
+  @media screen and (max-width: $small) {
+    left: 147px;
+  }
+}
+
+.monsterEventText {
+  position: absolute;
+  top: 9px;
+  justify-content: center;
+  color: v.$color-danger-red;
+  font-size: 26px;
+}
+
+.healingText {
+  position: absolute;
+  top: 9px;
+  justify-content: center;
+  color: v.$color-light-green;
+  font-size: 26px;
+}
+
+.eventBackground {
+  opacity: 0.8;
+  margin-left: -4px;
+}

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: dcx-whitelist-bot
+    namespace: dcx-prerelease
+    labels:
+      app: dcx-whitelist-bot
+
+spec:
+  selector:
+    matchLabels:
+        app: dcx-whitelist-bot
+  replicas: 1
+  template:
+
+    metadata:
+        labels:
+            app: dcx-whitelist-bot
+    spec:
+
+        imagePullSecrets:
+        - name: newearthcb-azurecr
+
+        containers:
+        -   name: dcx-whitelist-bot
+            image: newearthcb.azurecr.io/dcx-whitelistbot:1.1
+

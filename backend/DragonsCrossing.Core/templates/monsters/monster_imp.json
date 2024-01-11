@@ -1,0 +1,117 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 35,
+    "upper": 42
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 700,
+    "upper": 1000
+  },
+  "DifficultyToHit": {
+    "lower": 1800,
+    "upper": 3200
+  },
+  "CritChance": {
+    "lower": 800,
+    "upper": 1500
+  },
+  "ParryChance": {
+    "lower": 300,
+    "upper": 400
+  },
+  "Charisma": {
+    "lower": 10,
+    "upper": 18
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 7,
+    "upper": 9
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1000,
+    "upper": 1700
+  },
+  "ArmorMitigationAmount": {
+    "lower": 3,
+    "upper": 3
+  },
+  "BonusDamage": {
+    "lower": 3,
+    "upper": 4
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2200,
+    "upper": 2800
+  },
+  "LootItemsTemplates": {
+    "item_tight-headband.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_gambeson.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_quilted-cloth-armor.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_black-sabatons.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_sunstriking-kopis.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_flashing-diamond-focus.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Imp",
+  "MonsterSlug": "imp",
+  "Description": "A creature not fashioned on this world stands before you, smelling strongly of sulphur. It holds a whip that you don't think is used on beasts of burden.",
+  "MonsterItems": [
+    "Otherworldy Whip"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 12,
+  "SpecialAbility": {
+    "Id": 14,
+    "SoundSlug": "infernal-whip",
+    "Name": "Infernal Whip",
+    "Description": "Increases Monster damage by 30% for 1 round. Decreases Player Armor Mitigation Amount by 2 for 5 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "The monster will deal 30% bonus damage for 1 round.",
+        "AffectAmount": 3000,
+        "Duration": 1
+      }
+    ]
+  }
+}

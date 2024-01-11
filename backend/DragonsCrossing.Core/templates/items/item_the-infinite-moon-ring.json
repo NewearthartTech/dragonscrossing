@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 600,
+      "upper": 800
+    },
+    "DodgeRate": {
+      "lower": 400,
+      "upper": 650
+    },
+    "CriticalHitRate": {
+      "lower": 1200,
+      "upper": 1800
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Strength": {
+      "lower": 3,
+      "upper": 5
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "the-infinite-moon-ring",
+  "name": "The Infinite Moon Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "the-infinite-moon-ring",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

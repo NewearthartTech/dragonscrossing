@@ -1,0 +1,126 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 43,
+    "upper": 48
+  },
+  "ChanceToHit": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1500,
+    "upper": 2200
+  },
+  "CritChance": {
+    "lower": 700,
+    "upper": 900
+  },
+  "ParryChance": {
+    "lower": 400,
+    "upper": 800
+  },
+  "Charisma": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 8,
+    "upper": 10
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1200,
+    "upper": 1800
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 4
+  },
+  "BonusDamage": {
+    "lower": 3,
+    "upper": 3
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2500,
+    "upper": 3500
+  },
+  "LootItemsTemplates": {
+    "item_gladiator-leather-sandals.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_heavy-flamberge.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_iron-shod-staff.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_ring-of-ruin.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_glassmail.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_defiant-boots-of-the-third-war.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Selkie",
+  "MonsterSlug": "selkie",
+  "Description": "You are struck by its otherworldy beauty, but something is not quite right about it. She looks like she has just emerged from a dip in the sea, but there is no water nearby.",
+  "MonsterItems": [
+    "Marine Beauty",
+    "Sad Demeanor"
+  ],
+  "AppearChance": 1500,
+  "DieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 31,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "love-of-sea-and-land",
+    "Name": "Love of Sea and Land",
+    "Description": "Increases Monster Armor Mitigation Chance by 100% for 3 rounds. Increases Monster Armor Mitigation Amount by 75% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 10000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 7500,
+        "Duration": 2
+      }
+    ]
+  }
+}

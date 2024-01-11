@@ -1,0 +1,44 @@
+﻿{
+  "bonusDamage": {
+    "lower": 4,
+    "upper": 4
+  },
+  "affectedAttributes": {
+    "Agility": {
+      "lower": 6,
+      "upper": 8
+    },
+    "ParryRate": {
+      "lower": 500,
+      "upper": 600
+    },
+    "DodgeRate": {
+      "lower": 400,
+      "upper": 500
+    },
+    "CriticalHitRate": {
+      "lower": 600,
+      "upper": 700
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "griffonbone-crossbow",
+  "name": "Griffonbone Crossbow",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "griffonbone-crossbow",
+  "levelRequirement": 20,
+  "type": "ItemTemplate"
+}

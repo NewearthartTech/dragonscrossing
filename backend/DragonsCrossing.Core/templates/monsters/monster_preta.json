@@ -1,0 +1,129 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 80,
+    "upper": 95
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 3600,
+    "upper": 4000
+  },
+  "CritChance": {
+    "lower": 1700,
+    "upper": 2000
+  },
+  "ParryChance": {
+    "lower": 400,
+    "upper": 800
+  },
+  "Charisma": {
+    "lower": 32,
+    "upper": 42
+  },
+  "Quickness": {
+    "lower": 18,
+    "upper": 28
+  },
+  "Level": {
+    "lower": 17,
+    "upper": 20
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 0,
+    "upper": 0
+  },
+  "ArmorMitigationAmount": {
+    "lower": 0,
+    "upper": 0
+  },
+  "BonusDamage": {
+    "lower": 8,
+    "upper": 11
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "LootItemsTemplates": {
+    "item_ivory-ring.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_double-bit-axe.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_sharp-shooters-black-vest.json": {
+      "ChancesOfDrop": 1500
+    },
+    "item_takhs-shattering-spark-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_magnuss-mask-of-annihilation.json": {
+      "ChancesOfDrop": 100
+    },
+    "item_sorcerios-ruby-robes.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-fireball.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-ice-tomb.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-hasty-wish.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Preta",
+  "MonsterSlug": "preta",
+  "Description": "You have no idea how a ghost got here, but you feel whispers in your mind about neverending hunger. Best to do what you do best and see it off to a more permanent death.",
+  "MonsterItems": [
+    "Levitating Shattered Sword",
+    "Ethereal Form"
+  ],
+  "AppearChance": 1000,
+  "DieDamage": [
+    {
+      "Sides": 12
+    },
+    {
+      "Sides": 12
+    }
+  ],
+  "LocationTile": 22,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "ethereal-dementia",
+    "Name": "Ethereal Dementia",
+    "Description": "Lowers Hero Parry and Armor Mitigation Chance by 33% for 3 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -3300,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -3300,
+        "Duration": 3
+      }
+    ]
+  }
+}

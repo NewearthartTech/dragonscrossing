@@ -1,0 +1,26 @@
+{
+  "publicAddress": "1",
+  "playerId": "1",
+  "nonce": "nonce",
+  "accountSettings": {
+    "autoRoll": false,
+    "playMusic": true,
+    "musicVolume": 100,
+    "playVoice": true,
+    "voiceVolume": 100
+  },
+  "items": [
+    {
+      "id": "1",
+      "name": "Wish",
+      "slot": "Skill",
+      "imageUrl": "/img/api/skills/mage/wish"
+    },
+    {
+      "id": "2",
+      "name": "Shard",
+      "slot": "Shard",
+      "imageUrl": "/img/api/skills/mage/shield"
+    }
+  ]
+}

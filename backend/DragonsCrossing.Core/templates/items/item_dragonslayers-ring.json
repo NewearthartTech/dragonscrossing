@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 400,
+      "upper": 625
+    },
+    "DodgeRate": {
+      "lower": 225,
+      "upper": 350
+    },
+    "CriticalHitRate": {
+      "lower": 400,
+      "upper": 700
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Charisma": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "dragonslayers-ring",
+  "name": "Dragonslayer's Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "dragonslayers-ring",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

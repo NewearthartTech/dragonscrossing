@@ -1,0 +1,307 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$medium: 1199px;
+
+// Action Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+  @media screen and (max-width: $extraSmall) {
+    padding-top: 35px;
+  }
+}
+
+.modalContainer {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  height: 425px;
+  width: 608px;
+  @media screen and (max-width: $medium) {
+    margin-left: -5px;
+  }
+  @media screen and (max-width: $extraSmall) {
+    width: 390px;
+  }
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.actionPhaseBackground {
+  height: 420px;
+  width: 610px;
+  @media screen and (max-width: $extraSmall) {
+    width: 390px;
+  }
+  position: relative;
+}
+
+.combatActionBackground {
+  position: absolute;
+  top: -10px;
+  left: 0px;
+}
+
+.characterNameBackground {
+  position: absolute;
+  top: -2px;
+  left: 42px;
+  @media screen and (max-width: $extraSmall) {
+    left: 30px;
+  }
+}
+
+.heroResultName {
+  position: absolute;
+  top: 21px;
+  left: 57px;
+  @media screen and (max-width: $extraSmall) {
+    left: 45px;
+  }
+  color: v.$color-light-gray;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.phaseText {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  color: v.$color-light-gray;
+  font-size: 19px;
+}
+
+.closeButtonContainer {
+  position: absolute;
+  right: 24px;
+  top: 17px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.closeButtonContainer:hover {
+  opacity: 0.6;
+}
+
+.skillSelectionContainer {
+  position: absolute;
+  justify-content: space-between;
+  width: 574px;
+  height: 330px;
+  left: 20px;
+  top: 70px;
+  @media screen and (max-width: $extraSmall) {
+    width: 352px;
+    height: 320px;
+  }
+}
+
+.skillSelectionSubContainer {
+  justify-content: space-between;
+}
+
+.noSkillsMessageContainer {
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.noSkillsMessage {
+  color: v.$color-light-gray;
+  font-size: 18px;
+}
+
+.skillContainer {
+  position: relative;
+  width: 280px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  @media screen and (max-width: $extraSmall) {
+    width: 350px;
+  }
+}
+
+.skillContainer:hover {
+  opacity: 0.7;
+}
+
+.skillContainerDisabled {
+  position: relative;
+  width: 280px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  @media screen and (max-width: $extraSmall) {
+    width: 350px;
+  }
+  opacity: 0.7;
+}
+
+.skillBackgroundContainer {
+  top: 0px;
+  position: absolute;
+}
+
+.skillCompContainer {
+  margin-top: 18px;
+  margin-left: 3px;
+  width: 70px;
+}
+
+.skillEffect {
+  position: absolute;
+  top: 4px;
+  left: 81px;
+  width: 194px;
+  @media screen and (max-width: $extraSmall) {
+    width: 260px;
+  }
+}
+
+.effectText {
+  font-size: 15px;
+  line-height: 15px;
+  color: v.$color-light-gray;
+}
+
+.hoverPointer {
+  cursor: pointer;
+}
+
+.skillName {
+  cursor: pointer;
+  color: v.$color-gold;
+}
+
+.skillNameDisabled {
+  color: v.$color-gold;
+}
+
+.die {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 90px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.diePlayerContainer {
+  position: absolute;
+  height: 85px;
+  width: 86px;
+  top: -136px;
+  left: 1px;
+}
+
+.dieDamage {
+  position: absolute;
+  top: 25px;
+  margin-right: 2px;
+  font-size: 24px;
+  color: v.$color-black;
+  z-index: 2;
+  text-shadow: none;
+}
+
+.totalDamage {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 200px;
+  top: 100px;
+}
+
+.clickableImage {
+  cursor: pointer;
+}
+
+// Confirm Modal Styles
+
+.confirmModalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirmModalContainer {
+  position: relative;
+  height: 100px;
+  width: 220px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.confirmContainer {
+  position: absolute;
+  width: 190px;
+  top: 12px;
+}
+
+.confirmSkillText {
+  color: v.$color-light-gray;
+  text-align: center;
+  line-height: 20px;
+}
+
+.confirmCastButtonContainer {
+  position: absolute;
+  justify-content: center;
+  bottom: 10px;
+}
+
+.confirmButtonContainer {
+  position: absolute;
+  justify-content: center;
+  bottom: 20px;
+}
+
+.selectedSkillName {
+  color: v.$color-gold;
+}
+
+.questionMark {
+  margin-left: 1px;
+}
+
+// Dice Modal Styles
+.diceModalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diceModalContainer {
+  position: relative;
+  height: 260px;
+  width: 230px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.diceContainer {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 185px;
+  top: 13px;
+}

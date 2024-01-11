@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 400,
+      "upper": 625
+    },
+    "DodgeRate": {
+      "lower": 225,
+      "upper": 350
+    },
+    "CriticalHitRate": {
+      "lower": 400,
+      "upper": 700
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "elven-ring",
+  "name": "Elven Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "elven-ring",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

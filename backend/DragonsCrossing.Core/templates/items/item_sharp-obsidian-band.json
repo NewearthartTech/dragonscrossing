@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 600,
+      "upper": 800
+    },
+    "DodgeRate": {
+      "lower": 450,
+      "upper": 725
+    },
+    "CriticalHitRate": {
+      "lower": 900,
+      "upper": 1200
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Agility": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "sharp-obsidian-band",
+  "name": "Sharp Obsidian Band",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "sharp-obsidian-band",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

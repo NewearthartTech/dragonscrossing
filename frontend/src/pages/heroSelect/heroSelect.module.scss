@@ -1,0 +1,31 @@
+@use "@/styles/variables" as v;
+
+.backgroundImage {
+  position: relative;
+  background-image: url(../../../public/img/backgrounds/camp-interior.jpg);
+  height: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.heroCardsContainer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.opaqueContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(v.$color-dark-gray, v.$color-black);
+  opacity: 0.5;
+}

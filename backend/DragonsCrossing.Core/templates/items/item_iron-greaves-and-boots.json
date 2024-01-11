@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 700,
+      "upper": 1100
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 3
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "iron-greaves-and-boots",
+  "name": "Iron Greaves and Boots",
+  "itemDropSound": "stompers",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "iron-greaves-and-boots",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,6 @@
+py-cord==2.4.0
+eth-utils==1.9.5
+google-api-python-client==2.77.0
+google-auth-httplib2==0.1.0
+google-auth-oauthlib==1.0.0
+web3

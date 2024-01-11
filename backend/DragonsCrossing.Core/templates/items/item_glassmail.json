@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1350,
+      "upper": 2070
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 5
+    },
+    "DodgeRate": {
+      "lower": 150,
+      "upper": 300
+    },
+    "Strength": {
+      "lower": 4,
+      "upper": 6
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "glassmail",
+  "name": "Glassmail",
+  "itemDropSound": "mail",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "glassmail",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,267 @@
+{
+  "actionType": "Skill",
+  "round": 1,
+  "isCombatOpportunityAvailable": false,
+  "isCharismaOpportunittAvailable": false,
+  "statusEffects": [
+    {
+      "id": 1,
+      "type": "Positive",
+      "name": "Burn",
+      "description": "+4 spell DMG",
+      "turnsRemaining": 1
+    },
+    {
+      "id": 2,
+      "type": "Negative",
+      "name": "Dizzy",
+      "description": "-50% total armor mitigation",
+      "turnsRemaining": 2
+    }
+  ],
+  "monsterResult": {
+    "monster": {
+      "id": "1",
+      "areaId": "1",
+      "name": "Gargoyle",
+      "personality": "Enraged",
+      "description": "Grumbling, stumbling, filthy and ragged, this little red creature's size does little to hide the wanton violence begging to burst at the first thing that looks at him the wrong way. Today, that happens to be you.",
+      "monsterClass": "Warrior",
+      "imageUrl": "/img/api/monsters/gargoyle-fiend",
+      "power": 14,
+      "chanceToHit": 5,
+      "chanceToDodge": 5,
+      "armor": "Torn Rags and Leather",
+      "equippedItems": [
+        {
+          "name": "Runed Axe",
+          "url": "/img/api/items/runed_axe",
+          "rarity": "legendary"
+        },
+        {
+          "name": "Simple Shortsword",
+          "url": "/img/api/items/simple_shortsword",
+          "rarity": "epic"
+        }
+      ],
+      "attackType": "melee",
+      "healthStatus": "Fresh",
+      "maxHitPoints": 30,
+      "hitPoints": 20,
+      "baseDamage": 3,
+      "strength": 6,
+      "maxStrength": 6,
+      "agility": 5,
+      "maxAgility": 5,
+      "wisdom": 5,
+      "maxWisdom": 5,
+      "quickness": 7,
+      "maxQuickness": 7,
+      "level": 12,
+      "specialAbilities": [
+        {
+          "id": "1",
+          "name": "Sneak",
+          "description": "Sneaky Sneak"
+        }
+      ]
+    },
+    "isDead": false,
+    "isSpecialAbilityUsed": false
+  },
+  "heroResult": {
+    "hero": {
+      "id": 44,
+      "playerId": 1,
+      "name": "Dumbeldor",
+      "type": "Mage",
+      "rarity": "Mythic",
+      "imageUrl": "/img/api/heroes/Female-Mage-gen0",
+      "generation": 0,
+      "maxHitPoints": 25,
+      "hitPoints": 25,
+      "gender": "Female",
+      "maxExperiencePoints": 20,
+      "experiencePoints": 0,
+      "level": 1,
+      "strength": 9,
+      "agility": 4,
+      "wisdom": 12,
+      "charisma": 0,
+      "quickness": 0,
+      "skillPoints": 0,
+      "unusedSkillPoints": 7,
+      "unusedStats": 20,
+      "isAscended": false,
+      "maxDailyQuests": 0,
+      "unusedDailyQuests": 0,
+      "isHearthstoneAvailable": false,
+      "chanceToHit": 1,
+      "chanceToDodge": 25,
+      "maxSkillPoints": 0,
+      "learnedSkillCapacity": 0,
+      "baseDamage": 0,
+      "maxStrength": 9,
+      "maxAgility": 4,
+      "maxWisdom": 12,
+      "maxCharisma": 0,
+      "maxQuickness": 0,
+      "skills": [
+        {
+          "id": "1",
+          "url": "/img/api/skills/mage/firebolt",
+          "name": "firebolt",
+          "skillClass": "Mage",
+          "status": "learned",
+          "description": "Roll 1D4. On a 1-2, gain the use of any T1 or T2 warrior ability. On 3-4, gain the use of any T1 or T2 ranger ability (for immediate use). The player's charisma score is the attribute bonus for these abilities.",
+          "requiredSkillPoints": 1,
+          "uses": 2
+        },
+        {
+          "id": "2",
+          "url": "/img/api/skills/mage/ice-tomb",
+          "name": "ice tomb",
+          "skillClass": "Mage",
+          "status": "learned",
+          "description": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 3
+        },
+        {
+          "id": "3",
+          "url": "/img/api/skills/mage/drowse",
+          "name": "drowse",
+          "skillClass": "Mage",
+          "status": "learned",
+          "description": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 0
+        },
+        {
+          "id": "4",
+          "url": "/img/api/skills/mage/heal",
+          "name": "heal",
+          "skillClass": "Mage",
+          "status": "learned",
+          "description": "Roll 1D4. On a 1-2, gain the use of any T1 or T2 warrior ability. On 3-4, gain the use of any T1 or T2 ranger ability.",
+          "requiredSkillPoints": 1,
+          "uses": 1
+        },
+        {
+          "id": "5",
+          "url": "/img/api/skills/mage/magic-missile",
+          "name": "magic missile",
+          "skillClass": "Mage",
+          "status": "learned",
+          "description": "Roll 1D4. On a 1-2, gain the use of any T1 or T2 warrior ability. On 3-4, gain the use of any T1 or T2 ranger ability (for immediate use). The player's charisma score is the attribute bonus for these abilities.",
+          "requiredSkillPoints": 1,
+          "uses": 1
+        },
+        {
+          "id": "6",
+          "url": "/img/api/skills/mage/ray-of-frost",
+          "name": "ray of frost",
+          "skillClass": "Mage",
+          "status": "unlearned",
+          "description": "Deals 50 damage",
+          "requiredSkillPoints": 1
+        },
+        {
+          "id": "7",
+          "url": "/img/api/skills/mage/shield",
+          "name": "shield",
+          "skillClass": "Mage",
+          "status": "unlearned",
+          "description": "Deals 50 damage",
+          "requiredSkillPoints": 1
+        },
+        {
+          "id": "8",
+          "url": "/img/api/skills/mage/teleport",
+          "name": "teleport",
+          "skillClass": "Mage",
+          "status": "learned",
+          "description": "Deals 50 damage",
+          "requiredSkillPoints": 1,
+          "uses": 0
+        },
+        {
+          "id": "13",
+          "referenceId": "203",
+          "url": "/img/api/skills/mage/fireball",
+          "name": "fireball",
+          "skillClass": "Mage",
+          "status": "unlearned",
+          "description": "Deals 90 damage and inflicts 20 burn damage for 2 turns",
+          "requiredSkillPoints": 2
+        },
+        {
+          "id": "14",
+          "referenceId": "204",
+          "url": "/img/api/skills/mage/wish",
+          "name": "wish",
+          "skillClass": "Mage",
+          "status": "unlearned",
+          "description": "Deals 110 damage and freezes the enemy for the next turn",
+          "requiredSkillPoints": 3
+        },
+        {
+          "id": "10",
+          "referenceId": "200",
+          "status": "unidentified",
+          "url": "/img/api/skills/unidentified-skill"
+        },
+        {
+          "id": "11",
+          "referenceId": "201",
+          "status": "unidentified",
+          "url": "/img/api/skills/unidentified-skill"
+        }
+      ],
+      "equippedItems": [
+        {
+          "id": "4",
+          "name": "Cloth Robes",
+          "slot": "Chest",
+          "imageUrl": "/img/api/items/cloth-robes",
+          "rarity": "rare",
+          "damage": 0,
+          "armor": 1,
+          "parry": 1,
+          "dodge": 0,
+          "crit": 0,
+          "doubleAttack": 0
+        }
+      ]
+    },
+    "isDead": false,
+    "skillResult": {
+      "isDamage": true,
+      "isStatusEffect": true,
+      "statusEffects": [
+        {
+          "id": 3,
+          "type": "Positive",
+          "name": "Force Shield",
+          "description": "1D4 shield HP",
+          "turnsRemaining": 3
+        },
+        {
+          "id": 4,
+          "type": "Positive",
+          "name": "Focus",
+          "description": "1D6 attack DMG",
+          "turnsRemaining": 1
+        }
+      ],
+      "totalDamage": 9,
+      "bonusDamage": 2,
+      "statusEffectBonus": 4,
+      "statusEffectMitigation": 0,
+      "roll": {
+        "sides": 8,
+        "result": 3
+      }
+    }
+  }
+}

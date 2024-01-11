@@ -1,0 +1,10 @@
+{
+    "description": "Sweet berries were a boon to mankind on your old world, and here it seems they are no different. +5% HP.",
+    "gameState": {
+      "slug": "enchantedFields",
+      "zone": {
+        "slug": "wildPrairie",
+        "tiles": []
+      }
+    }
+  }

@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 925,
+      "upper": 1250
+    },
+    "DodgeRate": {
+      "lower": 400,
+      "upper": 650
+    },
+    "CriticalHitRate": {
+      "lower": 900,
+      "upper": 1200
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 3,
+      "upper": 5
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "takhs-shattering-spark-ring",
+  "name": "Takh's Shattering Spark Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "takhs-shattering-spark-ring",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

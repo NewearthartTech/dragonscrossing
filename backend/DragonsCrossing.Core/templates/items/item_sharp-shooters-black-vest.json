@@ -1,0 +1,47 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2430,
+      "upper": 3510
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 5
+    },
+    "CriticalHitRate": {
+      "lower": 150,
+      "upper": 300
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "sharp-shooters-black-vest",
+  "name": "Sharp Shooter's Black Vest",
+  "itemDropSound": "leathers",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "sharp-shooters-black-vest",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

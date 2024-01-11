@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_custom_poisons",
+  "slug": "skill-custom-poisons",
+  "name": "Custom Poisons",
+  "description": "Deals 2D6 + (Agility / 7) damage and deals an additional 2D4 + (Agility / 10) damage per round for 2 rounds.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 7,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 15,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

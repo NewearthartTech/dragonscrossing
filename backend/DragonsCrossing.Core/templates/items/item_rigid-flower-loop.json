@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 450,
+      "upper": 725
+    },
+    "DodgeRate": {
+      "lower": 200,
+      "upper": 300
+    },
+    "CriticalHitRate": {
+      "lower": 400,
+      "upper": 700
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "rigid-flower-loop",
+  "name": "Rigid Flower Loop",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "rigid-flower-loop",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

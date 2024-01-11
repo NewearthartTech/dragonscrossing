@@ -1,0 +1,268 @@
+[
+  {
+    "id": 45,
+    "playerId": "6371d2bb2835f67253654cbd",
+    "seasonId": 1,
+    "name": "Arthas",
+    "heroClass": "Warrior",
+    "gender": "Male",
+    "generation": 0,
+    "rarity": "Mythic",
+    "isHearthstoneAvailable": false,
+    "remainingHitPointsPercentage": 100,
+    "baseHitPoints": 30,
+    "remainingHitPoints": 30,
+    "totalHitPoints": 20,
+    "difficultyToHit": 2000,
+    "strength": 10,
+    "agility": 5,
+    "wisdom": 6,
+    "quickness": 6,
+    "charisma": 5,
+    "isAscended": false,
+    "prestigeLevel": 0,
+    "level": 1,
+    "experiencePoints": 20,
+    "maxExperiencePoints": 20,
+    "remainingQuests": 20,
+    "dailyQuestsUsed": 0,
+    "maxDailyQuests": 20,
+    "extraDailyQuestGiven": 0,
+    "learnedSkillCapacity": 6,
+    "usedUpSkillPoints": 0,
+    "baseChanceToHit": 2000,
+    "baseSkillPoints": 12,
+    "zoneBackgroundType": "Forest",
+    "unsecuredDCXValue": {
+      "amount": 0
+    },
+    "gold": 0,
+    "skills": [
+      {
+        "id": "1",
+        "status": "Learned",
+        "type": "LearnedHeroSkill",
+        "dcxToIdentify": 10,
+        "methodName": "apply_skill_Overhand_Chop",
+        "slug": "skill-overhand-chop",
+        "name": "Overhand Chop",
+        "description": "Deals 1D12 damage.",
+        "skillClass": "Warrior",
+        "requiredSkillPoints": 2,
+        "allocatedSkillPoints": 0,
+        "goldToLearn": 5,
+        "dcxToLearn": 10,
+        "skillsCalculatedStats": {
+          "totalUses": 0,
+          "currentUsesRemaining": 0
+        },
+        "skillUseInstance": []
+      },
+      {
+        "id": "2",
+        "status": "Learned",
+        "type": "LearnedHeroSkill",
+        "dcxToIdentify": 10,
+        "methodName": "apply_skill_Grapple",
+        "slug": "skill-grapple",
+        "name": "Grapple",
+        "description": "Deals 1D6 damage and reduces parry for both Monster and Player by 80% for 2 rounds.",
+        "skillClass": "Warrior",
+        "requiredSkillPoints": 1,
+        "allocatedSkillPoints": 0,
+        "goldToLearn": 1,
+        "dcxToLearn": 5,
+        "skillsCalculatedStats": {
+          "totalUses": 0,
+          "currentUsesRemaining": 0
+        },
+        "skillUseInstance": []
+      }
+    ],
+    "equippedItems": [
+    ],
+    "inventory": [
+      {
+        "type": "ItemDto",
+        "id": "1005",
+        "name": "Fallen Aedosian's Treacherous Ring",
+        "slug": "fallen-aedosians-treacherous-ring",
+        "imageSlug": "fallen-aedosians-treacherous-ring",
+        "slot": "Ring",
+        "itemDropSound": "cloth-robes",
+        "allowedHeroClassList": ["Warrior"],
+        "heroStatComplianceDictionary": {
+        },
+        "rarity": "Common",
+        "dieDamage": [],
+        "requiredLevel": 1,
+        "sellPrice": 1,
+        "affectedAttributes": {
+          "armorMitigation": 6000,
+          "armorMitigationAmount": 3,
+          "dodgeRate": 800,
+          "strength": 1,
+          "agility": 0,
+          "wisdom": 0,
+          "charisma": 0,
+          "quickness": 0,
+          "hitPoints": 20,
+          "difficultyToHit": 0,
+          "chanceToHit": 0
+        }
+      },
+      {
+        "type": "ItemDto",
+        "id": "1006",
+        "name": "Finnar's Spellsword of Despair",
+        "slug": "finnars-spellsword-of-despair",
+        "imageSlug": "finnars-spellsword-of-despair",
+        "slot": "TwoHand",
+        "itemDropSound": "metal-weapon",
+        "allowedHeroClassList": ["Warrior"],
+        "heroStatComplianceDictionary": {
+        },
+        "rarity": "Common",
+        "dieDamage": [
+          {
+            "sides": 6
+          }
+        ],
+        "requiredLevel": 1,
+        "sellPrice": 1,
+        "affectedAttributes": {
+          "armorMitigation": 0,
+          "armorMitigationAmount": 0,
+          "dodgeRate": 0,
+          "parryRate": 0,
+          "strength": 0,
+          "agility": 0,
+          "wisdom": 0,
+          "charisma": 0,
+          "quickness": 0,
+          "hitPoints": 0,
+          "difficultyToHit": 0,
+          "chanceToHit": 0
+        }
+      },
+      {
+        "type": "ItemDto",
+        "id": "1009",
+        "name": "Sorcerio's Ruby Robes",
+        "slug": "sorcerios-ruby-robes",
+        "imageSlug": "sorcerios-ruby-robes",
+        "slot": "Chest",
+        "itemDropSound": "metal-weapon",
+        "allowedHeroClassList": ["Warrior"],
+        "heroStatComplianceDictionary": {
+        },
+        "rarity": "Common",
+        "dieDamage": [
+          {
+            "sides": 6
+          }
+        ],
+        "requiredLevel": 1,
+        "sellPrice": 1,
+        "affectedAttributes": {
+          "armorMitigation": 0,
+          "armorMitigationAmount": 0,
+          "dodgeRate": 0,
+          "parryRate": 0,
+          "strength": 0,
+          "agility": 0,
+          "wisdom": 0,
+          "charisma": 0,
+          "quickness": 0,
+          "hitPoints": 0,
+          "difficultyToHit": 0,
+          "chanceToHit": 0
+        }
+      },
+      {
+        "type": "ItemDto",
+        "id": "1007",
+        "name": "Cloth Robes",
+        "slug": "cloth-robes",
+        "imageSlug": "cloth-robes",
+        "slot": "Chest",
+        "itemDropSound": "cloth-robes",
+        "allowedHeroClassList": ["Warrior"],
+        "heroStatComplianceDictionary": {
+        },
+        "rarity": "Common",
+        "dieDamage": [],
+        "requiredLevel": 1,
+        "sellPrice": 1,
+        "affectedAttributes": {
+          "armorMitigation": 6000,
+          "armorMitigationAmount": 3,
+          "dodgeRate": 800,
+          "strength": 1,
+          "agility": 0,
+          "wisdom": 0,
+          "charisma": 0,
+          "quickness": 0,
+          "hitPoints": 20,
+          "difficultyToHit": 0,
+          "chanceToHit": 0
+        }
+      },
+      {
+        "type": "ItemDto",
+        "id": "1008",
+        "name": "Basic Greatsword",
+        "slug": "basic-greatsword",
+        "imageSlug": "basic-greatsword",
+        "slot": "TwoHand",
+        "itemDropSound": "metal-weapon",
+        "allowedHeroClassList": ["Warrior"],
+        "heroStatComplianceDictionary": {
+        },
+        "rarity": "Common",
+        "dieDamage": [
+          {
+            "sides": 6
+          }
+        ],
+        "requiredLevel": 1,
+        "sellPrice": 1,
+        "affectedAttributes": {
+          "armorMitigation": 0,
+          "armorMitigationAmount": 0,
+          "dodgeRate": 0,
+          "parryRate": 0,
+          "strength": 0,
+          "agility": 0,
+          "wisdom": 0,
+          "charisma": 0,
+          "quickness": 0,
+          "hitPoints": 0,
+          "difficultyToHit": 0,
+          "chanceToHit": 0
+        }
+      }
+    ],
+    "calculatedStats": {
+      "strength": 10,
+      "agility": 5,
+      "wisdom": 6,
+      "quickness": 5,
+      "charisma": 9,
+      "chanceToCrit": 60,
+      "chanceToParry": 50,
+      "chanceToHit": 40,
+      "difficultyToHit": 20,
+      "chanceToDodge": 45,
+      "armorMitigation": 6000,
+      "armorMitigationAmount": 3,
+      "itemBonusDamage": 0,
+      "statsBonusDamage": 1,
+      "damageRange": {
+        "lower": 3,
+        "upper": 3
+      }
+    },
+    "alteredStats": []
+  }
+]

@@ -1,0 +1,98 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  -  main
+
+pool:
+  vmImage: ubuntu-20.04
+
+variables:
+  tag: '1.0.$(Build.BuildId)'
+
+
+stages:
+- stage: buildImage
+
+  jobs:
+  - job: buildDockerImage
+
+    steps:
+    - checkout: self
+      persistCredentials: true
+
+    - script: |
+        cp $(Build.Repository.LocalPath)/.npmrc.cicd.template $(Build.Repository.LocalPath)/.npmrc
+      displayName: 'copy npmrc'
+      failOnStderr: true
+
+    - task: npmAuthenticate@0
+      inputs:
+        workingFile: .npmrc
+
+    - task: Docker@2
+      displayName: Login to ACR
+      inputs:
+        command: login
+        containerRegistry: 'newEarthAzureContRegistryUsingPassword'
+
+
+    - script: |
+        echo "export const AppVersion = \"$(tag)\";" > ./src/version.js
+
+      displayName: 'update frontend version'
+
+
+    - task: Docker@2
+      displayName: docker build
+      inputs:
+        containerRegistry: 'newEarthAzureContRegistryUsingPassword'
+        repository: 'dcx-web'
+        command: 'build'
+        Dockerfile: './Dockerfile'
+        tags: $(tag)
+
+    - task: Docker@2
+      displayName: docker push
+      inputs:
+        containerRegistry: 'newEarthAzureContRegistryUsingPassword'
+        repository: 'dcx-web'
+        command: 'push'
+        tags: $(tag)
+
+    - script: |
+        cp ./deploy/toK8Staging-template.yml $(Agent.TempDirectory)/toStaging.k8.yml
+        docker run --rm  --entrypoint=cat newearthcb.azurecr.io/dcx-web:$(tag) /dcx-backend-version  | sed -i "s/__TAG__SERVER/$(</dev/stdin)/" $(Agent.TempDirectory)/toStaging.k8.yml
+        sed -i "s/__TAG__FRONTEND/$(tag)/" $(Agent.TempDirectory)/toStaging.k8.yml
+
+      displayName: 'copy kubectl file'
+      failOnStderr: true
+
+    - task: Kubernetes@1
+      displayName: kubectl apply
+      inputs:
+        connectionType: Kubernetes Service Connection
+        kubernetesServiceEndpoint: k8-do-new2
+        command: apply
+        arguments: -f $(Agent.TempDirectory)/toStaging.k8.yml    
+
+    - task: Npm@1
+      displayName: 'bump repo version'
+      inputs:
+        command: custom
+        customCommand: version $(tag) --no-git-tag-version
+
+    - script: |
+        git config user.email "cicd"
+        git config user.name "cicd"
+        git add .
+        git commit -m "updated package version to $(tag) [skip ci]"
+        git push origin HEAD:$(Build.SourceBranchName)
+   
+      displayName: 'push repo version'
+
+
+
+

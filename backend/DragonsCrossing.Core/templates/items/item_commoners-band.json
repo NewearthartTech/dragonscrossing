@@ -1,0 +1,51 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "DodgeRate": {
+      "lower": 125,
+      "upper": 225
+    },
+    "CriticalHitRate": {
+      "lower": 250,
+      "upper": 450
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "commoners-band",
+  "name": "Commoner's Band",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "commoners-band",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

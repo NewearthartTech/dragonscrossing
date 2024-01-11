@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "HitPoints": {
+      "lower": 1,
+      "upper": 2
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 350
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "yew-crossbow",
+  "name": "Yew Crossbow",
+  "itemDropSound": "crossbow",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 10
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "yew-crossbow",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

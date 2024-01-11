@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_improvised_trap",
+  "slug": "skill-improvised-trap",
+  "name": "Improvised Trap",
+  "description": "Reduces Monster armor mitigation amount by 20% + (Strength / 1.5) until end of combat, and deals 1D4+ (Agility / 10) damage per round for 2 rounds.",
+  "skillClass": "Ranger",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 4,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

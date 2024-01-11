@@ -1,0 +1,124 @@
+@use "@/styles/variables" as v;
+
+.imageContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.image {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+.imageOpaque {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  opacity: 50%;
+}
+
+.sellPriceContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+  bottom: -10px;
+}
+
+.sellPrice {
+  font-size: 22px;
+  color: v.$color-gold;
+}
+
+.itemDetailsContainer {
+  position: fixed;
+  width: 210px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.itemDetailsContainerShiftLeft {
+  position: fixed;
+  width: 210px;
+  margin-left: -55px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.itemDetailsContainerLeftHover {
+  position: fixed;
+  width: 210px;
+  z-index: 10;
+  margin-left: -279px;
+  pointer-events: none;
+}
+
+.itemDetailsContainerLeftDetails {
+  position: fixed;
+  width: 210px;
+  z-index: 10;
+  margin-left: -279px;
+  pointer-events: none;
+}
+
+.itemDetailsContainerLeftDetailsShiftRight {
+  position: fixed;
+  width: 210px;
+  z-index: 10;
+  margin-left: -224px;
+  pointer-events: none;
+}
+
+.itemDetails {
+  position: relative;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+}
+
+.itemName {
+  position: absolute;
+  color: v.$color-gold;
+  top: 5px;
+  font-size: 16px;
+}
+
+.itemStats {
+  position: absolute;
+  top: 28px;
+  left: 12px;
+}
+
+.statRow {
+  width: 183px;
+  justify-content: space-between;
+}
+
+.itemStat {
+  color: v.$color-light-gray;
+  font-size: 14px;
+  line-height: 19.5px;
+}
+
+.itemStatWarning {
+  color: v.$color-danger-red;
+  font-size: 14px;
+  line-height: 19.5px;
+}
+
+.contextMenuContainer {
+  position: absolute;
+  width: 81px;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+.menuContainer {
+  position: relative;
+  width: 81px;
+}
+
+.hoverPointer {
+  cursor: pointer;
+}

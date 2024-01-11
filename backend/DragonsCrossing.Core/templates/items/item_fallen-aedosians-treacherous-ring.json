@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 700,
+      "upper": 950
+    },
+    "DodgeRate": {
+      "lower": 450,
+      "upper": 725
+    },
+    "CriticalHitRate": {
+      "lower": 1000,
+      "upper": 1400
+    },
+    "Charisma": {
+      "lower": 4,
+      "upper": 6
+    },
+    "Quickness": {
+      "lower": 4,
+      "upper": 6
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Strength": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "fallen-aedosians-treacherous-ring",
+  "name": "Fallen Aedosian's Treacherous Ring",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "fallen-aedosians-treacherous-ring",
+  "levelRequirement": 12,
+  "type": "ItemTemplate"
+}

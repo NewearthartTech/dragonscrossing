@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "CriticalHitRate": {
+      "lower": 300,
+      "upper": 500
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "balanced-pike",
+  "name": "Balanced Pike",
+  "itemDropSound": "metal-weapon",
+  "slot": "twoHand",
+  "dieDamage": [
+    {
+      "Sides": 12
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "balanced-pike",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

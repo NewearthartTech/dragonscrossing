@@ -1,0 +1,18 @@
+﻿{
+  "dcxToLearn": 0.0,
+  "methodName": "apply_skill_firebolt",
+  "slug": "skill-firebolt",
+  "name": "Firebolt",
+  "description": "Deals 1D4 + (Wisdom / 10) damage, and deals an additional 1 + (Charisma / 9) damage per round for 2 rounds.",
+  "skillClass": "Mage",
+  "requiredSkillPoints": 5,
+  "allocatedSkillPoints": 0,
+  "skillUseInstance": [],
+  "skillsCalculatedStats": {
+    "TotalUses": 0,
+    "CurrentUsesRemaining": 0
+  },
+  "levelRequirement": 1,
+  "id": "",
+  "type": "UnlearnedHeroSkill"
+}

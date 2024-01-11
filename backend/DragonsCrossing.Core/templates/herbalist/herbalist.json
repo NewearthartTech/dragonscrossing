@@ -1,0 +1,12 @@
+[
+  {
+    "option": "fortyPercent",
+    "quests": 1,
+    "percentage": 33
+  },
+  {
+    "option": "oneHundredPercent",
+    "quests": 2,
+    "percentage": 100
+  }
+]

@@ -1,0 +1,59 @@
+# Deploys game balance branch
+
+trigger:
+- game-balance
+
+pool:
+  vmImage: ubuntu-20.04
+  
+variables:
+  tag: '1.0.$(Build.BuildId)'
+
+stages:
+- stage: buildImage
+
+  jobs:
+  - job: buildDockerImage
+
+    steps:
+    - task: NuGetAuthenticate@0
+
+    - task: Docker@2
+      displayName: docker build
+      inputs:
+        containerRegistry: 'newEarthAzureContRegistryUsingPassword'
+        repository: 'dcx-server'
+        command: 'build'
+        Dockerfile: './Dockerfile'
+        arguments: '--build-arg FEED_ACCESSTOKEN=$(VSS_NUGET_ACCESSTOKEN)'
+        tags: $(tag)
+
+    - task: Docker@2
+      displayName: docker push
+      inputs:
+        containerRegistry: 'newEarthAzureContRegistryUsingPassword'
+        repository: 'dcx-server'
+        command: 'push'
+        tags: $(tag)
+
+    - script: |
+        FRONTEND_VER=`cat balance-frontend-version.txt`
+        echo "using server $(tag) , frontend $FRONTEND_VER"
+        cp ./toBalance.k8.template.yml $(Agent.TempDirectory)/toBalance.k8.yml
+        sed -i "s/__TAG__SERVER/$(tag)/" $(Agent.TempDirectory)/toBalance.k8.yml
+        sed -i "s/__TAG__FRONTEND/$FRONTEND_VER/" $(Agent.TempDirectory)/toBalance.k8.yml
+
+      displayName: 'prepare kubectl file'
+      failOnStderr: true
+
+    - task: Kubernetes@1
+      displayName: kubectl apply
+      inputs:
+        connectionType: Kubernetes Service Connection
+        kubernetesServiceEndpoint: k8-do-new2
+        command: apply
+        arguments: -f $(Agent.TempDirectory)/toBalance.k8.yml    
+
+
+
+

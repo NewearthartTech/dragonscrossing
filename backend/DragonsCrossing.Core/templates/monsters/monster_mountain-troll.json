@@ -1,0 +1,137 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 68,
+    "upper": 80
+  },
+  "ChanceToHit": {
+    "lower": 125,
+    "upper": 250
+  },
+  "ChanceToDodge": {
+    "lower": 100,
+    "upper": 200
+  },
+  "DifficultyToHit": {
+    "lower": 1700,
+    "upper": 2600
+  },
+  "CritChance": {
+    "lower": 900,
+    "upper": 1600
+  },
+  "ParryChance": {
+    "lower": 700,
+    "upper": 1100
+  },
+  "Charisma": {
+    "lower": 16,
+    "upper": 25
+  },
+  "Quickness": {
+    "lower": 10,
+    "upper": 15
+  },
+  "Level": {
+    "lower": 13,
+    "upper": 16
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 1800,
+    "upper": 2200
+  },
+  "ArmorMitigationAmount": {
+    "lower": 4,
+    "upper": 7
+  },
+  "BonusDamage": {
+    "lower": 4,
+    "upper": 6
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 1900,
+    "upper": 3800
+  },
+  "LootItemsTemplates": {
+    "item_jane-and-mary-brand-walking-shoes.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_steel-cervelliere.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_bright-dory-spear.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_pappenheimer.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_prides-fallen-rod.json": {
+      "ChancesOfDrop": 125
+    },
+    "item_phantom-visage-of-the-corrupted-aedosian.json": {
+      "ChancesOfDrop": 100
+    },
+    "skill-berserk.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-bladeform-parry.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-thunderous-bellow.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Mountain Troll",
+  "MonsterSlug": "mountain-troll",
+  "Description": "Mountain trolls are infamous for their love of the dark, but this one has waylayed you on the mountain trails.",
+  "MonsterItems": [
+    "Stone Spears",
+    "Runic Tribal Armor"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 6
+    },
+    {
+      "Sides": 6
+    }
+  ],
+  "LocationTile": 17,
+  "SpecialAbility": {
+    "Id": 24,
+    "SoundSlug": "darkness-overwhelming",
+    "Name": "Darkness Overwhelming",
+    "Description": "Decreases Hero dodge and parry by 90% for 3 rounds. Increases Monster difficulty to hit by 15% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q4_ChanceToDodge",
+        "FriendlyStatName": "Chance to Dodge",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -9000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q5_Parry",
+        "FriendlyStatName": "Parry",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -9000,
+        "Duration": 3
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q3_DifficultyToHit",
+        "FriendlyStatName": "Difficulty to Hit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 1500,
+        "Duration": 2
+      }
+    ]
+  }
+}

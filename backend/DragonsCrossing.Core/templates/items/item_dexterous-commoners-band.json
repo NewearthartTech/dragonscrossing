@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 350,
+      "upper": 550
+    },
+    "DodgeRate": {
+      "lower": 125,
+      "upper": 225
+    },
+    "CriticalHitRate": {
+      "lower": 200,
+      "upper": 400
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    },
+    "HitPoints": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "dexterous-commoners-band",
+  "name": "Dexterous Commoner's Band",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "dexterous-commoners-band",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2340,
+      "upper": 3375
+    },
+    "ArmorMitigationAmount": {
+      "lower": 8,
+      "upper": 9
+    },
+    "ParryRate": {
+      "lower": 400,
+      "upper": 600
+    },
+    "Strength": {
+      "lower": 2,
+      "upper": 4
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 2
+    },
+    "Quickness": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 3
+    },
+    "Agility": {
+      "lower": 1,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "thundering-dark-mail-of-ending",
+  "name": "Thundering Dark Mail of Ending",
+  "itemDropSound": "mail",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "thundering-dark-mail-of-ending",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

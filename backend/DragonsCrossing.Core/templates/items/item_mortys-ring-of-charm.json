@@ -1,0 +1,55 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 400,
+      "upper": 625
+    },
+    "DodgeRate": {
+      "lower": 200,
+      "upper": 300
+    },
+    "CriticalHitRate": {
+      "lower": 425,
+      "upper": 725
+    },
+    "HitPoints": {
+      "lower": 0,
+      "upper": 2
+    },
+    "Charisma": {
+      "lower": 1,
+      "upper": 4
+    },
+    "Strength": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Agility": {
+      "lower": 0,
+      "upper": 1
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "mortys-ring-of-charm",
+  "name": "Morty's Ring of Charm",
+  "itemDropSound": "ring",
+  "slot": "ring",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "mortys-ring-of-charm",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

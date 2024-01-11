@@ -1,0 +1,31 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1150,
+      "upper": 1150
+    },
+    "ArmorMitigationAmount": {
+      "lower": 4,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": "darkTower",
+  "slug": "unironically-hideous-cap-+4",
+  "name": "Unironically Hideous Cap +4",
+  "itemDropSound": "cloth-head",
+  "slot": "head",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "leather-cap",
+  "levelRequirement": 14,
+  "type": "ItemTemplate"
+}

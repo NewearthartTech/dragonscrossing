@@ -1,0 +1,43 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 1260,
+      "upper": 1800
+    },
+    "ArmorMitigationAmount": {
+      "lower": 3,
+      "upper": 3
+    },
+    "DodgeRate": {
+      "lower": 150,
+      "upper": 275
+    },
+    "Charisma": {
+      "lower": 0,
+      "upper": 3
+    },
+    "Wisdom": {
+      "lower": 1,
+      "upper": 4
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "smokeform-robes",
+  "name": "Smokeform Robes",
+  "itemDropSound": "cloth-robes",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "smokeform-robes",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

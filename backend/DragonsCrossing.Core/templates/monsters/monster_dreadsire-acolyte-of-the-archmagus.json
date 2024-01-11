@@ -1,0 +1,156 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 180,
+    "upper": 210
+  },
+  "ChanceToHit": {
+    "lower": 500,
+    "upper": 500
+  },
+  "ChanceToDodge": {
+    "lower": 400,
+    "upper": 600
+  },
+  "DifficultyToHit": {
+    "lower": 2500,
+    "upper": 2500
+  },
+  "CritChance": {
+    "lower": 1700,
+    "upper": 1900
+  },
+  "ParryChance": {
+    "lower": 1000,
+    "upper": 1500
+  },
+  "Charisma": {
+    "lower": 162,
+    "upper": 189
+  },
+  "Quickness": {
+    "lower": 25,
+    "upper": 32
+  },
+  "Level": {
+    "lower": 20,
+    "upper": 20
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 3200,
+    "upper": 3700
+  },
+  "ArmorMitigationAmount": {
+    "lower": 8,
+    "upper": 10
+  },
+  "BonusDamage": {
+    "lower": 8,
+    "upper": 10
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2000,
+    "upper": 2500
+  },
+  "LootItemsTemplates": {
+    "item_balanced-red-and-black-kite-shield.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_copper-coated-xiphos.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_red-beryl-focus.json": {
+      "ChancesOfDrop": 10000
+    },
+    "item_the-facelifter-heirloom-of-horizon.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_quickstrike-crossbow-of-closing-eyes.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_archmaguss-skeletal-staff.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_magnuss-mask-of-annihilation.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_sorcerios-ruby-robes.json": {
+      "ChancesOfDrop": 200
+    },
+    "skill-thirst-for-blood.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-riposte.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-mastered-blow.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-adhesive-application.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-sniper.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-custom-poisons.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-fireball.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-ice-tomb.json": {
+      "ChancesOfDrop": 10
+    },
+    "skill-hasty-wish.json": {
+      "ChancesOfDrop": 10
+    }
+  },
+  "Name": "Dreadsire, Acolyte of the Archmagus",
+  "MonsterSlug": "dreadsire-acolyte-of-the-archmagus",
+  "Description": "Abaddon's mightiest acolyte stands before you. \"Acheron has put you up to this, hasn't he?\" You feel a shudder, as you know it was your own lust for adventure and fame that led you here; Acheron only played a convenient encourager. ",
+  "MonsterItems": [
+    "Bonecrafted Leather",
+    "Eerie Staff of Command"
+  ],
+  "AppearChance": 10000,
+  "DieDamage": [
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    },
+    {
+      "Sides": 10
+    }
+  ],
+  "LocationTile": 24,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "crippling-despair",
+    "Name": "Crippling Despair",
+    "Description": "Reduces Hero Crit by 50% for 2 rounds. Reduces Hero Bonus Damage by 33% for 2 Rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": true,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q7_Crit",
+        "FriendlyStatName": "Crit",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -3300,
+        "Duration": 2
+      }
+    ]
+  }
+}

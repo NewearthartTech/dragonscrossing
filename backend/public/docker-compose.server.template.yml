@@ -1,0 +1,53 @@
+# this is used to generate compose file for front end devs to run
+version: '2'
+
+services:
+
+  mongo:
+    image: mongo:4.4
+    command: ["--replSet", "rs0", "--bind_ip_all"]
+
+    healthcheck:
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo --quiet) -eq 1
+      interval: 10s
+      start_period: 30s
+
+  redis:
+    image: redis:6.2-alpine
+    ports:
+      - 6379:6379
+
+
+  rabbitmq:
+    image: masstransit/rabbitmq
+    hostname: "rabbit1"
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.6.0
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.6.0
+    ports:
+      - 5601:5601
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+
+  dcx-server:
+    image: newearthcb.azurecr.io/dcx-server:__TAG__
+    environment:
+      - rabbitmq__host=rabbitmq
+      - redis__connectionString=redis:6379
+      - mongo__connectionString=mongodb://mongo?connect=direct
+      - app__allowCors=true
+      - app__migrateDb=true
+      - ASPNETCORE_hostBuilder__reloadConfigOnChange=false
+    volumes:
+      - ../../../../deployedContracts.json:/app/deployedContracts.json
+    ports:
+      - 8080:80

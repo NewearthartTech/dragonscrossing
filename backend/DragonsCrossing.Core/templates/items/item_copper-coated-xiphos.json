@@ -1,0 +1,29 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 1
+  },
+  "affectedAttributes": {
+    "ParryRate": {
+      "lower": 1250,
+      "upper": 1650
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "copper-coated-xiphos",
+  "name": "Copper Coated Xiphos",
+  "itemDropSound": "metal-weapon",
+  "slot": "offHand",
+  "dieDamage": [
+    {
+      "Sides": 8
+    }
+  ],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Ranger"
+  ],
+  "imageSlug": "copper-coated-xiphos",
+  "levelRequirement": 16,
+  "type": "ItemTemplate"
+}

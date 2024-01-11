@@ -1,0 +1,39 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 400,
+      "upper": 600
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 2
+    },
+    "Wisdom": {
+      "lower": 2,
+      "upper": 3
+    },
+    "Charisma": {
+      "lower": 0,
+      "upper": 1
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "sagacious-rough-slippers",
+  "name": "Sagacious Rough Slippers",
+  "itemDropSound": "sandals",
+  "slot": "feet",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "sagacious-rough-slippers",
+  "levelRequirement": 1,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,75 @@
+@use "@/styles/variables" as v;
+$extraSmall: 599px;
+$small: 899px;
+$medium: 1199px;
+
+.main {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.unidentifyContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.skillContainer {
+  padding-bottom: 13px;
+  padding-right: 5px;
+}
+
+.unidentifiedSkillContainer {
+  padding-right: 5px;
+  height: 190px;
+}
+
+.noSkillsMessageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 254px;
+}
+
+.noSkillsMessage {
+  color: v.$color-light-gray;
+  font-size: 20px;
+}
+
+// Modal Styles
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.identifySuccessModalContainer {
+  position: relative;
+  height: 80px;
+  width: 168px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.identifiedSkillContainer {
+  position: absolute;
+  top: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.successMessage {
+  color: v.$color-green;
+  font-size: 28px;
+}
+
+.failedMessage {
+  color: v.$color-danger-red;
+  font-size: 28px;
+}

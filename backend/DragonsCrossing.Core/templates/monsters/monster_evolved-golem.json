@@ -1,0 +1,137 @@
+﻿{
+  "MaxHitPoints": {
+    "lower": 97,
+    "upper": 107
+  },
+  "ChanceToHit": {
+    "lower": 200,
+    "upper": 300
+  },
+  "ChanceToDodge": {
+    "lower": 0,
+    "upper": 0
+  },
+  "DifficultyToHit": {
+    "lower": 700,
+    "upper": 1100
+  },
+  "CritChance": {
+    "lower": 2000,
+    "upper": 3000
+  },
+  "ParryChance": {
+    "lower": 300,
+    "upper": 500
+  },
+  "Charisma": {
+    "lower": 29,
+    "upper": 39
+  },
+  "Quickness": {
+    "lower": 20,
+    "upper": 25
+  },
+  "Level": {
+    "lower": 16,
+    "upper": 18
+  },
+  "Power": {
+    "lower": 1,
+    "upper": 1
+  },
+  "ArmorMitigation": {
+    "lower": 4700,
+    "upper": 5700
+  },
+  "ArmorMitigationAmount": {
+    "lower": 10,
+    "upper": 12
+  },
+  "BonusDamage": {
+    "lower": 5,
+    "upper": 7
+  },
+  "ChanceOfUsingSpecialAbility": {
+    "lower": 2500,
+    "upper": 3500
+  },
+  "LootItemsTemplates": {
+    "item_quick-loading-arbalest.json": {
+      "ChancesOfDrop": 1250
+    },
+    "item_balanced-red-and-black-kite-shield.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_red-beryl-focus.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_shining-mail-coif.json": {
+      "ChancesOfDrop": 1100
+    },
+    "item_the-infinite-moon-ring.json": {
+      "ChancesOfDrop": 200
+    },
+    "item_the-facelifter-heirloom-of-horizon.json": {
+      "ChancesOfDrop": 125
+    },
+    "skill-adhesive-application.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-sniper.json": {
+      "ChancesOfDrop": 20
+    },
+    "skill-custom-poisons.json": {
+      "ChancesOfDrop": 20
+    }
+  },
+  "Name": "Evolved Golem",
+  "MonsterSlug": "evolved-golem",
+  "Description": "Abaddon created the last golem out of stone; this one looks to be made of metal. \"I have been crafted to serve Abaddon,\" it intones.",
+  "MonsterItems": [
+    "Massive Metal Axe",
+    "Full Steel Plate"
+  ],
+  "AppearChance": 2000,
+  "DieDamage": [
+    {
+      "Sides": 8
+    },
+    {
+      "Sides": 8
+    }
+  ],
+  "LocationTile": 22,
+  "SpecialAbility": {
+    "Id": 0,
+    "SoundSlug": "metallic-collision",
+    "Name": "Metallic Collision",
+    "Description": "Decreases Hero Armor Mitigation Amount and Armor Mitigation Chance by 50% for 2 rounds. Increases Monster Damage by 15% for 2 rounds.",
+    "CanUseSpecialAbilityMoreThanOnce": false,
+    "Affects": [
+      {
+        "AffectType": "Hero",
+        "StatName": "Q10_ArmorMitigationAmount",
+        "FriendlyStatName": "Armor Mitigation Amount",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Hero",
+        "StatName": "Q8_ArmorMitigation",
+        "FriendlyStatName": "Armor Mitigation Chance",
+        "Description": "FILL THIS IN",
+        "AffectAmount": -5000,
+        "Duration": 2
+      },
+      {
+        "AffectType": "Monster",
+        "StatName": "Q8_BonusDamage",
+        "FriendlyStatName": "Bonus Damage",
+        "Description": "FILL THIS IN",
+        "AffectAmount": 1500,
+        "Duration": 2
+      }
+    ]
+  }
+}

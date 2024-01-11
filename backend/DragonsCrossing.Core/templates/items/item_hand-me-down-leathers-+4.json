@@ -1,0 +1,31 @@
+﻿{
+  "bonusDamage": {
+    "lower": 0,
+    "upper": 0
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 2160,
+      "upper": 2160
+    },
+    "ArmorMitigationAmount": {
+      "lower": 5,
+      "upper": 5
+    }
+  },
+  "blackSmithZone": "darkTower",
+  "slug": "hand-me-down-leathers-+4",
+  "name": "Hand me down Leathers +4",
+  "itemDropSound": "leathers",
+  "slot": "chest",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior",
+    "Ranger",
+    "Mage"
+  ],
+  "imageSlug": "broken-in-leathers",
+  "levelRequirement": 14,
+  "type": "ItemTemplate"
+}

@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 1,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 360,
+      "upper": 540
+    },
+    "ArmorMitigationAmount": {
+      "lower": 1,
+      "upper": 1
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 2
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "heavy-arm-buckler",
+  "name": "Heavy Arm Buckler",
+  "itemDropSound": "shield",
+  "slot": "offHand",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "heavy-arm-buckler",
+  "levelRequirement": 4,
+  "type": "ItemTemplate"
+}

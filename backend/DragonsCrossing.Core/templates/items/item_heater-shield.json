@@ -1,0 +1,33 @@
+﻿{
+  "bonusDamage": {
+    "lower": 2,
+    "upper": 2
+  },
+  "affectedAttributes": {
+    "ArmorMitigation": {
+      "lower": 500,
+      "upper": 700
+    },
+    "ArmorMitigationAmount": {
+      "lower": 2,
+      "upper": 2
+    },
+    "HitPoints": {
+      "lower": 2,
+      "upper": 3
+    }
+  },
+  "blackSmithZone": null,
+  "slug": "heater-shield",
+  "name": "Heater Shield",
+  "itemDropSound": "shield",
+  "slot": "offHand",
+  "dieDamage": [],
+  "heroStatComplianceDictionary": {},
+  "allowedHeroClassList": [
+    "Warrior"
+  ],
+  "imageSlug": "heater-shield",
+  "levelRequirement": 7,
+  "type": "ItemTemplate"
+}
