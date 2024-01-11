@@ -3,7 +3,7 @@ Source code for DragonsCrossing a ROUGE-LIKE RPG Built On Web3
 
 # This Repo contains multiple projects
 It's intended as a placeholder to release DragonsCrossing source code in public domain.
-Right now there is no efforts to build from this Repository
+Right now there are no efforts to build from this Repository
 
 # building and deploying
 
